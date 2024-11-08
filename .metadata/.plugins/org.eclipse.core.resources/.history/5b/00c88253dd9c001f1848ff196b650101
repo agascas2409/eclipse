@@ -1,0 +1,25 @@
+package prog.unidad03.combinado;
+import java.util.Scanner;
+
+public class ParImparFibonacciApp {
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    //Titulo del ejercicio
+    System.out.println("NÚMEROS PARES E IMPARES Y SUCESIÓN DE FIBONACCI");
+    
+    try {
+      //Pedir un número entero
+      System.out.print("Introduce un número entero: ");
+      int numero = Integer.parseInt(sc.nextLine());
+      
+      //Se imprime
+      System.out.printf("El número introducido es %d%n", numero);
+      
+    } catch (NumberFormatException e) {
+      System.out.println("Entrada no válida. Debe introducir un número entero.");
+    }
+
+  }
+
+}

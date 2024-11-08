@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;r01e06.EurosAPesetasPorTeclado&apos; to &apos;PesetasAEurosPorTeclado&apos;&#x0D;&#x0A;- Original project: &apos;r01e06&apos;&#x0D;&#x0A;- Original element: &apos;r01e06.EurosAPesetasPorTeclado&apos;&#x0D;&#x0A;- Renamed element: &apos;r01e06.PesetasAEurosPorTeclado&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;EurosAPesetasPorTeclado&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;r01e06{EurosAPesetasPorTeclado.java[EurosAPesetasPorTeclado" matchStrategy="1" name="PesetasAEurosPorTeclado" qualified="false" references="true" similarDeclarations="false" stamp="1727687008167" textual="false" version="1.0"/>
+</session>
