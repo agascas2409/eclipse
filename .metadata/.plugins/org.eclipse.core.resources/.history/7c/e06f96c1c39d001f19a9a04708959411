@@ -39,7 +39,6 @@ public class ParImparFibonacciApp {
           int valorAnterior = 0;
           int valorAnteriorDos = 1;
           int fibonacci = valorAnterior + valorAnteriorDos;
-          
           for(int contador = 3; contador < numero; contador++) {
             valorAnterior = valorAnteriorDos;
             valorAnteriorDos = fibonacci;
