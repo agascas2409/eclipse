@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<config date="1730893550944" transient="false" version="3.0">
+<config date="1731322840546" transient="false" version="3.0">
 <site enabled="true" policy="USER-EXCLUDE" updateable="true" url="platform:/base/">
 <feature id="org.eclipse.help" plugin-identifier="org.eclipse.help.base" url="features/org.eclipse.help_2.3.1900.v20240903-0240/" version="2.3.1900.v20240903-0240">
 </feature>
@@ -295,7 +295,7 @@
 </feature>
 <feature id="org.eclipse.datatools.enablement.ibm.feature" plugin-identifier="org.eclipse.datatools.enablement.ibm" url="features/org.eclipse.datatools.enablement.ibm.feature_1.15.0.202311071249/" version="1.15.0.202311071249">
 </feature>
-<feature id="net.sf.eclipsecs" plugin-identifier="net.sf.eclipsecs.branding" url="features/net.sf.eclipsecs_10.19.0.202411050640/" version="10.19.0.202411050640">
+<feature id="net.sf.eclipsecs" plugin-identifier="net.sf.eclipsecs.branding" url="features/net.sf.eclipsecs_10.20.1.202411071856/" version="10.20.1.202411071856">
 </feature>
 <feature id="org.eclipse.jst.server_core.feature" url="features/org.eclipse.jst.server_core.feature_3.4.700.v202405180431/" version="3.4.700.v202405180431">
 </feature>
