@@ -1,5 +1,4 @@
 package prog.unidad03.repeticion;
-
 import java.util.Scanner;
 
 public class TrianguloNumerico {
