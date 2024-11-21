@@ -47,9 +47,14 @@ class CuentaTest {
    */
   @Test
   void testExtraerDinero() {
-    Cuenta cuenta1 = new Cuenta("ccc-01", 100);
-    cuenta1.extraerDinero(20);
-    assertEquals(80, cuenta1.getSaldo());
+    try {
+      Cuenta cuenta1 = new Cuenta("ccc-01", 100);
+      cuenta1.extraerDinero(120);
+      fail("Error. Debería saltar el control de la excepción");
+    } catch (ArithmeticException ae) {
+      //asserEquals(res-esperado, res-obtenido);
+      assertEquals("Saldo negativo", ae.getMessage());
+    }
   }
 
 }
