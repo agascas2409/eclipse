@@ -30,6 +30,7 @@ public class IntervaloTiempo {
     this.segundos = segundos;
   }
   
+  //Metodos
   public IntervaloTiempo suma(IntervaloTiempo otro) {
     //Sumamos segundos
     int segundosTemporales = segundos + otro.segundos;

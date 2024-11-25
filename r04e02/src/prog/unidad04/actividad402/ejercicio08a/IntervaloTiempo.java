@@ -27,11 +27,21 @@ public class IntervaloTiempo {
   this.segundos = segundos;  
   }
   
+  /**
+   * 
+   * @param otro
+   * @return
+   */
   public IntervaloTiempo suma(IntervaloTiempo otro) {
     int resultado = this.segundos + otro.segundos;
     return new IntervaloTiempo(resultado);
   }
   
+  /**
+   * 
+   * @param otro
+   * @return
+   */
   public IntervaloTiempo resta(IntervaloTiempo otro) {
       int resultado= this.segundos - otro.segundos;
       
@@ -44,6 +54,10 @@ public class IntervaloTiempo {
       }
   }
   
+  /**
+   * 
+   * @return
+   */
   public String obtenerCadena() {
     int segundosTemporal = segundos % 60;
     int minTemporal = segundos / 60;
