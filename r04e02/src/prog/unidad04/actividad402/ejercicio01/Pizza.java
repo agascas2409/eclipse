@@ -57,12 +57,13 @@ public class Pizza {
   //Constructores
   /**
    * Constructor con dos parametros
-   * @param tamagno Tamaño de la pizza; puedde ser mediana o familiar
-   * @param tipo Tipo de la pizza; puede ser margarita, cuatro quesos o funghi
+   * @param tamagno Tamaño de la pizza; puedde ser "mediana" o "familiar"
+   * @param tipo Tipo de la pizza; puede ser margarita, cuatro quesos o "funghi
    */
   public Pizza(String tamagno, String tipo) {
     if (tamagno.toLowerCase() == "mediana" || tamagno.equalsIgnoreCase("familiar")) {
       if (tipo.toLowerCase() == "margarita" || tipo.toLowerCase() == "cuatro quesos" || tipo.equalsIgnoreCase("funghi")) {
+        //Si todo es correcto se establece el tipo, tamaño, estado y se crea una pizza
         this.tipo = tipo;
         this.tamagno = tamagno;
         pizzasCreadas++;
