@@ -1,4 +1,4 @@
-package prog.unidad04.actividad402.ejercicio01;
+package prog.unidad04.actividad402.ejercicio02;
 
 /**
  * Prueba de la clase pizza
@@ -7,11 +7,11 @@ public class PruebaPizza {
 
   public static void main(String[] args) {
     //Cabezera
-    System.out.println("PROGRAMA DE PRUEBA DE PIZZAS 2");
+    System.out.println("PROGRAMA DE PRUEBA DE PIZZAS 3");
     
     //Creamos dos pizzas distintas
-    Pizza pizza1 = new Pizza("mediana", "funghi");
-    Pizza pizza2 = new Pizza("familiar", "margarita");
+    Pizza pizza1 = new Pizza("mediana", "margarita");
+    Pizza pizza2 = new Pizza("familiar", "funghi");
     
     //Intentamos crear pizzas con valiores erroneos y debe imprimir los errores
     Pizza pizzaErronea1 = new Pizza("grande", "funghi");

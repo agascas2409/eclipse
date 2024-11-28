@@ -1,4 +1,4 @@
-package prog.unidad04.actividad402.ejercicio01;
+package prog.unidad04.actividad402.ejercicio02;
 
 /**
  * Clase que representa una pizza
@@ -27,7 +27,7 @@ public class Pizza {
   /**
    * Tipo funghi
    */
-  public static final String TIP_FUNGHI = "funghi";
+  public static final String TIPO_FUNGHI = "funghi";
   //Para el estado en el que se encuentra la pizza
   /**
    * Estado pedida
@@ -37,6 +37,13 @@ public class Pizza {
    * Estado servida
    */
   public static final String ESTADO_SERVIDA = "servida";
+
+  private static final int COSTE_MEDIANA = 5;
+  private static final double COSTE_FAMILIAR = 7.5;
+  private static final int COSTE_INGREDIENTES = 1;
+  private static final int INGREDIENTES_MARGARITA = 2;
+  private static final int INGREDIENTES_CUATRO_QUESOS = 4;
+  private static final int INGREDIENTES_FUNGHI = 3;
   
   //Atributos
   //Tamaño de la pizza. Puede ser mediana o familiar
@@ -130,12 +137,35 @@ public class Pizza {
   public String getEstado() {
     return estado;
   }
+
+  /**
+   * Devuelve el coste de la pizza según el tamaño y tipo
+   * @return Coste de la pizza según tamaño y tipo
+   */
+  public double coste() {
+    double coste;
+    if (tamagno == TAMAGNO_MEDIANA) {
+      coste = COSTE_MEDIANA;
+    } else {
+      coste = COSTE_FAMILIAR;
+    }
+    if (tipo == TIPO_MARGARITA) {
+      coste += COSTE_INGREDIENTES * INGREDIENTES_MARGARITA;
+    } else if (tipo == TIPO_FUNGHI){
+      coste += COSTE_INGREDIENTES * INGREDIENTES_FUNGHI;
+    } else {
+      coste += COSTE_INGREDIENTES * INGREDIENTES_CUATRO_QUESOS;
+    }
+    return coste;
+  }
   
   /**
    * Devuelve una representación en cadena de la pizza
    * @return Representación en formato de cadena de la pizza con el formato especificado
    */
   public String obtenerCadena() {
-    return "Tamaño: " + getTamagno() + ", Tipo: " + getTipo() + ", Estado: " + getEstado();
+    return "Tamaño: " + getTamagno() + ", Tipo: " + getTipo() + ", Estado: " + getEstado() + ", Coste: " + coste();
   }
+  
 }
+
