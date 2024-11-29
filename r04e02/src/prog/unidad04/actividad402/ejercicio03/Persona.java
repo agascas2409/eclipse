@@ -1,4 +1,5 @@
 package prog.unidad04.actividad402.ejercicio03;
+import java.util.Random;
 
 public class Persona {
   
@@ -52,8 +53,8 @@ public class Persona {
   
   //Métodos
   /**
-   * 
-   * @return
+   * Devuelve el IMC de la persona
+   * @return IMC de la persona
    */
   public double getIMC() {
     double imc;
@@ -66,12 +67,17 @@ public class Persona {
   }
   
   /**
-   * 
-   * @return
+   * Devuelve si el peso es correcto en base al IMC
+   * @return peso correcto: (-1) peso bajo, (0) peso normal, (1) sobrepeso
    */
   public int getPesoCorrecto() {
     int pesoCorrecto;
-    double imc = peso / (altura * altura);
+    double imc;
+    if (altura == 0) {
+      imc = 0;
+    } else {
+      imc = peso / (altura * altura);
+    }
     if (imc < 20) {
       pesoCorrecto = -1;
     } else if(imc > 25) {
@@ -83,8 +89,8 @@ public class Persona {
   }
   
   /**
-   * 
-   * @return
+   * Devuelve si es mayor de edad o no
+   * @return true si es mayor de edad, false si no es mayor de edad
    */
   public boolean esMayorEdad() {
     boolean mayorEdad;
@@ -96,12 +102,24 @@ public class Persona {
     return mayorEdad;
   }
   
+  /**
+   * Devuelve una representación en cadena de la persona
+   * @return Representación en formato de cadena de la persona con el formato especificado
+   */
   public String toString() {
-    return "hola";
+    return "Nombre: " + this.nombre + ", Edad: " + this.edad + ", Sexo: " + this.sexo + ", Peso: " + this.peso + ", Altura: " + this.altura + ", DNI: " + generarDNI();
   }
   
+  /**
+   * Devuelve el DNI generado
+   * @return dni
+   */
   public String generarDNI() {
-    return "hola";
+    Random random = new Random();
+    int numeroDNI = random.nextInt(10000000, 99999999);
+    String letraNIF = "TRWAGMYFPDXBNJZSQVHLCKE";
+    char letraDNI = letraNIF.charAt(numeroDNI % letraNIF.length()); 
+    return "" + numeroDNI + letraDNI;
   }
   
   private char comprobarSexo(char sexo) {
