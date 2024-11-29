@@ -3,14 +3,14 @@
 <repository name='Bundle pool' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
     <property name='p2.system' value='true'/>
-    <property name='p2.timestamp' value='1731065878768'/>
+    <property name='p2.timestamp' value='1732878136411'/>
   </properties>
   <mappings size='3'>
     <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
     <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
-  <artifacts size='1216'>
+  <artifacts size='1300'>
     <artifact classifier='osgi.bundle' id='org.apache.httpcomponents.client5.httpclient5-win' version='5.2.3.v20231203-1619'>
       <properties size='1'>
         <property name='download.size' value='25187'/>
@@ -19,6 +19,11 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.frameworks' version='1.3.0.v202308161955'>
       <properties size='1'>
         <property name='download.size' value='130581'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.edit.ui' version='2.25.0.v20241015-0644'>
+      <properties size='1'>
+        <property name='download.size' value='376499'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.ui.console' version='3.14.100.v20240429-1358'>
@@ -51,6 +56,11 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.datatools.enablement.oda.xml' version='1.5.0.202311071249'>
       <properties size='1'>
         <property name='download.size' value='131042'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.pde.target' version='2.1.0.20241003-0434'>
+      <properties size='1'>
+        <property name='download.size' value='90425'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.metadata.repository' version='1.5.400.v20240515-1919'>
@@ -130,6 +140,14 @@
         <property name='download.size' value='14861'/>
       </properties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.edit.ui' version='2.27.0.v20241015-0644'>
+      <properties size='1'>
+        <property name='download.size' value='22773'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jst.ws.cxf.ui' version='1.1.0.v202308010145'>
       <properties size='1'>
         <property name='download.size' value='169950'/>
@@ -143,6 +161,13 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.equinox.frameworkadmin.equinox' version='1.3.200.v20240321-1450'>
       <properties size='1'>
         <property name='download.size' value='74287'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm.tree' version='9.7.1'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/EFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6cWDBAAqX8ziyHGx5yE4j1ezwN1XCEQ8i9Jjt5tWWUvfxRfCCyNvTP6dBToybi6&#xA;eAQ88rdnOAD+q6x8HMr8bo1RM+BHegjU8qWG+fPJX7QUBAlm5NQAlqRjZCP9+roM&#xA;RLDP0IG1FFr7djE4e5uZUvgIB88fxHm98Uu44DDE99LTtE/lRfRU5HV8KlCNCqHT&#xA;L9r52hNI7Tr+Jtj/GbrKlBnZdvDdtkmfGJ7HHro23Bj8hh/9G4955Ek3Acfuje6V&#xA;JwmnsEnyN8yH93OBYip/bjo5SIiC0Qj2HpVM4cu6ufc+2iO34orGqOQmJMx1GT4r&#xA;SbHINuLZ+rbBhq14e65lDq8GgfVlpi3n1FVbbyZCwNnJo/xtnETyhS43vAke1IFJ&#xA;FDUOLDKcIJLNLvdeZVII4TOl1441VByO7IAhjibyucpR8VhE+Dua8TyeTnP4CkXV&#xA;fDZypyUin/XeVTm1fkdmotGJFwGbjz9X/dT+FQjhtmM9MEPJisCT6JNDIqKAWep7&#xA;tIegV4f418T8klG2YXcojnhrW6mDtRsStlwumn4DLoZuGFbkV81rQZ7uBr5pA7SO&#xA;oWzb/sUwjv2YFvUzjXpNLto0qM2uu+B8jtu3vnM7Dou2Ml8gazjDrtM5byqBD1JC&#xA;7dfl3C0fp2IiOChm9Ed1zUeo026SRLR1//q1I0prki+X8cBR/3k=&#xA;=6OdM&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='51939'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.m2e.wtp' version='1.6.1.20231024-1618'>
@@ -284,6 +309,13 @@
         <property name='download.size' value='75855'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm' version='9.7.1'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/GFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6cyow/+MuzGqbDitEdVTerWdZGjBnj7YqTB3eRycV5jaJuf1iakhDvbjQMRFbvk&#xA;kkl1eBTbf9/otL/KcdasaB5EpWCfP+wa3U6e8uoZJESIozLvskDy48rVjMcSodRG&#xA;Id/LYfPz5A/eZ9cea99pdT7Uv85fYnilPyK0WzvhIfWti5cGzewcG6sIbyGZMtjJ&#xA;8g0OQ/nu0x3aiFdlK9PIcfziYH+rr42ZjjEjRJJiQxSWx1cF0VS1k7r53KzjolPC&#xA;lGyrT/ZroyO5cSU6FGxIAHpFcIV2fTkKQrhtAk7BoIN+WZebbYbidXyZYNQIA36W&#xA;M0ZswJahlU/gIQ3qgOEIyAdzUdoouxohISg0M5TzCY+mGyRZWdHxlKUmAFhjRrTX&#xA;cCZqg8bGeh6AAeM7T3JaVeBirqbte7dn/G1t7CCvrs0eYPem7s1hkGid4IX1a7Dg&#xA;zxVmM2TjbogHlfMHDi8WEDdZe4qDdHr6K1GPux0kob78zJsz1IuZHkoJ2g4J1git&#xA;Qx2BFVKuWedUuNPH2uBN5LalUyq9oJPJTZZO11mPXpuO6/E0ar3ZJQFC75c0jmSf&#xA;Ct0LSQfbwGC8XUQ7iXqmBbDq3G8JThPLJfmykm5VrBFRUfO++3GoZ4hK53BNyEqe&#xA;lPCu1F+bgE1AVZShTqWtPtIiyXuGF31gZ5+f1+MWyxZ4kfKAmaI=&#xA;=YM5f&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='126093'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.osgi.service.event' version='1.4.1.202109301733'>
       <properties size='3'>
         <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJm1rNMFiEEnjBEBxt1jry35FZzcA5PObwFNksACgkQcA5PObwF&#xA;NksKdQ//SLMQDwWCrZHOls/vuIaCtzv3SPrKLnu4KcdGp1Vg+2uCr9/loUx6HlKu&#xA;DoKW8WY4+8f77ZVRwWYu73ZCLTGI9W4q6wEKktYrYWPlBSw33/j5YN9EbKpoYfx7&#xA;7OLTATZrAhSXwzdsYqYklXUaytLxGzoHK3WQNVmndR3NmAIIXyqaG7Nq40EVkeoY&#xA;R8gTbMN+V7qd/VCmAkO6JKFAV4bprv41sY751kTMxRMmHfQyZpp0jus+4rSqN70D&#xA;TloJDaGL2a2xyBYBVcNirSPa527NOsX2XYauW1UDyltxBPSEj++hISjyObwLb6Q7&#xA;DC7AhSnPHNLQgPhjwyQM5TKcgxPT2zh6rn35goudSteshCgU+2se/qSnPwKqVzK+&#xA;N+/oa7cqxCypgH/ETqrCDYsxdObsMf625TPVNddWeyKyVJPjVy158xVxNzURyDvK&#xA;DwRSKLWZeeTgTY+JmstsI71u1gJlnUbUFLyMzrD1FsxbPb3hpimYZeZrhzPOfjxF&#xA;exsUdNctP+R+fce+UuwXTP/4tWe1ouQVFIYj4CXxbcHxRP9iI5GJptu8ZWTHlXkM&#xA;nzdgWjlHG9xObIXhFM5Y2nfeOPSufHr872AKQw8ZGvvXVO9qZWqSmDkwuCcYLT6o&#xA;c9cmOhiaswl9qDy5poYCE9MjOZ+yx86GM9Ti6Z0sm2ie9hOa7n8=&#xA;=8rL9&#xA;-----END PGP SIGNATURE-----'/>
@@ -311,6 +343,13 @@
         <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJm1rNOFiEEnjBEBxt1jry35FZzcA5PObwFNksACgkQcA5PObwF&#xA;NkuagQ/+N2abgERZzokQpsAJV9gY8jCt7lWk0cDirfD41JXpSSWMnEPx32lN3Hmd&#xA;EsaR5RmAOGN7N5RUFKWNBYlMOmRMiQDrk/KknedIRFzRRol3Pp7qjZ3mSXC7UbMj&#xA;DVwqSW1kqz1vm5r//I1vKsB/WgdvHrHwVRX3eGyspySOwu34iWa2m0WeupM3fOX8&#xA;bRRD4Vkwow1YywN8wnNix3TqAh3JA6YGSOiU391+KUK6i6DuwoUGJ7p0eLH+s+Bf&#xA;0VX0BkN3OxYEp/w4ecy/DotRBu6te4MgYaD7lDA99bP2j26xnnqVWHnMVB6t1n8K&#xA;/Z/tcZPOXmBcyXa2ClaY+iU5VMI08y2uqtWLshSJbdyolJ1bncm5omFHwRDeYG7N&#xA;hrnUT2LwCzm6KvcDxzOFkxQnJ2eKagAN1TRVK4u/vgYD+WHTie5skiUkVDbUpbD5&#xA;gvINWpmLc8Geq0WrQs2pN9AAy+TI4AUf9Ut8Z7YI2QHWsDty3ebzkLzICyCDzuwn&#xA;6Uum7BL02Fa7Obo0kOzmc0o4BzUcYem32+2yGQFAsZ7tgC49xut4y5yErvujOcuM&#xA;6JQRohaXHdIi2wyX9eZGC6N41EDW4hwdzGn8w054FdQfuxSGhzINd3Vawq8BYynX&#xA;f8DP8AcqMeCKJW5YZbwtf6u1tnUFuRMfTfiLERhN0744pfsK3TI=&#xA;=tOEI&#xA;-----END PGP SIGNATURE-----'/>
         <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xA;Version: BCPG v1.77.00&#xA;&#xA;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&#xA;=xtSl&#xA;-----END PGP MESSAGE-----'/>
         <property name='download.size' value='13467'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.sun.jna.platform' version='5.15.0'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIcBAABAgAGBQJnRfjQAAoJELojFh4lnQnMZIYQAJYPY0zRkoIdWaHtfyLU/LUG&#xA;ZaxS8uiLbZOJxgtI1SwTB0qFV4Zi+QK8uWIRUd8InwKd2FXDvwOCIU5dBBKsoUCb&#xA;7Zp1R19r4cx82EmnMbj1o0pCJjZBSPM2M6DLOjwtPpVUCmZlp2lNVG6hrrgkABj1&#xA;HXibihYtgPGZgHMmCCBvr5gtbWPwI4CABj68BjyI/w+qdSA0HcOtV9lDdusqOa8y&#xA;96F8zVFQC59jKmQauLhuDdUJdeuBbn/eDD4GubrIGrTHeVF8zXS4Wd0zjwinPHgH&#xA;dHsCJLc4ZBzm1z/st4/oFW7lngf3AwHJximeAWGKDTrpox6w7pe7QIRxXOppD3iT&#xA;pIp8erHk5PhewUC/UvztdCx0zlWGaQQXIpjp65toNq+uFehRZb8mcoeJ3RMXqlDJ&#xA;7OyAQTymVCfk7u1eR9sD8nLJAiU0+5ze1+L+pFkgx/G2wdIKjVgCZiP6JGCZx8pS&#xA;31z0bXcPIRFXjA7UjBjOzL48JoF20e0DKu/9hxKKXRkYrB3AWRT+IbS3qECdwSV+&#xA;ICrVIwE4MPsl/PFWFRdkmlTHNCR+reRHLFa+g/ZdtJ1kFRMRTtBO02H53TGwlISl&#xA;IGbLOcKwfdZ1hmiP/5pBXI/j/vzzSGih04GKcGONjSUP3c6LwxwfomzmnJFsEMSG&#xA;HsUGSLMvRPbEhLO4XgtD&#xA;=vnHt&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGRSOAQBEACYvIDktwbC/Ac+4D2DJwb2GnGRkzXMpcImuwU7VBUqY15OeOSX&#xD;&#xA;yBO/nWX/Z+2yoPnJA72mwsW//mUyq1PV+fmllepIR0Vd0BaY2WOxD2RL11aiUEkT&#xD;&#xA;V7uDQFV+lLSHfmubD9GtDz3FzKcbR1IX9HeCGChPt0VYuELt47d/G1ohrpg9pTfZ&#xD;&#xA;4dd7TIWMgWrisDHLmSzDmiFuI3S3ciYFDuQ2v1sinHaa8Zz05dVmOZm35rUwRQnv&#xD;&#xA;E1jVggk3PQLI5Notd72N0aF64hbTPBDmIp7nLwsN8UeG3yXK2dOsFLsYNvTTHq6Z&#xD;&#xA;6I6feUMXtZ6tM5vcq5Rvojp/yyaV0JysDGmNwhrquWO08SARvLarDCi2mIZ2Gqxa&#xD;&#xA;C4fq4MXvMYzkjWkIBjZVg1sk9frkDDE96iaUXaHeBL8+6vubxuWs2CXpPhy/+N/C&#xD;&#xA;tFBMcRphLgSg3ZSNaX1rSaOz28ap/QfGm8oTOFstcjYccvZ1Sx3dDRAcOxjP4/DZ&#xD;&#xA;Du/GT1CVv2+GyWcggQoX1vp2aKx5/W9e49tHW8WEwfkwykoQdnjz8MU4EYfFqViv&#xD;&#xA;8cZAqz1jZhN1lFcQ8pdzmciTBdiJcLtzTKXfg6lX4LfMFFaJ6BoguyOr4xPiQadS&#xD;&#xA;d4El/uvI+wPpZG5+GLLyfyXjX980/sq61WNEhgs8H3ZNGNZf8J8HMC5siwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEDUFmR4rH+OG4hXDmAmYIjeNaw1MFAmRSOAQCGwIFCQlmAYAC&#xD;&#xA;QAkQAmYIjeNaw1PBdCAEGQEIAB0WIQRlr4rUXZXd/H77p7W6IxYeJZ0JzAUCZFI4&#xD;&#xA;BAAKCRC6IxYeJZ0JzBdBD/9nDv+24HZ1VreH5IybOyA07oJIamL3gNztmbPfK3qW&#xD;&#xA;2kxRf6DmrYQoWML8UZW8D9ygQpPN/Axnm/u0zPFvoQ5ITgAjKPhu5W4yrIzm+87U&#xD;&#xA;isEz330S6bjI7+Y751oBxHjbSRGEmXxqq1vsqgHXkGh+P1u41gcQ3uyg5xOqLQx+&#xD;&#xA;if+XE7/2qfT4YSiBNj8ugiKEy8PJmQUG3T+IOKkKbe7ZI9xbcY69nH6N3F5FweY/&#xD;&#xA;Ot7WLNSbr7x9FunOOSiExQBAuwGntVMvzxWuFqOuIMekPr2UaeVynYo6JwVpOJIF&#xD;&#xA;4W3fL1PoCxUsBhmmDdEWGD9iw25ohFpdRuMYzmXgmhU8zrF5+Q7X7sQcXbSF3stY&#xD;&#xA;ozNCKXxP18OpfjI45b3/KVZOzVUx6GQaZ2bw6Pg3vZZ50UZN4r1uCt1nLHlsvhHV&#xD;&#xA;gXUIujMQvD6YFq7auVPCQsQ/HIwF/Tqxy3GNHAPMa2sEhCbnZ5XI+/fXScEscZ+x&#xD;&#xA;cdSCnTyImyJI54S2LB3FRnTbcWFR2fx+Mz1t/1kfZgLF3aWI2Uym/uPnZQJDSjrJ&#xD;&#xA;++J0zvxPYVXMLj1VR3nXGfzZZM3UPTQsO9iZ4JCSmk3OXr9E4+FdbzkmOvMX7K+X&#xD;&#xA;tFr6r89R98MuYoznZFrtELd9es/JpLsAXYjxleMdH9vuFWkF6R+W6OOAoTsNJoIc&#xD;&#xA;R/JTEACJwy3HGIpcKZfVOETIH01l3YgTK5My3+e1LS7Hr5JeTEX9wBQKWG73KRqg&#xD;&#xA;Kqj1YzVYEer6fhoOje1ulhAiHDMm3CsHsCMbMNiAs0vdwhYVc5xoepyNqZ7BI0PB&#xD;&#xA;3XNIxm5XRwtB/gBFnDeCW2pwcarnpazXDsipTYTEzMCqVHWFjmv+6vJTcflcP6nU&#xD;&#xA;7GE0EcONcS9/HWjlD5i0HuaUjY6XYZ57oMo9AEXboY0PrcgzHXkDW1cnj5coecpd&#xD;&#xA;ANppyT20+H+dFlbfbiVIOctnX7WRZduWpeAHGdd8/JhrGZjVkqj44Mq467f3KFNw&#xD;&#xA;D2T6cFtcgqcnsMdhl2vKAEoaSGkEtLJCPiwKW213DxAmeNmf3jIvHSVawhKgODpE&#xD;&#xA;isqaKBtBnxnOAppaCXGlZlbLuBARxBXTGZ46jlH5Qwqh8uHExDEtCr1UOv7eDFtN&#xD;&#xA;WB5YsLtCXBOwvaMJYM18hvE3RBFmRkDWJ5h5Tt5gs/ig29rEOMticvBhLVSSTjLc&#xD;&#xA;oATE+MC/XUhlt+PdXqLdGsVQ9XqKpskBztKv2U4I4rNn6ZiT6hqL3AUoqNalYGiG&#xD;&#xA;GhdGflZqUS6k4J/wQQpBNlhi5En2JDTi5kJ4hU4E5wSq5lnBPuk6Ji66Zk7Qz4Wn&#xD;&#xA;QFPaJTudbZSgN7Q70jDGxcN/Ti/jaebB3OdGDXhqtO8XqRbPrA==&#xD;&#xA;=Ailn&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='1376668'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.mylyn.tasks.activity.ui' version='4.4.0.v20240617-1534'>
@@ -512,6 +551,13 @@
         <property name='download.size' value='164907'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='com.evolvedbinary.thirdparty.org.apache.xmlrpc.xmlrpc-client' version='5.0.0'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJmzHplFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6fxdRAAp8jRND5iBcjBn9RaL0xxzzIooNguYhMfQmZu5xQDja+eMyLCOc7rEouw&#xA;92GgjVrFEky6oba4x3gwaW8RWja2dZ28HdXf1DNtCHcjbD81VD/UBHeEZDj3yYD9&#xA;n6q9v6vHDWMm0589AORIhcZ2eLhVB0rxEUlldfcIUSmn5T7F5FCuIPkwX8eAC7Ed&#xA;hVT3fecl2YXDdBrxRS2A5XlWkkSBZQnJHfYa89Xu4YBpOSxFkA8cmdIn+SOJea6J&#xA;ZMw/PT4tFuneXugJ0G6Sn6hpp73wykxZzIzpyDY8e9hXDehK4a5ViaQvTmebSGiz&#xA;ET7ofM0h0QkMsY6T9CSCmL1N5t+YOhuhGaDAIBfTjy1WnJGWBDxLDWLtO+QZbLx1&#xA;sYfTyb9JNWIMLL1NBgbmz38ZeA9jhcQNCI+XTKx9htnIoxIE/lxolZZO2EwzmYBw&#xA;Sd/eYl1KU8mvvl7HCkWELEhEi9DUA2XXxcUwHFeE7OJTal9qdLrvjMKGgnP1+Z0P&#xA;CmZzdDZ5IAFqx2OEmLkoZkVijT5lNn23dzaTeixHISNpZcbwPpxWla3V/YCpUlRB&#xA;WyQvKW4BoPIUnAiL0wFgth/jzo2e1wm+vCbcMcxeTau4frWWIOJth/vImMOgbfny&#xA;30KqQzmnk6rq//R8wPzx6VFJZQNazfhwfxp9loS9NLSDAC3Lyl4=&#xA;=+Nt2&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='153248'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.datatools.sqltools.routineeditor.ui' version='1.3.0.202311071249'>
       <properties size='1'>
         <property name='download.size' value='176146'/>
@@ -579,6 +625,11 @@
       <repositoryProperties size='1'>
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.ecore' version='2.38.0.v20241018-1213'>
+      <properties size='1'>
+        <property name='download.size' value='1396433'/>
+      </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jpt.jaxb.eclipselink.core' version='1.3.201.v201902121834'>
       <properties size='1'>
@@ -658,6 +709,11 @@
       <repositoryProperties size='1'>
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.model.edit' version='2.0.600.20240928-0605'>
+      <properties size='1'>
+        <property name='download.size' value='436041'/>
+      </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.apache.xml.resolver' version='1.2.0.v20230928-1222'>
       <properties size='1'>
@@ -833,6 +889,11 @@
         <property name='download.size' value='75117'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.tm4e.language_pack' version='0.14.0.202410282056'>
+      <properties size='1'>
+        <property name='download.size' value='944818'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='net.sf.eclipsecs.ui' version='10.18.2.202409031908'>
       <properties size='1'>
         <property name='download.size' value='437514'/>
@@ -851,6 +912,11 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.progress' version='0.4.600.v20240606-1020'>
       <properties size='1'>
         <property name='download.size' value='216626'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.logback' version='2.7.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='24260'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.datatools.enablement.ibm.ui' version='1.3.0.202311071249'>
@@ -923,6 +989,11 @@
       <repositoryProperties size='1'>
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.common.ui' version='2.24.0.v20240911-1027'>
+      <properties size='1'>
+        <property name='download.size' value='177333'/>
+      </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.datatools.enablement.jdbc.feature' version='1.15.0.202311071249'>
       <properties size='1'>
@@ -1018,6 +1089,13 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.jst.jsp.ui.infopop' version='1.0.200.v201903222120'>
       <properties size='1'>
         <property name='download.size' value='17271'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.jdt' version='2.4.0.20241126-1642'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnRg4GFiEEr5jQ39BUJkIrz2hNgQzs+LonEAgACgkQgQzs+Lon&#xA;EAjffg/9FqXV6nJvn/ercDYm7PVWaA1c8JDmD4YdFVZRvMi1ZVBF87pADWXPEb1v&#xA;A9bT689rGqlw8d0dTspDTjmP6EfR/kGmBj/se2R9O5oQld8m/Fe9HpvouV0qFvDA&#xA;iZxR+Cwri+qR4LmYujQH2nuOg3P/KTPDZkZcBl7Fb6OFYICXZp+AbiXTtXKjPMud&#xA;Ex4C7ql+ZuQLh84Zd2YO5YsTl/FyYIL5YhCX7IO2Yy9+jk5Wg+TdV5fGz87c/6Zk&#xA;lu5FegV24bQ6EUlomw4a+3+k5baf77xgJof5EEy0NPf6xsMnwGydWW81NQYwcSWA&#xA;jtoG3DaMztAzXz0+x43H/gbWJXIGJkxfwH7sUy6ZPCAlmv+aZT0G8nIO+1B+WMI6&#xA;cvmu2c5fuug8smNHdGZTQsy40eUZRR6/hD1x4sy8SIssiSGHrXXXzpTByZHDpXsn&#xA;4sto2wWObBNZmoto1VLWhY+vQWgeIGnfY5EdlUjs4Hap0oDQtp96T/xEliju9ehD&#xA;RNSU5Ah4J84T2kCUw5kaP7BXWTwKyv4D9Acc3S7jbsVSVex5brsxqkHxzTSjZZBF&#xA;oTMFnth/5ccMjSdrnnsllgkVprSOzr+hszK5HSgcE9NXJUwXTx7RaAzG3lTxJw1l&#xA;pRkfnbEKBQm3cSOqZgnoqBpYyApAJpVrhQoMw703Tag+4WMMAqc=&#xA;=YgAH&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGNGkVgBEACZ+Z2ZDGOg+Ge5ntdC+QByQC1A1l503lwUNrIP5YF+V3kdZEo0&#xD;&#xA;Ys3SNKUGsfm6cJ0vi9aXq4R8bjsOfm1u9vQJOqn1d0D2uiwKUz0RZmv5RaV0UzKM&#xD;&#xA;RvhvAeQbYCCVWMyFYMfc1d1aYRhipMSkuAj6sfzDY0DmjIdqzVplyd/IbXtZcr8Q&#xD;&#xA;cTk7qpyHbrlXnDRfLN0lQgLTaDJCLrqeazcM0Hv6UC/fKi9/fF56wF7hmX8yf1K+&#xD;&#xA;JW0pgu6r/7hPZanlfxNsweziN10Lhuj+4oEvsiZfmUTU1tnPKUPMl4HvgyL/PX5x&#xD;&#xA;7PmW17MLE/o4M9NGp1cVGr41SEelleA3yxO6EA/JVlKKaTGI63ChoDYFVbERz0tl&#xD;&#xA;WpynsbeWDOELqRH6wt2djZBbk3CVLPnFHV3Sc7tqDsYPVsw1Xoy2+LKzJCNurkJ4&#xD;&#xA;RWri2j8kzHF3gK9psR7WYlHpMWALIpPMgj1ZiQ6xJO5KFzgxHBplkM2EaapLDzF2&#xD;&#xA;vgcbdZ26Mp+a9/ZLVi3YsG078ewgr4N8t9kKp6EQkQdzB6MoAcjxgXJ99Dzpc9SR&#xD;&#xA;Lkg9Pp+ROwUbQnV4Tn6xnFLAVj/LhACqvfysS7WL7lu8mscNXVKTvbdI76qZtmFJ&#xD;&#xA;g/vLk8B0n0/n3ygjFhlx2Os1XzxzUgy1f4ZARbKULWd+c90VSNm8oHWkJwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEs4ZyG2wRQqowRVkFARxSbymyznkFAmNGkVgCGwIFCQlmAYAC&#xD;&#xA;QAkQARxSbymyznnBdCAEGQEIAB0WIQSvmNDf0FQmQivPaE2BDOz4uicQCAUCY0aR&#xD;&#xA;WAAKCRCBDOz4uicQCBlJD/4kAiVpxbFqra6FpXWHG0/uVevQUrvMc5LzpFhkWLi7&#xD;&#xA;7LJNdLEHsrURog22Bsncuzh32PY666cC8GrrOX6qIsq3yJHI0Tm6+TQkkx++2rXV&#xD;&#xA;1xAM2RMHyo+WAfViS7rF5XDLzWWQz+z1uXrCfsz+gEHE/arWKQor2OX3ZV7Ke4jt&#xD;&#xA;11pkCIAujvhv7W+bp1v76mW+XcX9EW/vU5Toy9YWDlfGjMotlURwAvH5QWIx12E9&#xD;&#xA;aeVg0bUbEpE4xl2WKV4CciMb1beK2qeJil5ixNBwUrK3wyUqAy1V683kEnVo8QoW&#xD;&#xA;yHKAAXr5hGjc6AkDzb29Xyv27444k2jVf80sRhHdx2mvzyorw/7v6kcj8+iYltmS&#xD;&#xA;9UCVQI/gjz4uZ9wKHNYubNfQsoGlq05r7vVHkGFTunlYlx7cltt91kWwuNyE1peb&#xD;&#xA;CuDFr4oR2P7vIpVnDDFE2wVzSbxJQFt+Ay3DCCuq1yFGM8NE7jK+z0v/TwDQVwbh&#xD;&#xA;OVgDmaC4UCa79oC06UVJTJmS+qnnmVOoajqgEWWh1Ez4ZnY/CpmHva7F06a24jza&#xD;&#xA;kXaWtvj+HLllgDx3FJsjeY3dlJQECSKFBH1MXmA3PVWZKAHoetLTYt2jlrbpK+Ip&#xD;&#xA;SIrjrTvpHTu7WKjaoeCd8K2EnLUUoW1cAb7JfwQnqBYhFTfbUZyAyMLYJYokTmmM&#xD;&#xA;ZwLWD/0T40bbQdkVuzgHslSoEWH01VFisMQwGzSGpglEZ+UoEi3s9kXfMkM357U/&#xD;&#xA;VyiNM6iShikrT8BAuW/VFa4CO8LELtJnbpKeJ1+/fhCm4O0Osj2cGibUCJKb2T2V&#xD;&#xA;JPIxNIPxgHvZbn4qENqNa9ZcEzWFT/YkKoAaeZlMGFMEQy1/o4AUXSNFZwgdc95r&#xD;&#xA;M1Zov+J89NzWZHU4QL1oKyrbMI3e9PyTgN1LKxjEwV7ObuBaPQBydrJkIpR/L9fp&#xD;&#xA;FzUp3t8Ri1ntyTmIUvPNrLFW3MofTtitX7rMkQ2zKDJY4Pi4XjN0Ka9dPfN8mh/m&#xD;&#xA;5SS6AkOfOQEnfWkopBSCsmaSyhf0Hqet2kzbn4nfBV2RCSCSJPIdVp49WKxdP6sX&#xD;&#xA;2NS+AgYG7ocinK2RvjN2u9w7pDPVzsQHKiW+dMYc96oya6+Af89VjCNkqY7r6bj9&#xD;&#xA;Bi3Cy+no6UkHVQhLpyg2xD4JFc8lWOdJtg1GuiRvZnrZ+u17WVt0w8INsg69YWNi&#xD;&#xA;0YExuI8j5EHtuqtE97VV1a/vv+AC3lrV8NeOJPOvKNYLZ+H1gIB0BRUDYp4Sm0hN&#xD;&#xA;giiFQ1irhwilgVGPV1IVTJuQptQ9pdogkpHpcuP4C8flke59TeErmO0DnL+q2Hd7&#xD;&#xA;3OGb46QkKrimly/wVA/lwMpqHhzITQDfbWDCEJ/w67XQ4vH4Nw==&#xD;&#xA;=HbVw&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='166843'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jdt.launching' version='3.23.0.v20240822-0459'>
@@ -1126,9 +1204,24 @@
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.wildwebdeveloper.xml.feature' version='1.3.6.202409052135'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnPQWRFiEEDqwG46YUYY17hu8xBxbpObSltVoACgkQBxbpObSl&#xA;tVqqpg/7BF90Bo2H1MW5Le516bNtv6wdEqv/cTvBbE7j9mSIoNvH7pWXiafV1APD&#xA;ullOJhqNrrkQpdnyhiYwM5pTYVhnHJNxRSsbFnkghm374S0vCP4jluMsbtxu6JeA&#xA;pudFMhG7OGSzw8aNtyIJewOgN8ER0QhVugmYxnrdaE2np9FkU3B8bJxtLlgjeeaT&#xA;mN1yXYASwAQzGD7TaahpIwAkPoanrgkU4yqfwnDi4/fi1XfsskiF3xvf+n4HnCqW&#xA;l+lCXE6vFLMHBqrptX5qAcxBHgeEo3JdCQUn4G1cUtdJj/BLWdO2wyOC5YE2CvTo&#xA;KSObnSzFGQORkmMH7jQyWbZ+78dC2YMa5+bi9GP2pF3aenp3G/iQ3bHd/ELYek2a&#xA;3CQHxyi2uPrR8lGIbilUehH/yyYcn3uqd3h8URqWtKmgXRdALooVnEitRWRMavo5&#xA;uhU3ii6xKq0MIXVYbHtTG4311Di6Khe5OqnBviYxforZmSSKJAn0HoxkWCzH1sgY&#xA;osXfOiMQt3g2dAyu0hYNTHtRtEgvTy6841bvRiJyCFczBG/IXA/cPNVQUSqrnxk+&#xA;kgfrHbQvsBTCYHjN1m9XKLsK2A5DJ2rktLwlWtvkiXDUtfC1bqygoiYUtcgT/Dtt&#xA;3IwVjhTypGdDbKVUu8TPxguabYTn0Bgo+1fmulFEyilWggiTm4E=&#xA;=GL2I&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGZUdzoBEADNUdi8lOeZALttkj0mmDYKEoKM4Pf+KraMfD9RkIrhCux7JL2y&#xD;&#xA;4q9VUilgJ3cS31kOTXr01eLshIKHBdnqiI+S4xl46KemQd12uSnGINrRaYdM8WYo&#xD;&#xA;T2MtlvHgBgQu5NuuzSfgkB4AlseOISVJzhc/L1rbmBcG710QFcU1/IuQlRXM72+o&#xD;&#xA;Ft74R+iQ7rQBvhP/aUyNIoGBDgMzUxdoglkZDcxQYNhKK/9A/dVHLh6XGkV85mCx&#xD;&#xA;tytQRF7RBOWSp9I5khtosTY6KgKXMak+aF+jY9vR9SgPyU/o3dvXYbUOaBudZt2r&#xD;&#xA;HUzetZLEVMeeHaOtE8QfoCKbOLi8Vz0nroKrAiji+O2p83GRRgWBrAL1bRavdkQJ&#xD;&#xA;eUQlZGEeDvW2C6x2U+dABkj6VEutXjuDmIkgXevOlJ0HNYa/QvVGLcYzkm0nxs1V&#xD;&#xA;Rg0lBDMiW3eIefEdF5ds09BxraKF0iMpYbIDPtoOQeS5X2wXU0HQidOpMvWvdTpY&#xD;&#xA;mBitBty5Ir4u5gVHuV/caRp1lZhVRmEeSr0V0Tes2gULFljripTBtyZfSGcvFKbg&#xD;&#xA;1sBnkxWop5w0oE91oLo5PnwJxDkn7I1dz4VwLAm4hHaHyApl3m9l5YlWcOkSdBF/&#xD;&#xA;VyeBHpEuCa3KeyV1y+D5QW+s10Iii5fxqSUlhuu9g1n3g8YNlZsQjx5pWwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEEPmtmIlNHzXS/my7m8BvyX7U7SYFAmZUdzoCGwIFCQlmAYAC&#xD;&#xA;QAkQm8BvyX7U7SbBdCAEGQEIAB0WIQQOrAbjphRhjXuG7zEHFuk5tKW1WgUCZlR3&#xD;&#xA;OgAKCRAHFuk5tKW1WictEADBdIQB5VWyml6jujMPUFFgXu68x8aWXwdJEipM7Qax&#xD;&#xA;AfyrE2NFeThFZoQwBaEl4Z0pco9EjkZEzGeh9sjdag+4PxD2so6issEt7MOKOtcn&#xD;&#xA;GJbCq21y+kKbXOiEKhvehu3Jgf1Bjt3O9UxC66FFCiOrIU8kywFrtbHuDG3J7yG9&#xD;&#xA;3FSfKmSdBjZg/Vzjg7kHExtfdegJcFMN/agm2nnspLO2+Cope/Bkp6f/rX0Ur5Uo&#xD;&#xA;EPkB1AKkBo6WqdE7WDIs1xw9Ab+thBnZNfhEEdH4rFNN3tRACyQmMqrLfHazqW8a&#xD;&#xA;xasdEVX9rZfIG67VR8LWd5ZKtZNHQ9iTEvffdREw/eFKIt48Dw3OsICAixHvSIzE&#xD;&#xA;X1eEaGyrSw9WmZCMyObrQCR+SnZh+bA5g9vmaP5wJnu2EfuU+K1JUhEjkV7OHFhA&#xD;&#xA;Lbz/2DvlVRa0QhfoTMs4ZWW4yMPlADHL26+HKOJycXRkG6AlffejV5/Lp/xF8i/v&#xD;&#xA;ju3AllgFX2hi/rAiKXPlRMqZwH99FB8sSg8MORl9QoaL3TcFjwfI3rxO+vyyqGOy&#xD;&#xA;CHiEVMNTDEDeEqvnXrhpDdboYlTm+VoB2exKAfyVXEGNB/NqyLDwCh3Fy10YWDWN&#xD;&#xA;B2Dbjh4snJFqV73qZMKM1CTLPRVYfnYaDi2jsJTAteFthMlUS2kNFLmwDMnEftfq&#xD;&#xA;Ee7aD/90X+2Y5gxLWRsCcP/Vrt3qKULfevMhsfuhGpOM885OnuDbC4uRJqBADLvQ&#xD;&#xA;lcHHs2lKTMbGJiZxx541lbxMtbuBXQJ2uTB06Kaut1c3JESlT6wp+cjhHrdYWjhQ&#xD;&#xA;EVPV12QfABdQJ8laqrnwyfoPTmm72m7feFZgJL8IomuXLvwHcY/5ZGch3NDbRyaP&#xD;&#xA;ng0zgi55tVJ0xTQNYMIvZRvWbkGdvBfHXM1jqdz7o8PogeIbjvRBCIoK+/wkO4v6&#xD;&#xA;Hx8moaiUfNYuBR6jCzBGkZaur7nx11bYW8RN/OD0WMFoY2m512O5tXO2LKkErTji&#xD;&#xA;V9h3v9tsd0JRUN+pS+YTCWF8/ImeNn642Q9MIlu6dAU1Ed0ZvGIFJnD8rHMO0ntL&#xD;&#xA;352gnWwa0XA+we45ckLAT1rA7TnjsLnUSEHU5Hrk97EBnK2XeG78raLdRPiX9fnd&#xD;&#xA;vdPsC4UGMt16LeHcj3jheWTLgx/YgOSxYeaB/Rih6ggB2hxHrG+7HVZJgiqUYtRW&#xD;&#xA;tl1MYjaJVJZC/3O/w0OPKyZPVTSZ9Bz4tb1X0sRd6EA9z0GINxowlS5NqjgB0bd1&#xD;&#xA;7DPVjfMQ2r/3B3Vz7EbIj01Hj97PAkk/Yh34EalpJrqBKod8DuNJxWl5qpCFVROt&#xD;&#xA;z/82PozlAe6qvILhk+Xt5M0a3zHgb4rWB67yivL0UurnlAMqDQ==&#xD;&#xA;=SLxC&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='13097'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.ecore2ecore' version='2.13.0.v20240604-0832'>
       <properties size='1'>
         <property name='download.size' value='33838'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.profiles.core' version='2.2.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='25833'/>
       </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.databinding.edit' version='1.12.0.v20240604-0832'>
@@ -1189,6 +1282,11 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.mylyn.wikitext.asciidoc' version='4.4.0.v20240630-0904'>
       <properties size='1'>
         <property name='download.size' value='111112'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.codegen' version='2.25.0.v20240911-1027'>
+      <properties size='1'>
+        <property name='download.size' value='395572'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='net.sf.eclipsecs.branding' version='10.19.0.202410151847'>
@@ -1330,6 +1428,13 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.jst.j2ee.jca.ui' version='1.2.0.v202402152248'>
       <properties size='1'>
         <property name='download.size' value='37698'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.core.ui' version='2.1.0.20241011-0600'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnRg4GFiEEr5jQ39BUJkIrz2hNgQzs+LonEAgACgkQgQzs+Lon&#xA;EAgjOA//RrAQpETlPL10Oiy+s+8bVpoGHjTZSIDSArqjytnbn4GWZiiZzq1+6gf/&#xA;MsfZ/zRtFRJtLCBQqBhcvpvMg3jEKI1Y+e8sW8sSUSOF8UrsbWoeyym3nhr2TYhy&#xA;EYwC1SdG0rn3MmPlfCcQvugpBqs9cHpFdY31A9OlBhf6TCiNizr1yf9nd38jeV+G&#xA;aPiZ9+AOTIsCk+sE3Ry2pHCbGp/DckFKO3iIkKPuq7FVLfj2EKDTM+6/jao58Oxl&#xA;9TeLQe0PiNyQaBGMzPvhNHieXy9FMPTp0NSiVrbszpssh8pcBPhqlndU27GcZX9N&#xA;EEIN8kzt4Lm4eDOqNpDAi4l7F6GhonSaqqzK7svvELMx+47vMPbD18Pf9dv/Sh1f&#xA;7a5xDeru1Bwnv2sGDwmAJuaYqlsQUehJIYSiNJhbmyRgS56QmMf24s+6N69gKbG+&#xA;0hbvF3hnorDgb9Vt991rQ9/cOLaToo6Tmqrr0q2WwJyQZ02T4h8ZFSgBK8AVPHi/&#xA;yY2PJdnhoSRWbbjRzgd+Y58b3gtXW4Q0sQc2pJR5HD0J8OVTCLvoV/VzffOUWDNZ&#xA;+IEuaiZ3+mPF4n7Pk1RWwRVJCs34vw6HdtJPmXApXiZ7HVDLaj4Nir83PtIjsAnC&#xA;ulCjf+nMKg+FhG6iuOdydfxTdfTtelXvEtGrtvHaTycDJtpGEn0=&#xA;=2OPG&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGNGkVgBEACZ+Z2ZDGOg+Ge5ntdC+QByQC1A1l503lwUNrIP5YF+V3kdZEo0&#xD;&#xA;Ys3SNKUGsfm6cJ0vi9aXq4R8bjsOfm1u9vQJOqn1d0D2uiwKUz0RZmv5RaV0UzKM&#xD;&#xA;RvhvAeQbYCCVWMyFYMfc1d1aYRhipMSkuAj6sfzDY0DmjIdqzVplyd/IbXtZcr8Q&#xD;&#xA;cTk7qpyHbrlXnDRfLN0lQgLTaDJCLrqeazcM0Hv6UC/fKi9/fF56wF7hmX8yf1K+&#xD;&#xA;JW0pgu6r/7hPZanlfxNsweziN10Lhuj+4oEvsiZfmUTU1tnPKUPMl4HvgyL/PX5x&#xD;&#xA;7PmW17MLE/o4M9NGp1cVGr41SEelleA3yxO6EA/JVlKKaTGI63ChoDYFVbERz0tl&#xD;&#xA;WpynsbeWDOELqRH6wt2djZBbk3CVLPnFHV3Sc7tqDsYPVsw1Xoy2+LKzJCNurkJ4&#xD;&#xA;RWri2j8kzHF3gK9psR7WYlHpMWALIpPMgj1ZiQ6xJO5KFzgxHBplkM2EaapLDzF2&#xD;&#xA;vgcbdZ26Mp+a9/ZLVi3YsG078ewgr4N8t9kKp6EQkQdzB6MoAcjxgXJ99Dzpc9SR&#xD;&#xA;Lkg9Pp+ROwUbQnV4Tn6xnFLAVj/LhACqvfysS7WL7lu8mscNXVKTvbdI76qZtmFJ&#xD;&#xA;g/vLk8B0n0/n3ygjFhlx2Os1XzxzUgy1f4ZARbKULWd+c90VSNm8oHWkJwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEs4ZyG2wRQqowRVkFARxSbymyznkFAmNGkVgCGwIFCQlmAYAC&#xD;&#xA;QAkQARxSbymyznnBdCAEGQEIAB0WIQSvmNDf0FQmQivPaE2BDOz4uicQCAUCY0aR&#xD;&#xA;WAAKCRCBDOz4uicQCBlJD/4kAiVpxbFqra6FpXWHG0/uVevQUrvMc5LzpFhkWLi7&#xD;&#xA;7LJNdLEHsrURog22Bsncuzh32PY666cC8GrrOX6qIsq3yJHI0Tm6+TQkkx++2rXV&#xD;&#xA;1xAM2RMHyo+WAfViS7rF5XDLzWWQz+z1uXrCfsz+gEHE/arWKQor2OX3ZV7Ke4jt&#xD;&#xA;11pkCIAujvhv7W+bp1v76mW+XcX9EW/vU5Toy9YWDlfGjMotlURwAvH5QWIx12E9&#xD;&#xA;aeVg0bUbEpE4xl2WKV4CciMb1beK2qeJil5ixNBwUrK3wyUqAy1V683kEnVo8QoW&#xD;&#xA;yHKAAXr5hGjc6AkDzb29Xyv27444k2jVf80sRhHdx2mvzyorw/7v6kcj8+iYltmS&#xD;&#xA;9UCVQI/gjz4uZ9wKHNYubNfQsoGlq05r7vVHkGFTunlYlx7cltt91kWwuNyE1peb&#xD;&#xA;CuDFr4oR2P7vIpVnDDFE2wVzSbxJQFt+Ay3DCCuq1yFGM8NE7jK+z0v/TwDQVwbh&#xD;&#xA;OVgDmaC4UCa79oC06UVJTJmS+qnnmVOoajqgEWWh1Ez4ZnY/CpmHva7F06a24jza&#xD;&#xA;kXaWtvj+HLllgDx3FJsjeY3dlJQECSKFBH1MXmA3PVWZKAHoetLTYt2jlrbpK+Ip&#xD;&#xA;SIrjrTvpHTu7WKjaoeCd8K2EnLUUoW1cAb7JfwQnqBYhFTfbUZyAyMLYJYokTmmM&#xD;&#xA;ZwLWD/0T40bbQdkVuzgHslSoEWH01VFisMQwGzSGpglEZ+UoEi3s9kXfMkM357U/&#xD;&#xA;VyiNM6iShikrT8BAuW/VFa4CO8LELtJnbpKeJ1+/fhCm4O0Osj2cGibUCJKb2T2V&#xD;&#xA;JPIxNIPxgHvZbn4qENqNa9ZcEzWFT/YkKoAaeZlMGFMEQy1/o4AUXSNFZwgdc95r&#xD;&#xA;M1Zov+J89NzWZHU4QL1oKyrbMI3e9PyTgN1LKxjEwV7ObuBaPQBydrJkIpR/L9fp&#xD;&#xA;FzUp3t8Ri1ntyTmIUvPNrLFW3MofTtitX7rMkQ2zKDJY4Pi4XjN0Ka9dPfN8mh/m&#xD;&#xA;5SS6AkOfOQEnfWkopBSCsmaSyhf0Hqet2kzbn4nfBV2RCSCSJPIdVp49WKxdP6sX&#xD;&#xA;2NS+AgYG7ocinK2RvjN2u9w7pDPVzsQHKiW+dMYc96oya6+Af89VjCNkqY7r6bj9&#xD;&#xA;Bi3Cy+no6UkHVQhLpyg2xD4JFc8lWOdJtg1GuiRvZnrZ+u17WVt0w8INsg69YWNi&#xD;&#xA;0YExuI8j5EHtuqtE97VV1a/vv+AC3lrV8NeOJPOvKNYLZ+H1gIB0BRUDYp4Sm0hN&#xD;&#xA;giiFQ1irhwilgVGPV1IVTJuQptQ9pdogkpHpcuP4C8flke59TeErmO0DnL+q2Hd7&#xD;&#xA;3OGb46QkKrimly/wVA/lwMpqHhzITQDfbWDCEJ/w67XQ4vH4Nw==&#xD;&#xA;=HbVw&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='789676'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.extensionlocation' version='1.5.400.v20240321-1450'>
@@ -1884,6 +1989,14 @@
         <property name='download.size' value='145026'/>
       </properties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen.ecore' version='2.40.0.v20240911-1442'>
+      <properties size='1'>
+        <property name='download.size' value='22848'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jdt.core' version='3.39.0.v20240807-1632'>
       <properties size='1'>
         <property name='download.size' value='4317091'/>
@@ -2028,6 +2141,13 @@
         <property name='download.size' value='766070'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.snakeyaml.engine' version='2.8.0'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/GFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6cWog/+K1Yd/dEmO+Dddb17aIQYvqsmW5RudafJhhc1vqPqEuGTuz9vl48DqPdN&#xA;f8O82E5Kc2W6VDzhI2Xv/6j0hnDYZrCA0W4FWbshX6eagn07ZXyNkU1uCMt7vRto&#xA;fMcyqkHQaR+dLEGFcXVHZnwkyEQvRNaoVaOkpuzzbQNucrKoeOQdhY2m/5G9v8q7&#xA;khyhN4J9ea+aboOhB1113vOvG1fJ7faH9WY5qYQGkjG6c1muUBgC1FQeiYi9Xr5K&#xA;c917A+422joQl50mxouGsiHWgMAs/ji1tpyRryMORF+132cxFWv+K5gluCi5rbCf&#xA;3WwqYgFN3ZkXa36qrSZOoqTlV8g3C1yp+BIh8hdsH41nNWvaTbCBMhQGCtJfJ8MU&#xA;TubGEhUhJ9TJwUDNSNEPOmZ1b2E3ssy79BXBAQypxxT3h0b56mWKMzUG0TTzbnYT&#xA;UwR1QJlcjyWVPmVs/uLwd+zpcsPEtyOc3bY72+/r+UKGF+buMpBkEAdyMrU26BDJ&#xA;IdNYQBjWGbt13XQQsVWX60F8BaFfM/MAg3zQBq/nuDV2BN+nK1BX4UMT7pBu2PVE&#xA;Nz3SKwVXewWPSVGl/QbQ9gyZHl0vIomdIXEHF+b+Hemceuox/wleZnFlvghgzsux&#xA;BoFBoj82n0gEWjCcCA9ImdQYvqB68DvE1nn0RbnliqxND/bzZDs=&#xA;=oC9P&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='294542'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.wst.server.preview' version='1.3.100.v202408152039'>
       <properties size='1'>
         <property name='download.size' value='29296'/>
@@ -2060,6 +2180,11 @@
         <property name='download.size' value='16209'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.tm4e.registry' version='0.14.0.202410282056'>
+      <properties size='1'>
+        <property name='download.size' value='45117'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jst.ws.jaxws.dom.integration' version='1.1.0.v202308010229'>
       <properties size='1'>
         <property name='download.size' value='64174'/>
@@ -2075,6 +2200,11 @@
         <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJlXGKaFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6d8zA/+LYbOplql9LQYMpR4wV3bHGDIfZ3Ebm98Zd79v3StzNaTAgcLhO8IRQb5&#xA;HUIgaD/yt4KaYDNdfHxZTpO+n8hznBbHjggJ7wvPghYRy595j88H4xDGpe801bvJ&#xA;EmOSsFZp8/ojY0TDqkfJ67w/qyk+5YWKLl37Zt4hTKWZAf0kUSN1ckQNSZLJXUZc&#xA;I7RA4lCrL0b+1j25j4ofYr4OlZ98+/TUgkQaCuu/Ys88WTXJaTAJAeln6BJgGN8F&#xA;pGdMj3pjno65DGf1vp6yaJBUKyqjeJZzQZRy5B1Wt0OhhPDxV9F4yziFXeh7riwM&#xA;iZ7rIbIwwDSEv7+0mH8mOIiwCz+gq2q8194VeqNeJ33neBy4XEY8Zf27EGDmKdo6&#xA;Ud8zhml3Nq8bwm/YpHeeHfyuOYAMyhhkJiglKrMjAk2LhWOTVC4lhhLNPwrb2etS&#xA;XSgly2UuwLCyTmqiNXGZqEmSnzwZpngSz6klTTBWk3lUls6maPDeubEJJyzYFz6F&#xA;9YzbvmnKrIyABGjOzdqtQ6kEd7Ck+lWnO2TFqJ0aQXswRo//pUwiS2vjlgSuBw/q&#xA;aZeI7wAw2VfVimpUj5TBAV/fKr26JPOcx0SjMk6KW0wrUYk70Yz/AtGAAMnIKXs3&#xA;5ieOgb//WDcfPz7+ZBWrxRlgaGG41Fz/NiDp7UwoQ6wNBIGlNvE=&#xA;=3Tw2&#xA;-----END PGP SIGNATURE-----'/>
         <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xA;Version: BCPG v1.77.00&#xA;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xA;=OqCe&#xA;-----END PGP MESSAGE-----'/>
         <property name='download.size' value='63292'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.pde.ui' version='2.1.0.20241003-0434'>
+      <properties size='1'>
+        <property name='download.size' value='126391'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.m2e.sourcelookup.ui' version='2.0.401.20240411-1122'>
@@ -2145,6 +2275,11 @@
         <property name='download.size' value='170052'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.converter' version='2.15.0.v20240911-1442'>
+      <properties size='1'>
+        <property name='download.size' value='100944'/>
+      </properties>
+    </artifact>
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.logback.feature' version='2.6.1.20240411-1743'>
       <properties size='1'>
         <property name='download.size' value='21891'/>
@@ -2188,6 +2323,18 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.m2e.pde.target' version='2.0.501.20240411-1122'>
       <properties size='1'>
         <property name='download.size' value='88783'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.refactoring' version='2.1.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='80564'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm.tree.analysis' version='9.7.1'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/IFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6fpHA//aOuy2qO2yeUej4NlXL5pUjKU7ZhN4cs2sKuFR5c2K6IQGT5+SwEFESrs&#xA;tVaf50Wj1LqxxPJ7LcN1ZNMrH4nVyByP4pFoDpp88uSs78YFh32tRFcuErmU+9qZ&#xA;KXf6LsS1g840R5pmnpZgA1cU7ERtJersxxZOv9zWjxt/T++BClk5FYLxrMkAjL/L&#xA;N/ZinzynS0njIr4A8wFi0SQ0YoUYxreKXc4it31eJDMkCCzUA64PpuVjWZHoXeHz&#xA;6j16m/ErrzaXKjzBWa1tdB5fD2DMxWBWNUSb86klHV9RZuCnKwQVROGZgaKids8L&#xA;/lEIF672hW7fSswRYZ+BvUvWyr5OLuKVCdbC0CPC/erhQQq0RuitwkTrLcCAbuXB&#xA;AYVfqIkWdd7YA5SbxWuvUHzqom55WrMPdxueP4F+LUSJfTZ6Hum1WH/VHHeYMl0C&#xA;K6b7dbK503pZsOggIo1sdgPjSs3EZfsRDKVBn4ficcG+61X5RquxC7mnjPd7V500&#xA;iDSg+sNCNxkxJ+1XtLH0K957x+3s2N28VuysloQHcbwU44ZxMRtvvtkjR+F8hK9l&#xA;6gqBGK4Hzqb+wEOSbk5jAdpNhzd11ZJGVhbMxZKYze9z54wbHcf8ls0sv/uXxSZ3&#xA;gx6yl90A2mcxUfcdj4UFwgedLC46ZxWJdMgHhwH0fKU4bGi5GxE=&#xA;=QXej&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='35126'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jetty.security' version='12.0.12'>
@@ -2365,6 +2512,11 @@
         <property name='download.size' value='55277'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.css' version='1.18.0.v20241009-1200'>
+      <properties size='1'>
+        <property name='download.size' value='366167'/>
+      </properties>
+    </artifact>
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.wtp.jsf.feature' version='1.6.1.20231024-1618'>
       <properties size='1'>
         <property name='download.size' value='21987'/>
@@ -2414,6 +2566,11 @@
         <property name='download.size' value='3206520'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.constants' version='1.18.0.v20241009-1200'>
+      <properties size='1'>
+        <property name='download.size' value='18352'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.justj.openjdk.hotspot.jre.full' version='21.0.4.v20240802-1551'>
       <properties size='1'>
         <property name='download.size' value='21792'/>
@@ -2439,6 +2596,11 @@
         <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJm1rNKFiEEnjBEBxt1jry35FZzcA5PObwFNksACgkQcA5PObwF&#xA;NktqPA//S/7H7xmAyxS8A0w9gVYYuSnnAFM2bCw2sCfWOXT1fmX61dWHTfZx/98D&#xA;n2rz5kY8cjkGVRtBnVQvXtiQ5NhVkHd1svM8gAAsI1jOcCvnN6zzshBD1gmHWhm9&#xA;BCJxwGH5oZju2oLWBDzK/FSM3kisfEjv2OrH/9FBvu+gf3KQzgXWWjpftAuqT/nM&#xA;7Kl+CBqjyv9BqaX3QRI3v2bMvrrKJGmcb215WnUldueiNZKa6Jmpni/8i4h/EnaE&#xA;FROP+WTrTR4Qjs0M79UJS6NE4Lx8xydUpIR4X2uHW6jealSEt0ITw0iomf/P8U7N&#xA;UELmF2GG9ccHjDUS1MFkGWS6Swp1cwK4ZBt7v1/xCGiXzWZ+6CVIohgI1kwe7KQD&#xA;KXmk2eLBEKzAK03/YAUextd5Izumsl27nYkgXiJ0rJ5bIFHVZqbjCd7FiUyaeN7J&#xA;JjenvNT+XUXamM3SPdoJRb8iHL8wdwFdgT3XmwMZefrRsO68s+LaUlOmbPjfzEnj&#xA;lNv3ne0Fcpr5mSad68Eu469pIgoZzoRkaRl/rF7PFdn3lmoKgjGII9TAsx6Qmq/S&#xA;G6M6j1kqaWq0bwG7lc6O3+FalNir3GtIGdult1FPgbU9WFHYROXAPeN8+Hb+obGv&#xA;vGlnRx0N/YeSZZWN9oXc4UzQy7+XZ7QPJKqwpdigQp/Lza4L5qQ=&#xA;=B1C0&#xA;-----END PGP SIGNATURE-----'/>
         <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xA;Version: BCPG v1.77.00&#xA;&#xA;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&#xA;=xtSl&#xA;-----END PGP MESSAGE-----'/>
         <property name='download.size' value='125428'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.apt.core' version='2.3.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='69426'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.apache.xalan' version='2.7.2.v20230928-1302'>
@@ -2685,6 +2847,11 @@
         <property name='download.size' value='283107'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.profiles.ui' version='2.1.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='45735'/>
+      </properties>
+    </artifact>
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.common.ui' version='2.22.0.v20240604-0832'>
       <properties size='1'>
         <property name='download.size' value='22742'/>
@@ -2692,6 +2859,11 @@
       <repositoryProperties size='1'>
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.common' version='2.40.0.v20240911-1027'>
+      <properties size='1'>
+        <property name='download.size' value='403410'/>
+      </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.tips.core' version='0.3.400.v20240413-1529'>
       <properties size='1'>
@@ -2736,6 +2908,11 @@
         <property name='download.size' value='109076'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.codegen.ui' version='2.26.0.v20240911-1027'>
+      <properties size='1'>
+        <property name='download.size' value='321069'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='junit-platform-commons' version='1.11.0'>
       <properties size='3'>
         <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJm1rNQFiEEnjBEBxt1jry35FZzcA5PObwFNksACgkQcA5PObwF&#xA;Nkt6RQ/+JZjeCp3OFamCP8R4SaLMxDh++EiUp9/Ky78m6AnvFYTwEreB3QT+YxeZ&#xA;M24ojQRGH0iSZHqcB3tlXL3hNbxxLOKNF3xyQTzFKAB6EOLcy9QxD6QF7wut9btt&#xA;AKvMEmuzu5Eft76sm7LiDX61aeMDMG+4C341t4J24GkQeSEFvbcWJ4SYOPSBI2jM&#xA;E1MxpFwyncOi/fg3ZGkACMvDDXWGeqkVza1n9lCkSMhk4xsBLx1nLahK9yFFvxm5&#xA;kLCffJL2/8pFxqL3h65QyOxvc1zDD/ukb77mlAoZp90d+xEnkDd1rrmmQsq30+3x&#xA;WmH15lzcDnh9Vi9ONAdCj9m5gkCLbDpKmNyFNArW9UhtfjqR+ITZWmBuutHPtW1F&#xA;xBfCO95Y8VVtyFsqcsjdeU66ZCX25faM5lb7vmQOgS3O9QglGGieBK7HHD7KncGB&#xA;+i1ggVDgZCRAmvB4VUVZ8qeBrjoQRb2/du3CQWEW7rMEdOMH7BUiSZszmuKIk0gV&#xA;642rYsb0d2qUewYjAqVgEQbQKLUHix0IiruobiLmb53oFNqN4AMC849hdZ5qacT4&#xA;/Z3qySpjtrJGteV/eHc7gU2aWFXx7U7ZX2d2I1dOncVM2vlhIZI11cfdov2nD8Wd&#xA;CymoWXSM0BL7VtCOVFgRcffMqv53bklX8zJmwvGtq28VEx6D3LA=&#xA;=nfOv&#xA;-----END PGP SIGNATURE-----'/>
@@ -2743,9 +2920,24 @@
         <property name='download.size' value='140617'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.binaryproject.ui' version='2.1.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='20899'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.scm' version='2.1.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='65615'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.wst.common.ui' version='1.2.401.v202308161955'>
       <properties size='1'>
         <property name='download.size' value='158089'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.binaryproject' version='2.2.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='25583'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.datatools.enablement.ibm.db2.zseries.ui' version='1.3.0.202311071249'>
@@ -2882,6 +3074,13 @@
         <property name='download.size' value='128985'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.mortbay.jasper.apache-jsp' version='9.0.96'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/EFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6cwABAAi+aqDICdEMJ8JOwvY1wzfAUooSZKiOVaUNKklQg5YIaK0tQSgiO32rgD&#xA;AvBQble132/hvPLmE/ETvZ+iOikIXcje1aVmtvpgtVWX2Nk95o7TYZcw8vLuhmKG&#xA;+8d1ptkThJJkQjoBBs8U3/I/e9h0281HXO8eEzWviJJRHkYBTm9CBDDEIFKYYLgI&#xA;/phpWiB+E1S+FMf7qXJzWKesj6s+ocEdS7I9Wx0tbMyW2gKYUGGxsKER79M+dg6z&#xA;McqvHNtAGdqu1HLE/PG+/65UISDDFlspabiH+BBXO2LJaFaxPCqw+eS5CE2AIvzN&#xA;Yf6mqFHGkpc+3QjAu1S/pSJAp30b1HkuCpvGpPBZKmeffKW4ouTThmEWsR8hH7qi&#xA;gFeFXIHGiDi/X8d/a1R7Y63aUMDVh4MiCmiMxzSsxwEvk/DcV6/UJWd5J1kEjMcD&#xA;LFrRWbjUq8sPNZtMkmAcWduPI/t+J+xtjleQEof56bLgLBVZkJ0WIOwWMFXRFjXG&#xA;YQ6zEpZCiwQ/9BGOVwzcXEJ1cVVJLWsqF1bqk0iAnQoJoXEu6zGQXoA2B6ELrm9s&#xA;frPAEJSLUL5XKlb+hMUT8wmCxGTs0MVCOTmw+sE+O+AKekrPBy089Xhi0vxZVtiB&#xA;UbUPh4hznRBlpl93M6X4uoWd1zVK3V7cwVl85eHLbqWZhE3eVPE=&#xA;=fbnw&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='1059162'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='jakarta.annotation-api' version='1.3.5'>
       <properties size='3'>
         <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJm1rNOFiEEnjBEBxt1jry35FZzcA5PObwFNksACgkQcA5PObwF&#xA;NkvDFg/+KrpHd1O3F3gEdnJ5d/6G4Hx9DV/NNQEWh7Sa9lh8aYb66nP5znj8DDdT&#xA;KNmvPm/s+fXyVh57qzq2fQOTAPB0MmUJYqt/XZuVtEy1KBzhLpWQUdfwV09Mf3kP&#xA;ePs4fSrkHu1XfXteJ3tBX91LTWRVaUSdb8n5i47rlhPivE8NUsbg4JtYid6awDlD&#xA;YsMv2loZqQXSbopXFMoX2iO/Kiwdf3zF7OOSsTFy/XoyXc+8lSDQ+m2pzYBkTOsf&#xA;NDQmxFrgQOPb/6WULVNMDw9xbmfSOITYnbvJz0pV7YlL0QYeyNMzWeo28rZD3dTB&#xA;SB4FcpcnPbtX/evTVaSru6/RvdYGxhvZv/iq/VVz7t7iEQDMxprJYhvVgcQfbIkB&#xA;etLdipYUZp2DXviQlhYLSFsfUDEeYms/Qz2S+Qomkn59CmsCU7McxwagMR4mXE0i&#xA;Gg69Seg7KnCcyksi+cywZG+tlq2rwk25GV3cGUyeLVvQiDA0UGibx7wjCTINjJYf&#xA;o1mUbS1/4bJCcXni2usULr+GbSw/MV9xVgoi8l1Vqs27i8t+8R9o96T1a4ANHaQC&#xA;LzFLPz10UCSLn30WWnQ86tK7TgiLAs3Zi4hp7JUcsH4Tlj10KrGP2uC+OGuT36Mh&#xA;1O1eL8g+n5Y5p0N4+E6hK3XjF5kVfTYjYKcnFG/eMFf5vk9loH4=&#xA;=FAws&#xA;-----END PGP SIGNATURE-----'/>
@@ -2935,6 +3134,18 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.wildwebdeveloper.xml' version='1.3.5.202408121113'>
       <properties size='1'>
         <property name='download.size' value='9241971'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.codegen.ecore' version='2.40.0.v20240911-1442'>
+      <properties size='1'>
+        <property name='download.size' value='1195632'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.qos.logback.classic' version='1.5.12'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnRg4GFiEEr5jQ39BUJkIrz2hNgQzs+LonEAgACgkQgQzs+Lon&#xA;EAjg5g//RtcCs2iP0Y5VwzrB4ZvJ8SgCvT0fHxDJFhPax4q3rTyMLON70cNkVdLU&#xA;GE0WKr2Xd879m2s2n2+0MZsoM2hrZGjKn1kzOdVgSUGm8MzTjoy3maYSrh9SvVRZ&#xA;7PnVpQwpuVK6TzpqJqhZsTFWldBMvZJjaZOPRrsbufXizlncdB/s9MIldCXL9l62&#xA;Ox1ekcqsmCOl++7O86Ihyfgs8++ZHOGzfX8x0Aqh0S/TkIgYqgf47A/giRWylk9g&#xA;9y3NbcMyi135vOuoiFDbGkQG78m7P9fuTHfbgL7qRjkDxDKXlOmRHxSB9/0ENYMt&#xA;pnsqWDYiOSTHoGpdJ/NNqoDpbSFZfPP2EFG+2vbQ8ONVdxx8Qr2MFVI1WaPXpdpn&#xA;3R6IWvvUsmNTTFjs2zxC0tt+fKoGdBpIEsLsq0WdFOxKIctwD6z9BoOzSejCEjIM&#xA;dETcEimL8gAN5elGZZRe5jrigNx558xz6V2ipeuR65UpL61BWPDmuUv3vumTAD72&#xA;2vo28YcrKeorHeB9F5x8ZQPBNXR8ZaHURLUeMB+uyG7fgbW8Yo2VDQ4BFT4vFE0j&#xA;rv8J0mCtC+TYKCnLT9YDeTLzH0al6jmrXcQm7NQBW7363cLb/DrTAr/dNBGd5Ok8&#xA;wUfXdYfoelgmqOFv6/emLfi2hWgZTAABU3SRMjruimaKhhsgDi4=&#xA;=edYk&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGNGkVgBEACZ+Z2ZDGOg+Ge5ntdC+QByQC1A1l503lwUNrIP5YF+V3kdZEo0&#xD;&#xA;Ys3SNKUGsfm6cJ0vi9aXq4R8bjsOfm1u9vQJOqn1d0D2uiwKUz0RZmv5RaV0UzKM&#xD;&#xA;RvhvAeQbYCCVWMyFYMfc1d1aYRhipMSkuAj6sfzDY0DmjIdqzVplyd/IbXtZcr8Q&#xD;&#xA;cTk7qpyHbrlXnDRfLN0lQgLTaDJCLrqeazcM0Hv6UC/fKi9/fF56wF7hmX8yf1K+&#xD;&#xA;JW0pgu6r/7hPZanlfxNsweziN10Lhuj+4oEvsiZfmUTU1tnPKUPMl4HvgyL/PX5x&#xD;&#xA;7PmW17MLE/o4M9NGp1cVGr41SEelleA3yxO6EA/JVlKKaTGI63ChoDYFVbERz0tl&#xD;&#xA;WpynsbeWDOELqRH6wt2djZBbk3CVLPnFHV3Sc7tqDsYPVsw1Xoy2+LKzJCNurkJ4&#xD;&#xA;RWri2j8kzHF3gK9psR7WYlHpMWALIpPMgj1ZiQ6xJO5KFzgxHBplkM2EaapLDzF2&#xD;&#xA;vgcbdZ26Mp+a9/ZLVi3YsG078ewgr4N8t9kKp6EQkQdzB6MoAcjxgXJ99Dzpc9SR&#xD;&#xA;Lkg9Pp+ROwUbQnV4Tn6xnFLAVj/LhACqvfysS7WL7lu8mscNXVKTvbdI76qZtmFJ&#xD;&#xA;g/vLk8B0n0/n3ygjFhlx2Os1XzxzUgy1f4ZARbKULWd+c90VSNm8oHWkJwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEs4ZyG2wRQqowRVkFARxSbymyznkFAmNGkVgCGwIFCQlmAYAC&#xD;&#xA;QAkQARxSbymyznnBdCAEGQEIAB0WIQSvmNDf0FQmQivPaE2BDOz4uicQCAUCY0aR&#xD;&#xA;WAAKCRCBDOz4uicQCBlJD/4kAiVpxbFqra6FpXWHG0/uVevQUrvMc5LzpFhkWLi7&#xD;&#xA;7LJNdLEHsrURog22Bsncuzh32PY666cC8GrrOX6qIsq3yJHI0Tm6+TQkkx++2rXV&#xD;&#xA;1xAM2RMHyo+WAfViS7rF5XDLzWWQz+z1uXrCfsz+gEHE/arWKQor2OX3ZV7Ke4jt&#xD;&#xA;11pkCIAujvhv7W+bp1v76mW+XcX9EW/vU5Toy9YWDlfGjMotlURwAvH5QWIx12E9&#xD;&#xA;aeVg0bUbEpE4xl2WKV4CciMb1beK2qeJil5ixNBwUrK3wyUqAy1V683kEnVo8QoW&#xD;&#xA;yHKAAXr5hGjc6AkDzb29Xyv27444k2jVf80sRhHdx2mvzyorw/7v6kcj8+iYltmS&#xD;&#xA;9UCVQI/gjz4uZ9wKHNYubNfQsoGlq05r7vVHkGFTunlYlx7cltt91kWwuNyE1peb&#xD;&#xA;CuDFr4oR2P7vIpVnDDFE2wVzSbxJQFt+Ay3DCCuq1yFGM8NE7jK+z0v/TwDQVwbh&#xD;&#xA;OVgDmaC4UCa79oC06UVJTJmS+qnnmVOoajqgEWWh1Ez4ZnY/CpmHva7F06a24jza&#xD;&#xA;kXaWtvj+HLllgDx3FJsjeY3dlJQECSKFBH1MXmA3PVWZKAHoetLTYt2jlrbpK+Ip&#xD;&#xA;SIrjrTvpHTu7WKjaoeCd8K2EnLUUoW1cAb7JfwQnqBYhFTfbUZyAyMLYJYokTmmM&#xD;&#xA;ZwLWD/0T40bbQdkVuzgHslSoEWH01VFisMQwGzSGpglEZ+UoEi3s9kXfMkM357U/&#xD;&#xA;VyiNM6iShikrT8BAuW/VFa4CO8LELtJnbpKeJ1+/fhCm4O0Osj2cGibUCJKb2T2V&#xD;&#xA;JPIxNIPxgHvZbn4qENqNa9ZcEzWFT/YkKoAaeZlMGFMEQy1/o4AUXSNFZwgdc95r&#xD;&#xA;M1Zov+J89NzWZHU4QL1oKyrbMI3e9PyTgN1LKxjEwV7ObuBaPQBydrJkIpR/L9fp&#xD;&#xA;FzUp3t8Ri1ntyTmIUvPNrLFW3MofTtitX7rMkQ2zKDJY4Pi4XjN0Ka9dPfN8mh/m&#xD;&#xA;5SS6AkOfOQEnfWkopBSCsmaSyhf0Hqet2kzbn4nfBV2RCSCSJPIdVp49WKxdP6sX&#xD;&#xA;2NS+AgYG7ocinK2RvjN2u9w7pDPVzsQHKiW+dMYc96oya6+Af89VjCNkqY7r6bj9&#xD;&#xA;Bi3Cy+no6UkHVQhLpyg2xD4JFc8lWOdJtg1GuiRvZnrZ+u17WVt0w8INsg69YWNi&#xD;&#xA;0YExuI8j5EHtuqtE97VV1a/vv+AC3lrV8NeOJPOvKNYLZ+H1gIB0BRUDYp4Sm0hN&#xD;&#xA;giiFQ1irhwilgVGPV1IVTJuQptQ9pdogkpHpcuP4C8flke59TeErmO0DnL+q2Hd7&#xD;&#xA;3OGb46QkKrimly/wVA/lwMpqHhzITQDfbWDCEJ/w67XQ4vH4Nw==&#xD;&#xA;=HbVw&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='306214'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.director.app' version='1.3.400.v20240425-1316'>
@@ -3021,6 +3232,13 @@
         <property name='download.size' value='3911994'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.wildwebdeveloper.xml' version='1.3.6.202409052135'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnPQWRFiEEDqwG46YUYY17hu8xBxbpObSltVoACgkQBxbpObSl&#xA;tVop6A//VhmY/eyCYnpzXP5TQsEY9j9nHsjRzyzoAkzVa1nkuSs2psuKGwYRmxIw&#xA;8O+rxLTM7yHAE1tFQYhyWZ0jtrpobbam8u1aimYJQ7O+Ni6eX2rl54JzDchtzXwo&#xA;mYyCTLwX97jecV37ZrbFnFjq7TU73VlDf1nD3QyUmB3M35ZKLVu269NwO3whw1ox&#xA;IrDfM1nZQptFq8x/dLO05Md5h/5OGgibgDFu0pNwqqg4PYTtf05KedIhEbJAvym3&#xA;3mvHDIEZs6a8nTe9aynjGnyuVjnslEWL95z+uY264eJ+apJGMyCRgmiHQrtppbXN&#xA;KKgjHKD/nK8Kxy8jR5oVZ+iNDHV/wg/QC30E69Rmcti6sldlpVPhc3y+rqMIqJUM&#xA;FjfZ5t9bjp9ZQSzfzvNCXl/9sfUlJYKI0TLXE/fdA7WDHUTcidZdveOyGx6BwJrg&#xA;zOhDtjvo6vge+bGexEHmYdqnAdgLWVpIHW0gDnuVH3o3tO9YgF9CbKyIYNahiaZe&#xA;g8ya19mXo7VcHrUJF5yUSxcSD/1gdBFlgpPINUe0TTxakdHoAlo9NUTQPy3EWl6g&#xA;1iK+A7REpO9y+ClSWBwPdTDZW1qPhdpoX3nAt0y4L3PprDsP04g3gtjAMFyomKgW&#xA;3zWY4TNSIbP5lizINLksjT8lE+KpcBpQc+jmlxJ4i4rjZizXMvY=&#xA;=79oo&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGZUdzoBEADNUdi8lOeZALttkj0mmDYKEoKM4Pf+KraMfD9RkIrhCux7JL2y&#xD;&#xA;4q9VUilgJ3cS31kOTXr01eLshIKHBdnqiI+S4xl46KemQd12uSnGINrRaYdM8WYo&#xD;&#xA;T2MtlvHgBgQu5NuuzSfgkB4AlseOISVJzhc/L1rbmBcG710QFcU1/IuQlRXM72+o&#xD;&#xA;Ft74R+iQ7rQBvhP/aUyNIoGBDgMzUxdoglkZDcxQYNhKK/9A/dVHLh6XGkV85mCx&#xD;&#xA;tytQRF7RBOWSp9I5khtosTY6KgKXMak+aF+jY9vR9SgPyU/o3dvXYbUOaBudZt2r&#xD;&#xA;HUzetZLEVMeeHaOtE8QfoCKbOLi8Vz0nroKrAiji+O2p83GRRgWBrAL1bRavdkQJ&#xD;&#xA;eUQlZGEeDvW2C6x2U+dABkj6VEutXjuDmIkgXevOlJ0HNYa/QvVGLcYzkm0nxs1V&#xD;&#xA;Rg0lBDMiW3eIefEdF5ds09BxraKF0iMpYbIDPtoOQeS5X2wXU0HQidOpMvWvdTpY&#xD;&#xA;mBitBty5Ir4u5gVHuV/caRp1lZhVRmEeSr0V0Tes2gULFljripTBtyZfSGcvFKbg&#xD;&#xA;1sBnkxWop5w0oE91oLo5PnwJxDkn7I1dz4VwLAm4hHaHyApl3m9l5YlWcOkSdBF/&#xD;&#xA;VyeBHpEuCa3KeyV1y+D5QW+s10Iii5fxqSUlhuu9g1n3g8YNlZsQjx5pWwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEEPmtmIlNHzXS/my7m8BvyX7U7SYFAmZUdzoCGwIFCQlmAYAC&#xD;&#xA;QAkQm8BvyX7U7SbBdCAEGQEIAB0WIQQOrAbjphRhjXuG7zEHFuk5tKW1WgUCZlR3&#xD;&#xA;OgAKCRAHFuk5tKW1WictEADBdIQB5VWyml6jujMPUFFgXu68x8aWXwdJEipM7Qax&#xD;&#xA;AfyrE2NFeThFZoQwBaEl4Z0pco9EjkZEzGeh9sjdag+4PxD2so6issEt7MOKOtcn&#xD;&#xA;GJbCq21y+kKbXOiEKhvehu3Jgf1Bjt3O9UxC66FFCiOrIU8kywFrtbHuDG3J7yG9&#xD;&#xA;3FSfKmSdBjZg/Vzjg7kHExtfdegJcFMN/agm2nnspLO2+Cope/Bkp6f/rX0Ur5Uo&#xD;&#xA;EPkB1AKkBo6WqdE7WDIs1xw9Ab+thBnZNfhEEdH4rFNN3tRACyQmMqrLfHazqW8a&#xD;&#xA;xasdEVX9rZfIG67VR8LWd5ZKtZNHQ9iTEvffdREw/eFKIt48Dw3OsICAixHvSIzE&#xD;&#xA;X1eEaGyrSw9WmZCMyObrQCR+SnZh+bA5g9vmaP5wJnu2EfuU+K1JUhEjkV7OHFhA&#xD;&#xA;Lbz/2DvlVRa0QhfoTMs4ZWW4yMPlADHL26+HKOJycXRkG6AlffejV5/Lp/xF8i/v&#xD;&#xA;ju3AllgFX2hi/rAiKXPlRMqZwH99FB8sSg8MORl9QoaL3TcFjwfI3rxO+vyyqGOy&#xD;&#xA;CHiEVMNTDEDeEqvnXrhpDdboYlTm+VoB2exKAfyVXEGNB/NqyLDwCh3Fy10YWDWN&#xD;&#xA;B2Dbjh4snJFqV73qZMKM1CTLPRVYfnYaDi2jsJTAteFthMlUS2kNFLmwDMnEftfq&#xD;&#xA;Ee7aD/90X+2Y5gxLWRsCcP/Vrt3qKULfevMhsfuhGpOM885OnuDbC4uRJqBADLvQ&#xD;&#xA;lcHHs2lKTMbGJiZxx541lbxMtbuBXQJ2uTB06Kaut1c3JESlT6wp+cjhHrdYWjhQ&#xD;&#xA;EVPV12QfABdQJ8laqrnwyfoPTmm72m7feFZgJL8IomuXLvwHcY/5ZGch3NDbRyaP&#xD;&#xA;ng0zgi55tVJ0xTQNYMIvZRvWbkGdvBfHXM1jqdz7o8PogeIbjvRBCIoK+/wkO4v6&#xD;&#xA;Hx8moaiUfNYuBR6jCzBGkZaur7nx11bYW8RN/OD0WMFoY2m512O5tXO2LKkErTji&#xD;&#xA;V9h3v9tsd0JRUN+pS+YTCWF8/ImeNn642Q9MIlu6dAU1Ed0ZvGIFJnD8rHMO0ntL&#xD;&#xA;352gnWwa0XA+we45ckLAT1rA7TnjsLnUSEHU5Hrk97EBnK2XeG78raLdRPiX9fnd&#xD;&#xA;vdPsC4UGMt16LeHcj3jheWTLgx/YgOSxYeaB/Rih6ggB2hxHrG+7HVZJgiqUYtRW&#xD;&#xA;tl1MYjaJVJZC/3O/w0OPKyZPVTSZ9Bz4tb1X0sRd6EA9z0GINxowlS5NqjgB0bd1&#xD;&#xA;7DPVjfMQ2r/3B3Vz7EbIj01Hj97PAkk/Yh34EalpJrqBKod8DuNJxWl5qpCFVROt&#xD;&#xA;z/82PozlAe6qvILhk+Xt5M0a3zHgb4rWB67yivL0UurnlAMqDQ==&#xD;&#xA;=SLxC&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='8558709'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.datatools.sqltools.debugger.core.ui' version='1.3.0.202311071249'>
       <properties size='1'>
         <property name='download.size' value='89300'/>
@@ -3055,6 +3273,14 @@
       <properties size='1'>
         <property name='download.size' value='430368'/>
       </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.logback.feature' version='2.7.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='23265'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.ui.editors' version='3.18.0.v20240807-0735'>
       <properties size='1'>
@@ -3162,6 +3388,13 @@
         <property name='download.size' value='14937'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm.commons' version='9.7.1'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/FFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6fPeQ/6At8p1eJ/3ppgLrTwdji/pE9sZhtHkAq02hpYd+yCcRQSF1D8BUWsmzns&#xA;elhn+5wIubZLvdiLBvfV26DgmKszsEOYm6FN5H3qx2D1up4LViDcK5bm7kihkuT5&#xA;DumXASdmNRe/GZMabCisnOn041EhPzhBlEa/GIFObFYhE9rqLKsNSIioerZSiN5h&#xA;Cs1Iw/iVBxpj+ypBjS+8rhEqojeVUf2KRe7ukGqLoK0IOB+B1Jv1R3dVjsWXdbOF&#xA;xkWnYRFou6OVqYBN4Z+tRiOQbYKpFa1TXxZ8W4rIlhcFj8yXck7AyLtcq4Nsi/x8&#xA;+RYCwP5RoDzaIjITZFfdUCcCabFlGq700Wn6cmxpDUahTliHQFlmgE8eG6MBHTUd&#xA;281/uoGP1QRJ2v+VN84ex0ooMU/FXHfHQ/gZT2Rd29dBNK9s8jaMXC5Q+dM4SlZB&#xA;dK634GPF/JU9kAdwsclkXQPMYiKrkYz1c1K50vhINFDaSetgemqc2gqcnquwdtK1&#xA;0B79xJqxResmnLVZpZzaAM6YP/wayrve3CEn5j4+TivSOlt+mgCy2bHpClnihAgR&#xA;fiGLc6+kkaKNq2MdYiAHoh4g6jUzzsZp/ydzCNWbnoGZZb86Sv9AX9KjH3In/L1A&#xA;tHbLml68bPSiwHilu96S7RsGjIRHeFRUzDd8TQBjdNhg4BTDFYo=&#xA;=MfYT&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='73459'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.wst.jsdt.web.core' version='1.1.300.v202305221615'>
       <properties size='1'>
         <property name='download.size' value='168549'/>
@@ -3182,6 +3415,11 @@
       <repositoryProperties size='1'>
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.google.javascript' version='0.0.20240317.v20240319-0700'>
+      <properties size='1'>
+        <property name='download.size' value='14861391'/>
+      </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jpt.common.feature' version='1.5.200.v202308172102'>
       <properties size='1'>
@@ -3330,6 +3568,14 @@
         <property name='download.size' value='55116'/>
       </properties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.common' version='2.33.0.v20240911-1027'>
+      <properties size='1'>
+        <property name='download.size' value='22779'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.di.extensions.supplier' version='0.17.500.v20240419-1233'>
       <properties size='1'>
         <property name='download.size' value='42540'/>
@@ -3446,6 +3692,11 @@
         <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJm1rNKFiEEnjBEBxt1jry35FZzcA5PObwFNksACgkQcA5PObwF&#xA;NkvibhAAmL7XcYlTwJRxFc2rr6wkYN1ibAbKL7Z2Nu8Xx3hiKSl0QjnL9wwHrIw7&#xA;nBkppj9hYmfXHVl+xpvASHzOnZvT5cy9faLrRshjRFLV714effcEaOeODGYTp8Gg&#xA;46100FW7jz1J1jD9miatTbFOFtZ2I2b7D6STo4KT+vCuWmnQwObjiLTmd1FNjP5r&#xA;X5tDoWRwuLZFIfdP+O/HOro2T6Gnt+HGy8pL35dB+uCa3VU1NE7Y/TH+hgWD9zFO&#xA;eRidsvqjPAzljgu6mVEmBvG39Q42Opxbeddze+FMt9XGoGZuCEnwJsimocnIgTBH&#xA;+JtOerUzbS7UNAZpq/HMMKORlDoaC/YiqSREeB15W2EWYMS+F3pBejnQHFKogSrA&#xA;722Zgt23wjwm1kCYXqZC1cUd7DwOCYEgc+GiijDdt+v0Gg6WGG6LDPkjJCqr0fFb&#xA;dNRJRTyUyC8e6da7jI0KJ932zf4s30lFNf2/FgvILyQrKNToNXQlUbN5/Bmk/nWb&#xA;Qy8vVgjXWm1gB5bK0k93wZsu8Iw3K7731rSbByhx02ef8HwHnTJCl8zcUTpefcXL&#xA;MEJR/ER0M6BDdnad0ma7o+FT3tuJVDDMXWbXb8aMQQrQlQlq66QCULsYzdMFLH4x&#xA;Y9DFbFOhyn5dekmZmT+JsUa3pnwVm6z2m1rGt2PlFhINdRF20DE=&#xA;=1k46&#xA;-----END PGP SIGNATURE-----'/>
         <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xA;Version: BCPG v1.77.00&#xA;&#xA;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&#xA;=xtSl&#xA;-----END PGP MESSAGE-----'/>
         <property name='download.size' value='40740'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.tm4e.core' version='0.14.0.202410282056'>
+      <properties size='1'>
+        <property name='download.size' value='306102'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jdt.junit4.runtime' version='1.3.100.v20231214-1952'>
@@ -3593,6 +3844,13 @@
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='com.ibm.icu' version='76.1.0'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/KFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6d1fA//Y6VFan8bqjSTz4cxbyGAJn6MYQ3dFZGe3p+PuYYxtmkqjl0GQldBxWo6&#xA;uKjOnn7JpjjvvjKGXvmzGV/8D4bjYlsECTI0D78Npx4fKkIBEpf8AhDnAgXT5Bj+&#xA;AqgovOdxH24j/E5tzCeoPMznEum2tNvQB6IyT4xCYyEKaRf4Ux2DMmxA+d71ajk4&#xA;1q9NVmHkcMAAqD44Js5J4vCrczJNqU51wPx7wd6g/ikZfXKpThlcEZON+ZxVGqsd&#xA;vRH+LALEAD5IDQJgnpuibezoFNqFrByQjhcjR3BOUzEq7faN3MumHs9DdPDIoGXd&#xA;QwOBXex3rjP2tmryC72K5f+XmH2Iz5oQzJBOaCGhIqAoYI5NG1UHQs2dPZZb+xYw&#xA;zDzqyGioZvT9B/Z5K0uHatanphUipAC+dOuCcucFgtDhp+epkJXB9Dy4KKTkZjUd&#xA;NctUzq9Y/ZMlKWC3WpmDm4zdYHyC0+yP60b5eCjs5427dQNHc6ZvGm7dGkRFlEW1&#xA;D/erZLr5yaqdUBJEZZm0UIozrMSrhhDgKBH8btSq6tZHi/S9xqOI3/ApODoozlZT&#xA;Nt/35H3aYXdupu6N0GIKGp2DNB1XW0Kq9fq0fvor2CLeDOmMUqCpz4ZieKhTAaW0&#xA;k8PTClAbM4XVFe4/CmEXNenDAufe20stAU8cV9jz6TWVkm7LyaU=&#xA;=HJkf&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='14621879'/>
+      </properties>
+    </artifact>
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.jsf.feature' version='3.13.200.v202408212140'>
       <properties size='1'>
         <property name='download.size' value='34677'/>
@@ -3706,6 +3964,18 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.model.workbench' version='2.4.300.v20240321-1245'>
       <properties size='1'>
         <property name='download.size' value='406273'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='bcprov' version='1.79.0'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIcBAABAgAGBQJnRfjTAAoJELojFh4lnQnMzDwP/2sNWYa/lqzJlG1+kLkp6Rpd&#xA;sIzhS6ZveXQRnNLZEsMElw7uZa9ph/AQaiaWac70uUJbqEKL9tOZqYpevPg2b2A0&#xA;nx6veP9gLG7B9LCh7DWw3UHkDPk1Eb/aMCZWmp1IBt9vbUdeKf86q9og8oEFZNux&#xA;nHbjZEr5bDOhbjBnxNFFk3c2ZbUnU3LBQecfzxahjTQ+ddJqsl3scgHonWX0ti1v&#xA;4rcAX5iOm/5cMYBwODeXSwAijC7UF/fIXXO+irTrqG/BGjpgp1xGWSqpdMWWacPZ&#xA;3u+54e4lBtsbkS8u2G/xxYHrTUEXX7kEoPnHtKMNNBzQ1lg7M/Iv5W/GZdFpTrmb&#xA;hEtmx5Ku1blTHN9G0v3PRMi909E+A7B237nBbt8zFxnncznJiQqJcsakp13Lm3u2&#xA;oeziEqlMeW8hzospfth5EyPVMgzZixb6wPOykjNYdED6iwBBMvKfyUsXGhnUwocK&#xA;U4cqF82Gm96e9/VeQvLYJUSSRvKSy0zyXsGs7hykRGG/+MgjbdkL3TJy+YP6RK2K&#xA;F5+8BNq9ZnLS0c44eOlg44M0GJ98S+IGy7RZkTWj9dNWwRRFqu5xtJTGPzdC+1Er&#xA;rac6FoeBMLLUf6XLDoGFSVobjrrBBJD7d/LzrBidaU2IEZiqaS9CbQq9PvEmdJHp&#xA;s8pjC4fx1gn2dOfsRNGz&#xA;=z0M0&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGRSOAQBEACYvIDktwbC/Ac+4D2DJwb2GnGRkzXMpcImuwU7VBUqY15OeOSX&#xD;&#xA;yBO/nWX/Z+2yoPnJA72mwsW//mUyq1PV+fmllepIR0Vd0BaY2WOxD2RL11aiUEkT&#xD;&#xA;V7uDQFV+lLSHfmubD9GtDz3FzKcbR1IX9HeCGChPt0VYuELt47d/G1ohrpg9pTfZ&#xD;&#xA;4dd7TIWMgWrisDHLmSzDmiFuI3S3ciYFDuQ2v1sinHaa8Zz05dVmOZm35rUwRQnv&#xD;&#xA;E1jVggk3PQLI5Notd72N0aF64hbTPBDmIp7nLwsN8UeG3yXK2dOsFLsYNvTTHq6Z&#xD;&#xA;6I6feUMXtZ6tM5vcq5Rvojp/yyaV0JysDGmNwhrquWO08SARvLarDCi2mIZ2Gqxa&#xD;&#xA;C4fq4MXvMYzkjWkIBjZVg1sk9frkDDE96iaUXaHeBL8+6vubxuWs2CXpPhy/+N/C&#xD;&#xA;tFBMcRphLgSg3ZSNaX1rSaOz28ap/QfGm8oTOFstcjYccvZ1Sx3dDRAcOxjP4/DZ&#xD;&#xA;Du/GT1CVv2+GyWcggQoX1vp2aKx5/W9e49tHW8WEwfkwykoQdnjz8MU4EYfFqViv&#xD;&#xA;8cZAqz1jZhN1lFcQ8pdzmciTBdiJcLtzTKXfg6lX4LfMFFaJ6BoguyOr4xPiQadS&#xD;&#xA;d4El/uvI+wPpZG5+GLLyfyXjX980/sq61WNEhgs8H3ZNGNZf8J8HMC5siwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEDUFmR4rH+OG4hXDmAmYIjeNaw1MFAmRSOAQCGwIFCQlmAYAC&#xD;&#xA;QAkQAmYIjeNaw1PBdCAEGQEIAB0WIQRlr4rUXZXd/H77p7W6IxYeJZ0JzAUCZFI4&#xD;&#xA;BAAKCRC6IxYeJZ0JzBdBD/9nDv+24HZ1VreH5IybOyA07oJIamL3gNztmbPfK3qW&#xD;&#xA;2kxRf6DmrYQoWML8UZW8D9ygQpPN/Axnm/u0zPFvoQ5ITgAjKPhu5W4yrIzm+87U&#xD;&#xA;isEz330S6bjI7+Y751oBxHjbSRGEmXxqq1vsqgHXkGh+P1u41gcQ3uyg5xOqLQx+&#xD;&#xA;if+XE7/2qfT4YSiBNj8ugiKEy8PJmQUG3T+IOKkKbe7ZI9xbcY69nH6N3F5FweY/&#xD;&#xA;Ot7WLNSbr7x9FunOOSiExQBAuwGntVMvzxWuFqOuIMekPr2UaeVynYo6JwVpOJIF&#xD;&#xA;4W3fL1PoCxUsBhmmDdEWGD9iw25ohFpdRuMYzmXgmhU8zrF5+Q7X7sQcXbSF3stY&#xD;&#xA;ozNCKXxP18OpfjI45b3/KVZOzVUx6GQaZ2bw6Pg3vZZ50UZN4r1uCt1nLHlsvhHV&#xD;&#xA;gXUIujMQvD6YFq7auVPCQsQ/HIwF/Tqxy3GNHAPMa2sEhCbnZ5XI+/fXScEscZ+x&#xD;&#xA;cdSCnTyImyJI54S2LB3FRnTbcWFR2fx+Mz1t/1kfZgLF3aWI2Uym/uPnZQJDSjrJ&#xD;&#xA;++J0zvxPYVXMLj1VR3nXGfzZZM3UPTQsO9iZ4JCSmk3OXr9E4+FdbzkmOvMX7K+X&#xD;&#xA;tFr6r89R98MuYoznZFrtELd9es/JpLsAXYjxleMdH9vuFWkF6R+W6OOAoTsNJoIc&#xD;&#xA;R/JTEACJwy3HGIpcKZfVOETIH01l3YgTK5My3+e1LS7Hr5JeTEX9wBQKWG73KRqg&#xD;&#xA;Kqj1YzVYEer6fhoOje1ulhAiHDMm3CsHsCMbMNiAs0vdwhYVc5xoepyNqZ7BI0PB&#xD;&#xA;3XNIxm5XRwtB/gBFnDeCW2pwcarnpazXDsipTYTEzMCqVHWFjmv+6vJTcflcP6nU&#xD;&#xA;7GE0EcONcS9/HWjlD5i0HuaUjY6XYZ57oMo9AEXboY0PrcgzHXkDW1cnj5coecpd&#xD;&#xA;ANppyT20+H+dFlbfbiVIOctnX7WRZduWpeAHGdd8/JhrGZjVkqj44Mq467f3KFNw&#xD;&#xA;D2T6cFtcgqcnsMdhl2vKAEoaSGkEtLJCPiwKW213DxAmeNmf3jIvHSVawhKgODpE&#xD;&#xA;isqaKBtBnxnOAppaCXGlZlbLuBARxBXTGZ46jlH5Qwqh8uHExDEtCr1UOv7eDFtN&#xD;&#xA;WB5YsLtCXBOwvaMJYM18hvE3RBFmRkDWJ5h5Tt5gs/ig29rEOMticvBhLVSSTjLc&#xD;&#xA;oATE+MC/XUhlt+PdXqLdGsVQ9XqKpskBztKv2U4I4rNn6ZiT6hqL3AUoqNalYGiG&#xD;&#xA;GhdGflZqUS6k4J/wQQpBNlhi5En2JDTi5kJ4hU4E5wSq5lnBPuk6Ji66Zk7Qz4Wn&#xD;&#xA;QFPaJTudbZSgN7Q70jDGxcN/Ti/jaebB3OdGDXhqtO8XqRbPrA==&#xD;&#xA;=Ailn&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='8575537'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.codegen.ecore.ui' version='2.40.0.v20240911-1442'>
+      <properties size='1'>
+        <property name='download.size' value='201530'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='jakarta.servlet-api' version='6.1.0'>
@@ -3923,12 +4193,25 @@
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.orbit.xml-apis-ext' version='1.0.0.v20240917-0534'>
+      <properties size='1'>
+        <property name='download.size' value='145530'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.apache.commons.lang' version='2.6.0.v201404270220'>
       <properties size='3'>
         <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJm2MqXFiEEHG89QtbmsHpmFVWccLgk2aa0rikACgkQcLgk2aa0&#xA;rilUuBAAuHvJr3sQOfsm5pfuTzY/VaD2HKckCbODRsKNPWYP0bct8e3cPFRCVJKS&#xA;W0E/5Cp/TfAukCSsjH9YHeBFK/laD+v3XYOtevwBKhztO8QzDPyKNXl4lDYukxoM&#xA;Gn0Wmg8YgVBh2IZ6uIEMpCcnlcVQqdLNojDFJ4dgZJ7253/UGdAxLpI6wsyy0J59&#xA;Oa/0CJ+cmLFmzmPg1eWDybwNVq1b2cN+sZRdxd4g/Bozi4ug3WXYsipc9erz/yLY&#xA;SqWyMzpQ9AFXr0mrPJDGftHP+4TsnXxw9utSDjkxMlLxu4LTXyJdRlYS+z5DsQyo&#xA;Rastkek3KENkZ/w7BqusSJAqUtqo7udcWHqLWp3S21/V8pCFXtU0vBkhKcGT1L89&#xA;XhObm+ayQCSnc2ZzRmWmlgG12uVD/yZ1EdixWDFm3/UnN2v7pr692sFBD3hJ6LTA&#xA;cbhRG1rJjEHapWHKwJMK4bGP6rRkgV2Q/6qzKzGS0q45yvPb2O3UpzI0kfDtoewo&#xA;27pSqZNivt2HjoNbdKqay+WsiZyK7lHLwEjsjqXmmhNiQn6ms1nNfPlTCKX4XgDg&#xA;YTowJ7fUeeQ8tiB/aoJjHeNB3NTuVjJm34zBU74UJhcqPwqHTE81bXyhr48U6e51&#xA;0Me6mI4AbdppOVQp0lIBiCUL/Gwwue0AVhjXWuLvuB8fCUkHynM=&#xA;=dUUA&#xA;-----END PGP SIGNATURE-----'/>
         <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xA;Version: BCPG v1.77.00&#xA;&#xA;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&#xA;=GiWN&#xA;-----END PGP MESSAGE-----'/>
         <property name='download.size' value='306273'/>
       </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf' version='2.40.0.v20241018-1213'>
+      <properties size='1'>
+        <property name='download.size' value='22925'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jpt.common.eclipselink.branding' version='1.3.101.v201902121834'>
       <properties size='1'>
@@ -4383,6 +4666,21 @@
         <property name='download.size' value='478060'/>
       </properties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.pde.feature' version='2.3.200.20241003-0434'>
+      <properties size='1'>
+        <property name='download.size' value='22743'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='bcpkix' version='1.79.0'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIcBAABAgAGBQJnRfjOAAoJELojFh4lnQnM2ZIP/R679x6p+3LWwyqxm4lDZrKs&#xA;C7/7W4JiS8mbr1Ebj1V3O25CQCMnXppLnVflJhB7VX5fWeGwVVJkEkJQprfY5JOb&#xA;AvtDubX4B7JRjKGhkeh4PL+Fzev8LWi5IM4rEhDXkqwkfJLgYFWS2BIW/XZSjMSc&#xA;K5mzSTISoE/sAQtlNDGjIn8JnslS7uHfT/B19l7emf0Y3U3LY173npz4vSsQzTRt&#xA;whL5QKXc38kZhYslha2fdcf4hn/eVcYrUVAXZvfk3nz2PtD6CJWy0kdNWuBEGMCP&#xA;AF78kvdYwNHiVPmM3Nh3H9lSyUVa0NrShuulW+u9wzmIiDP5hIiVNmYDX5GoCAEv&#xA;cJO1iUdt4+njCgpMjSs6AcVzHK+xCTyFztEYnD/Bwfs5wLeG/fpHAn8JB4wh2sJn&#xA;Jd78km45VRS1BbpqDvU1nsl+5e9vfB1T+6kG7pu2Va2mAhH6qdaZNJ8zJnVm4FT8&#xA;lIpv70vaxDWxV5RGteKJI0kXmnJvh8sHB2ofsZjh2yhOh1Q7pxYGAW3LNUYw+PuY&#xA;bl6jeG/7mhy2NByQFsuF/jYz/+eYf1QL/aGmoXnnYNBjCsLUqS4O+DW/EqLvC89W&#xA;gRM/FqBfkfhrNiYVM8CJFTL5jSNifa9LXQBv0efhyimeum6y3INigzKMlvtHNkdR&#xA;X3YfqciMcuYSm4XN2mB6&#xA;=8DEp&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGRSOAQBEACYvIDktwbC/Ac+4D2DJwb2GnGRkzXMpcImuwU7VBUqY15OeOSX&#xD;&#xA;yBO/nWX/Z+2yoPnJA72mwsW//mUyq1PV+fmllepIR0Vd0BaY2WOxD2RL11aiUEkT&#xD;&#xA;V7uDQFV+lLSHfmubD9GtDz3FzKcbR1IX9HeCGChPt0VYuELt47d/G1ohrpg9pTfZ&#xD;&#xA;4dd7TIWMgWrisDHLmSzDmiFuI3S3ciYFDuQ2v1sinHaa8Zz05dVmOZm35rUwRQnv&#xD;&#xA;E1jVggk3PQLI5Notd72N0aF64hbTPBDmIp7nLwsN8UeG3yXK2dOsFLsYNvTTHq6Z&#xD;&#xA;6I6feUMXtZ6tM5vcq5Rvojp/yyaV0JysDGmNwhrquWO08SARvLarDCi2mIZ2Gqxa&#xD;&#xA;C4fq4MXvMYzkjWkIBjZVg1sk9frkDDE96iaUXaHeBL8+6vubxuWs2CXpPhy/+N/C&#xD;&#xA;tFBMcRphLgSg3ZSNaX1rSaOz28ap/QfGm8oTOFstcjYccvZ1Sx3dDRAcOxjP4/DZ&#xD;&#xA;Du/GT1CVv2+GyWcggQoX1vp2aKx5/W9e49tHW8WEwfkwykoQdnjz8MU4EYfFqViv&#xD;&#xA;8cZAqz1jZhN1lFcQ8pdzmciTBdiJcLtzTKXfg6lX4LfMFFaJ6BoguyOr4xPiQadS&#xD;&#xA;d4El/uvI+wPpZG5+GLLyfyXjX980/sq61WNEhgs8H3ZNGNZf8J8HMC5siwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEDUFmR4rH+OG4hXDmAmYIjeNaw1MFAmRSOAQCGwIFCQlmAYAC&#xD;&#xA;QAkQAmYIjeNaw1PBdCAEGQEIAB0WIQRlr4rUXZXd/H77p7W6IxYeJZ0JzAUCZFI4&#xD;&#xA;BAAKCRC6IxYeJZ0JzBdBD/9nDv+24HZ1VreH5IybOyA07oJIamL3gNztmbPfK3qW&#xD;&#xA;2kxRf6DmrYQoWML8UZW8D9ygQpPN/Axnm/u0zPFvoQ5ITgAjKPhu5W4yrIzm+87U&#xD;&#xA;isEz330S6bjI7+Y751oBxHjbSRGEmXxqq1vsqgHXkGh+P1u41gcQ3uyg5xOqLQx+&#xD;&#xA;if+XE7/2qfT4YSiBNj8ugiKEy8PJmQUG3T+IOKkKbe7ZI9xbcY69nH6N3F5FweY/&#xD;&#xA;Ot7WLNSbr7x9FunOOSiExQBAuwGntVMvzxWuFqOuIMekPr2UaeVynYo6JwVpOJIF&#xD;&#xA;4W3fL1PoCxUsBhmmDdEWGD9iw25ohFpdRuMYzmXgmhU8zrF5+Q7X7sQcXbSF3stY&#xD;&#xA;ozNCKXxP18OpfjI45b3/KVZOzVUx6GQaZ2bw6Pg3vZZ50UZN4r1uCt1nLHlsvhHV&#xD;&#xA;gXUIujMQvD6YFq7auVPCQsQ/HIwF/Tqxy3GNHAPMa2sEhCbnZ5XI+/fXScEscZ+x&#xD;&#xA;cdSCnTyImyJI54S2LB3FRnTbcWFR2fx+Mz1t/1kfZgLF3aWI2Uym/uPnZQJDSjrJ&#xD;&#xA;++J0zvxPYVXMLj1VR3nXGfzZZM3UPTQsO9iZ4JCSmk3OXr9E4+FdbzkmOvMX7K+X&#xD;&#xA;tFr6r89R98MuYoznZFrtELd9es/JpLsAXYjxleMdH9vuFWkF6R+W6OOAoTsNJoIc&#xD;&#xA;R/JTEACJwy3HGIpcKZfVOETIH01l3YgTK5My3+e1LS7Hr5JeTEX9wBQKWG73KRqg&#xD;&#xA;Kqj1YzVYEer6fhoOje1ulhAiHDMm3CsHsCMbMNiAs0vdwhYVc5xoepyNqZ7BI0PB&#xD;&#xA;3XNIxm5XRwtB/gBFnDeCW2pwcarnpazXDsipTYTEzMCqVHWFjmv+6vJTcflcP6nU&#xD;&#xA;7GE0EcONcS9/HWjlD5i0HuaUjY6XYZ57oMo9AEXboY0PrcgzHXkDW1cnj5coecpd&#xD;&#xA;ANppyT20+H+dFlbfbiVIOctnX7WRZduWpeAHGdd8/JhrGZjVkqj44Mq467f3KFNw&#xD;&#xA;D2T6cFtcgqcnsMdhl2vKAEoaSGkEtLJCPiwKW213DxAmeNmf3jIvHSVawhKgODpE&#xD;&#xA;isqaKBtBnxnOAppaCXGlZlbLuBARxBXTGZ46jlH5Qwqh8uHExDEtCr1UOv7eDFtN&#xD;&#xA;WB5YsLtCXBOwvaMJYM18hvE3RBFmRkDWJ5h5Tt5gs/ig29rEOMticvBhLVSSTjLc&#xD;&#xA;oATE+MC/XUhlt+PdXqLdGsVQ9XqKpskBztKv2U4I4rNn6ZiT6hqL3AUoqNalYGiG&#xD;&#xA;GhdGflZqUS6k4J/wQQpBNlhi5En2JDTi5kJ4hU4E5wSq5lnBPuk6Ji66Zk7Qz4Wn&#xD;&#xA;QFPaJTudbZSgN7Q70jDGxcN/Ti/jaebB3OdGDXhqtO8XqRbPrA==&#xD;&#xA;=Ailn&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='1134345'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.core.contenttype' version='3.9.500.v20240708-0707'>
       <properties size='1'>
         <property name='download.size' value='107141'/>
@@ -4461,6 +4759,14 @@
       <properties size='1'>
         <property name='download.size' value='94341'/>
       </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore' version='2.39.0.v20241018-1213'>
+      <properties size='1'>
+        <property name='download.size' value='22845'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.mylyn.wikitext.markdown.ui' version='4.4.0.v20240617-1534'>
       <properties size='1'>
@@ -4635,6 +4941,14 @@
         <property name='download.size' value='203424'/>
       </properties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen.ecore.ui' version='2.40.0.v20240911-1442'>
+      <properties size='1'>
+        <property name='download.size' value='22793'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.egit.ui' version='7.0.0.202409031743-r'>
       <properties size='1'>
         <property name='download.size' value='4099766'/>
@@ -4698,6 +5012,11 @@
         <property name='download.size' value='428836'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.discovery' version='2.1.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='79931'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='wrapped.org.dom4j.dom4j' version='2.1.4'>
       <properties size='1'>
         <property name='download.size' value='328755'/>
@@ -4736,6 +5055,13 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.datatools.enablement.sqlite.dbdefinition' version='1.3.0.202311071249'>
       <properties size='1'>
         <property name='download.size' value='15869'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.commons.commons-io' version='2.17.0'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/GFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6cSGw//QIwmIFPAIiucz8UiRmkNLutlJW/aFQXN1I5h1C7WX0i/tR0a/ssRHEgK&#xA;ixry1KIzT/GNV+e94FbOm332KkbCP/wKNL/1z46oyfI8wCk4sq205CsI3fw4kj3N&#xA;SPo676Z2KVjv1paTK1jiQp+ktXn/sdoR5HSWz5kMNN5DO+XyPNmgbnrZSaj/aFGo&#xA;BYj9z7Rp6T08+LgvhUJb/cxpnkC5wj5N6ObwKF6I8LeDBuxAh45WPL38sKZv3QAl&#xA;sbyDgEoQKLEPth7cO+s8Z/DjlMvZKMXZ2cmVYk0bgcO/88cCDMCbcQxJ01dIkj31&#xA;+U+U1o1BzgdQMIMYBBgn0DOm+8M3e0/iCp/vGF+MLALRFYMRyytod52kZtK9tFZv&#xA;NpQSbTjHkyXNJsSHMSJAAMkxk7fAD9YL+6eQtG2cO6gELtwPuPZRg3DqLzxG+zJX&#xA;iW3EExFzMNqhBKX0TjCS0Ax5pPMGM1wLkafcRKXZThBxGnmTpDVrvF0m+oCK2hSY&#xA;4+FCigVx5xbc4mV7jstpi0GcKWRfTIuRBGKHjLyXqKBNbW51RYxidPJxT7YM5y8w&#xA;ykUGuXTmbykydXmSTSF9LOYlypJWr3LdUIfF+NQecFTS34GbeoRcFCBj04ZVlqUE&#xA;FpV9ZB8S0Y508On0b0y7QWRu4xeDWWzBJ0w6TNqLiKle7CPH3zM=&#xA;=JnuY&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='515978'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.emf.codegen' version='2.24.0.v20240721-0802'>
@@ -4856,10 +5182,25 @@
         <property name='download.size' value='33185'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.tm4e.languageconfiguration' version='0.14.0.202410282056'>
+      <properties size='1'>
+        <property name='download.size' value='160549'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jst.pagedesigner.jsp.core' version='1.6.0.v202303190717'>
       <properties size='1'>
         <property name='download.size' value='38566'/>
       </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.feature' version='2.7.0.20241126-1642'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnRg4GFiEEr5jQ39BUJkIrz2hNgQzs+LonEAgACgkQgQzs+Lon&#xA;EAjp7xAAjGqsZ8NQmqws55jiKZw8Jc9fiK+84FdNJsxExb92bu8fKV806LaFImN3&#xA;Ba7wpP0G7x8O9uipDj/OkLBNU9xkHcQCAsAGgl+w4eJ/F/wxuPAb947SKhNAKiac&#xA;N6bk02H0jlcH0OASNPInjfQkuvZKGnM5gWehrFmhqzxeVurhej07c5DaNmokc9sj&#xA;TlRL9TGwYZZdRy5WLK9fm/zaU3kM3RZsQVb7bYQz2BGg8lneK2W+mnGIovlPXDfw&#xA;taLUHzDtWWRkgMYb/t9FfuThuE2XYnN2rFFjN6d1UBcxyOpg5QtKFD1RZ8EITpGh&#xA;abe0H4GsC3Ne5B6UG6hyYoCNIq8zs/WqPTpfnCGLtySaVDSrhIl8dvP+nRE1MCvD&#xA;vE8f8XSq5p6jZCerfydIvXLZE3ZiVp9miu+AjuubjwJI+u/+aKyTAXBmTG+qvSnv&#xA;NETdHAG+WguX35vLvit7OqQdDocQCSoNcIwcb/1yYNn/cZ20TBV6WJVP7SO/yjwW&#xA;VNz/F6bVFX8YgXzVvbCiMMbm/Rd6kFl5kdqE6H1Px6pg64xN7Fqgjhn1eI74cibU&#xA;yLAPzfg+/kpm4hmDjWrRkxrOiFqsIAFM0irkEswEvlXOxCVtS3Bwf72kOuqiEZKw&#xA;+RnkEXjHnMuPtOjnYkUTCJrVeXpNOo8sM21MiP9uXyiRrRapBUw=&#xA;=bnhr&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGNGkVgBEACZ+Z2ZDGOg+Ge5ntdC+QByQC1A1l503lwUNrIP5YF+V3kdZEo0&#xD;&#xA;Ys3SNKUGsfm6cJ0vi9aXq4R8bjsOfm1u9vQJOqn1d0D2uiwKUz0RZmv5RaV0UzKM&#xD;&#xA;RvhvAeQbYCCVWMyFYMfc1d1aYRhipMSkuAj6sfzDY0DmjIdqzVplyd/IbXtZcr8Q&#xD;&#xA;cTk7qpyHbrlXnDRfLN0lQgLTaDJCLrqeazcM0Hv6UC/fKi9/fF56wF7hmX8yf1K+&#xD;&#xA;JW0pgu6r/7hPZanlfxNsweziN10Lhuj+4oEvsiZfmUTU1tnPKUPMl4HvgyL/PX5x&#xD;&#xA;7PmW17MLE/o4M9NGp1cVGr41SEelleA3yxO6EA/JVlKKaTGI63ChoDYFVbERz0tl&#xD;&#xA;WpynsbeWDOELqRH6wt2djZBbk3CVLPnFHV3Sc7tqDsYPVsw1Xoy2+LKzJCNurkJ4&#xD;&#xA;RWri2j8kzHF3gK9psR7WYlHpMWALIpPMgj1ZiQ6xJO5KFzgxHBplkM2EaapLDzF2&#xD;&#xA;vgcbdZ26Mp+a9/ZLVi3YsG078ewgr4N8t9kKp6EQkQdzB6MoAcjxgXJ99Dzpc9SR&#xD;&#xA;Lkg9Pp+ROwUbQnV4Tn6xnFLAVj/LhACqvfysS7WL7lu8mscNXVKTvbdI76qZtmFJ&#xD;&#xA;g/vLk8B0n0/n3ygjFhlx2Os1XzxzUgy1f4ZARbKULWd+c90VSNm8oHWkJwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEs4ZyG2wRQqowRVkFARxSbymyznkFAmNGkVgCGwIFCQlmAYAC&#xD;&#xA;QAkQARxSbymyznnBdCAEGQEIAB0WIQSvmNDf0FQmQivPaE2BDOz4uicQCAUCY0aR&#xD;&#xA;WAAKCRCBDOz4uicQCBlJD/4kAiVpxbFqra6FpXWHG0/uVevQUrvMc5LzpFhkWLi7&#xD;&#xA;7LJNdLEHsrURog22Bsncuzh32PY666cC8GrrOX6qIsq3yJHI0Tm6+TQkkx++2rXV&#xD;&#xA;1xAM2RMHyo+WAfViS7rF5XDLzWWQz+z1uXrCfsz+gEHE/arWKQor2OX3ZV7Ke4jt&#xD;&#xA;11pkCIAujvhv7W+bp1v76mW+XcX9EW/vU5Toy9YWDlfGjMotlURwAvH5QWIx12E9&#xD;&#xA;aeVg0bUbEpE4xl2WKV4CciMb1beK2qeJil5ixNBwUrK3wyUqAy1V683kEnVo8QoW&#xD;&#xA;yHKAAXr5hGjc6AkDzb29Xyv27444k2jVf80sRhHdx2mvzyorw/7v6kcj8+iYltmS&#xD;&#xA;9UCVQI/gjz4uZ9wKHNYubNfQsoGlq05r7vVHkGFTunlYlx7cltt91kWwuNyE1peb&#xD;&#xA;CuDFr4oR2P7vIpVnDDFE2wVzSbxJQFt+Ay3DCCuq1yFGM8NE7jK+z0v/TwDQVwbh&#xD;&#xA;OVgDmaC4UCa79oC06UVJTJmS+qnnmVOoajqgEWWh1Ez4ZnY/CpmHva7F06a24jza&#xD;&#xA;kXaWtvj+HLllgDx3FJsjeY3dlJQECSKFBH1MXmA3PVWZKAHoetLTYt2jlrbpK+Ip&#xD;&#xA;SIrjrTvpHTu7WKjaoeCd8K2EnLUUoW1cAb7JfwQnqBYhFTfbUZyAyMLYJYokTmmM&#xD;&#xA;ZwLWD/0T40bbQdkVuzgHslSoEWH01VFisMQwGzSGpglEZ+UoEi3s9kXfMkM357U/&#xD;&#xA;VyiNM6iShikrT8BAuW/VFa4CO8LELtJnbpKeJ1+/fhCm4O0Osj2cGibUCJKb2T2V&#xD;&#xA;JPIxNIPxgHvZbn4qENqNa9ZcEzWFT/YkKoAaeZlMGFMEQy1/o4AUXSNFZwgdc95r&#xD;&#xA;M1Zov+J89NzWZHU4QL1oKyrbMI3e9PyTgN1LKxjEwV7ObuBaPQBydrJkIpR/L9fp&#xD;&#xA;FzUp3t8Ri1ntyTmIUvPNrLFW3MofTtitX7rMkQ2zKDJY4Pi4XjN0Ka9dPfN8mh/m&#xD;&#xA;5SS6AkOfOQEnfWkopBSCsmaSyhf0Hqet2kzbn4nfBV2RCSCSJPIdVp49WKxdP6sX&#xD;&#xA;2NS+AgYG7ocinK2RvjN2u9w7pDPVzsQHKiW+dMYc96oya6+Af89VjCNkqY7r6bj9&#xD;&#xA;Bi3Cy+no6UkHVQhLpyg2xD4JFc8lWOdJtg1GuiRvZnrZ+u17WVt0w8INsg69YWNi&#xD;&#xA;0YExuI8j5EHtuqtE97VV1a/vv+AC3lrV8NeOJPOvKNYLZ+H1gIB0BRUDYp4Sm0hN&#xD;&#xA;giiFQ1irhwilgVGPV1IVTJuQptQ9pdogkpHpcuP4C8flke59TeErmO0DnL+q2Hd7&#xD;&#xA;3OGb46QkKrimly/wVA/lwMpqHhzITQDfbWDCEJ/w67XQ4vH4Nw==&#xD;&#xA;=HbVw&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='14009'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.epp.package.common.feature' version='4.33.0.20240905-0613'>
       <properties size='1'>
@@ -4921,6 +5262,14 @@
       <properties size='1'>
         <property name='download.size' value='260592'/>
       </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen' version='2.26.0.v20240911-1027'>
+      <properties size='1'>
+        <property name='download.size' value='22817'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.mylyn.github.doc' version='6.5.0.v20240617-1534'>
       <properties size='1'>
@@ -5039,6 +5388,14 @@
       <properties size='1'>
         <property name='download.size' value='99548'/>
       </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.common.ui' version='2.23.0.v20240911-1027'>
+      <properties size='1'>
+        <property name='download.size' value='22746'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jdt.annotation' version='2.3.0.v20240111-2306'>
       <properties size='1'>
@@ -5201,6 +5558,11 @@
         <property name='download.size' value='121151'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.editor' version='2.1.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='414504'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jst.j2ee.ui' version='1.2.300.v202402152248'>
       <properties size='1'>
         <property name='download.size' value='882735'/>
@@ -5209,6 +5571,16 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.jst.ws.doc.user' version='1.0.700.v201903222115'>
       <properties size='1'>
         <property name='download.size' value='134905'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.apt.ui' version='2.0.500.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='47858'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.sourcelookup.ui' version='2.1.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='30153'/>
       </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.ecore.edit' version='2.17.0.v20240604-0832'>
@@ -5222,6 +5594,16 @@
     <artifact classifier='org.eclipse.update.feature' id='net.sf.eclipsecs' version='10.18.2.202410111513'>
       <properties size='1'>
         <property name='download.size' value='19459'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.sun.jna' version='5.15.0.v20240915-2000'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNIF5FiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6dgyRAAhuwQ4ksAAqrOMIbRFyaNNphWtcpU+zeF5RzMlgRyOZ6v/61Kiy0Srrx7&#xA;aTe25f9pn8RzJVxS9q2MmmImP8E6sfB7IX5dJSSNMp7dd43sZhbIscJrbFJxLTxf&#xA;sQctZ8HbtvuKZNBO/gA2K4J8jkYqXBnNQvzQEvm5HROIhlO+v2uyZgZI0Tag7Nr4&#xA;2qH0ywme7VhZhA/5JludMkvzZ+0+m09fJJWtlTp8KumVtwOgh2akZiYyBaLv0/kb&#xA;tj90EOiEaI6APYrjkRXlL4l84bK7H+Gg9fpthl4giWwGIu66/8TId5e/SRtYfS5g&#xA;sC3PAYUalalIWBhtkl7u0NRw9qMdj4D3sVqcQ6nLGddkeqhOHR9bogbMlvxTuHcF&#xA;/5WyGDmD8G5R9NJZ24K6ufp8vmp2CCeSroAbaFdLbs/9ovRVfLltCZfKc+GDzE66&#xA;LpvKKhau4ezfcR3dDHK9hUFC0OFAsbBK7EnsqqzWNQYPze9HWMul+XRUXj+5Nura&#xA;nVR2ZvD/XczSB1rygImb5QUJLoWGBLI5OKkS6ryLObeX7mo7hfu5iIp54I3GkCeG&#xA;wTTvvXLsw9RSlViYgC++0rBTfVZfYR96jyi+pqaiWe7A0TPTa13nRWkcKfePs8F5&#xA;mB83RDKe9ECKFghZ7Vfb1q/Z/tFcl/BUH2b2OznRaIBKYkTGq8g=&#xA;=tehN&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='2016038'/>
       </properties>
       <repositoryProperties size='1'>
         <property name='artifact.folder' value='true'/>
@@ -5271,6 +5653,11 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench3' version='0.17.400.v20240321-1245'>
       <properties size='1'>
         <property name='download.size' value='23798'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.core' version='2.7.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='682484'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.mylyn.wikitext.tracwiki' version='4.4.0.v20240617-1534'>
@@ -5401,6 +5788,11 @@
         <property name='download.size' value='17999509'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.lsp4e' version='0.18.14.202410030435'>
+      <properties size='1'>
+        <property name='download.size' value='768362'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.wst.ws.infopop' version='1.0.400.v201903050508'>
       <properties size='1'>
         <property name='download.size' value='14545'/>
@@ -5464,6 +5856,18 @@
         <property name='download.size' value='358183'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.mortbay.jasper.apache-el' version='9.0.96'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/EFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6cPjA/+P9/zXVvD1Fo6fIx8FxwUDhZwgqYOqaRgsSsrdNkIsqBkLEzJ0RoCZC4R&#xA;dhwwov0SGPl5NxVXE4uhFtnjXBbHd9r3MxGISmxWUUqgAC4qKoc7IZCAqGRHeSNx&#xA;sQTXMSeDSRs1guWiKVqRNBZb5ZxssfnKjD6ZFrGa3w2LxhCDEUQt/wDrX78qLr/8&#xA;Pl76cOIb8gg4yRmz/DroNR8NpmCEI7hklIKiI5ROWj4wgVeLnn+n3CR40fcNKWNb&#xA;MvIxIcC+KM7wFJ1g5lr16cLPtOkJvSPz+Hoi2s6NjHWnUJJhALi5XbNKYv8GOxLH&#xA;6fln2hR+9VNTzxsXjKoqVro97EHNJb9nspX0irmMBofAHstaXfVMpj63Lt1BQVaH&#xA;DJz4QYtqPGk8WFd6YYF2TH4qAB0BOD7STGkJ+L91MwOJB14TxdJQ9HiH53GrmZmN&#xA;/oAj6BemynLonPaxGSTdHuovvm9bHPyKxrtMsHwm+i2J4VXIS3DC2O+PFBq4z2hR&#xA;Rgfd4IXu+R9+apltBheglKLBhhM38CMgKPRUwMEE3z0lbwulkwdBS5qrr5DOXIKp&#xA;FZUI3Jk+K0GM97d118mEfvGRyBkfIfi7z8K5sDXR7ABduJLbv+9KEYUOPFBd/MTJ&#xA;VkMhkWvmOEcvOqRS5FdPnbWzzpDr+Y/SPjs/rLaxYqEDyTa8IU0=&#xA;=bgIr&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='258085'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.util' version='1.18.0.v20241009-1200'>
+      <properties size='1'>
+        <property name='download.size' value='145841'/>
+      </properties>
+    </artifact>
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.tm.terminal.connector.local.feature' version='11.6.1.202406241230'>
       <properties size='1'>
         <property name='download.size' value='26955'/>
@@ -5490,6 +5894,11 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.equinox.simpleconfigurator.manipulator' version='2.3.300.v20240702-1335'>
       <properties size='1'>
         <property name='download.size' value='31017'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.mavenarchiver' version='2.1.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='33397'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.apache.xmlgraphics' version='2.9.0.v20230916-1600'>
@@ -5524,6 +5933,18 @@
       <repositoryProperties size='1'>
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.tm4e.ui' version='0.14.0.202410282056'>
+      <properties size='1'>
+        <property name='download.size' value='234190'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='bcutil' version='1.79.0'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIcBAABAgAGBQJnRfjPAAoJELojFh4lnQnMU7YP/2uteVFJbG/UhgKuP9WgA99B&#xA;2yLpai1SL018a1+7hur08ktaU9n4vBxUnnZIFQLaNzoP4GpD4tL/sIl8LfDW3fFl&#xA;L+voss1jgCjlqPWCOtwjDMf8HkjB833lPdPVae5FtC4LD/d/Madt3FLHOHi0MEPl&#xA;YMiktcbVR6s06y+1lt1dQv+fo3/whksO9PgVwma3PFqmtT4ZtkxabyhUWx+06j96&#xA;/ZP1WTaqvV1AhExydHEjt5AfOi4ac13rnISmfV+aFlkQ6pKbdAO6RBXdXmMrscXV&#xA;J5UXwIVs77mYe7HAfwPxI01Vex50T4EBrk0XEmvlsimmq1ttfWPLIexRDwWAcAeV&#xA;pWKmAXd/ECp0E/QyIRNqC8kSjSfQ1rgX6/k23VnPiJJ8d/lvCP8LGvZjyZ4U5Uix&#xA;vm7yiDL/XnzY/8hidsZdfTREqNOTOvscWhzuTsJdao3qubEZ2wE2vRv0jsFDiumZ&#xA;4g0JVSLS0E+dlwNqPYsEj5qPNlB0IqExrqEW3NJubkRu6MwHoLdCTlNmm5kRXK1q&#xA;SKMUyRAQyNVf6ZR1q7hWhVQdVnaWwjCdlDRhiuRVP4idry0k9a3E/W4X0Kymbd2K&#xA;aY78dJ8gqjk0ICwCbxD0KIjmlFMoqi1TFEGYW8D6ABn9IOn7aXGAoIXgH1el6D7e&#xA;IH7B6Ot94CR/L5Q+jKfs&#xA;=qvsG&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGRSOAQBEACYvIDktwbC/Ac+4D2DJwb2GnGRkzXMpcImuwU7VBUqY15OeOSX&#xD;&#xA;yBO/nWX/Z+2yoPnJA72mwsW//mUyq1PV+fmllepIR0Vd0BaY2WOxD2RL11aiUEkT&#xD;&#xA;V7uDQFV+lLSHfmubD9GtDz3FzKcbR1IX9HeCGChPt0VYuELt47d/G1ohrpg9pTfZ&#xD;&#xA;4dd7TIWMgWrisDHLmSzDmiFuI3S3ciYFDuQ2v1sinHaa8Zz05dVmOZm35rUwRQnv&#xD;&#xA;E1jVggk3PQLI5Notd72N0aF64hbTPBDmIp7nLwsN8UeG3yXK2dOsFLsYNvTTHq6Z&#xD;&#xA;6I6feUMXtZ6tM5vcq5Rvojp/yyaV0JysDGmNwhrquWO08SARvLarDCi2mIZ2Gqxa&#xD;&#xA;C4fq4MXvMYzkjWkIBjZVg1sk9frkDDE96iaUXaHeBL8+6vubxuWs2CXpPhy/+N/C&#xD;&#xA;tFBMcRphLgSg3ZSNaX1rSaOz28ap/QfGm8oTOFstcjYccvZ1Sx3dDRAcOxjP4/DZ&#xD;&#xA;Du/GT1CVv2+GyWcggQoX1vp2aKx5/W9e49tHW8WEwfkwykoQdnjz8MU4EYfFqViv&#xD;&#xA;8cZAqz1jZhN1lFcQ8pdzmciTBdiJcLtzTKXfg6lX4LfMFFaJ6BoguyOr4xPiQadS&#xD;&#xA;d4El/uvI+wPpZG5+GLLyfyXjX980/sq61WNEhgs8H3ZNGNZf8J8HMC5siwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEDUFmR4rH+OG4hXDmAmYIjeNaw1MFAmRSOAQCGwIFCQlmAYAC&#xD;&#xA;QAkQAmYIjeNaw1PBdCAEGQEIAB0WIQRlr4rUXZXd/H77p7W6IxYeJZ0JzAUCZFI4&#xD;&#xA;BAAKCRC6IxYeJZ0JzBdBD/9nDv+24HZ1VreH5IybOyA07oJIamL3gNztmbPfK3qW&#xD;&#xA;2kxRf6DmrYQoWML8UZW8D9ygQpPN/Axnm/u0zPFvoQ5ITgAjKPhu5W4yrIzm+87U&#xD;&#xA;isEz330S6bjI7+Y751oBxHjbSRGEmXxqq1vsqgHXkGh+P1u41gcQ3uyg5xOqLQx+&#xD;&#xA;if+XE7/2qfT4YSiBNj8ugiKEy8PJmQUG3T+IOKkKbe7ZI9xbcY69nH6N3F5FweY/&#xD;&#xA;Ot7WLNSbr7x9FunOOSiExQBAuwGntVMvzxWuFqOuIMekPr2UaeVynYo6JwVpOJIF&#xD;&#xA;4W3fL1PoCxUsBhmmDdEWGD9iw25ohFpdRuMYzmXgmhU8zrF5+Q7X7sQcXbSF3stY&#xD;&#xA;ozNCKXxP18OpfjI45b3/KVZOzVUx6GQaZ2bw6Pg3vZZ50UZN4r1uCt1nLHlsvhHV&#xD;&#xA;gXUIujMQvD6YFq7auVPCQsQ/HIwF/Tqxy3GNHAPMa2sEhCbnZ5XI+/fXScEscZ+x&#xD;&#xA;cdSCnTyImyJI54S2LB3FRnTbcWFR2fx+Mz1t/1kfZgLF3aWI2Uym/uPnZQJDSjrJ&#xD;&#xA;++J0zvxPYVXMLj1VR3nXGfzZZM3UPTQsO9iZ4JCSmk3OXr9E4+FdbzkmOvMX7K+X&#xD;&#xA;tFr6r89R98MuYoznZFrtELd9es/JpLsAXYjxleMdH9vuFWkF6R+W6OOAoTsNJoIc&#xD;&#xA;R/JTEACJwy3HGIpcKZfVOETIH01l3YgTK5My3+e1LS7Hr5JeTEX9wBQKWG73KRqg&#xD;&#xA;Kqj1YzVYEer6fhoOje1ulhAiHDMm3CsHsCMbMNiAs0vdwhYVc5xoepyNqZ7BI0PB&#xD;&#xA;3XNIxm5XRwtB/gBFnDeCW2pwcarnpazXDsipTYTEzMCqVHWFjmv+6vJTcflcP6nU&#xD;&#xA;7GE0EcONcS9/HWjlD5i0HuaUjY6XYZ57oMo9AEXboY0PrcgzHXkDW1cnj5coecpd&#xD;&#xA;ANppyT20+H+dFlbfbiVIOctnX7WRZduWpeAHGdd8/JhrGZjVkqj44Mq467f3KFNw&#xD;&#xA;D2T6cFtcgqcnsMdhl2vKAEoaSGkEtLJCPiwKW213DxAmeNmf3jIvHSVawhKgODpE&#xD;&#xA;isqaKBtBnxnOAppaCXGlZlbLuBARxBXTGZ46jlH5Qwqh8uHExDEtCr1UOv7eDFtN&#xD;&#xA;WB5YsLtCXBOwvaMJYM18hvE3RBFmRkDWJ5h5Tt5gs/ig29rEOMticvBhLVSSTjLc&#xD;&#xA;oATE+MC/XUhlt+PdXqLdGsVQ9XqKpskBztKv2U4I4rNn6ZiT6hqL3AUoqNalYGiG&#xD;&#xA;GhdGflZqUS6k4J/wQQpBNlhi5En2JDTi5kJ4hU4E5wSq5lnBPuk6Ji66Zk7Qz4Wn&#xD;&#xA;QFPaJTudbZSgN7Q70jDGxcN/Ti/jaebB3OdGDXhqtO8XqRbPrA==&#xD;&#xA;=Ailn&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='705999'/>
+      </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.datatools.connectivity.oda.consumer' version='3.5.0.202311071249'>
       <properties size='1'>
@@ -5591,6 +6012,13 @@
         <property name='download.size' value='87032'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.qos.logback.core' version='1.5.12'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnRg4GFiEEr5jQ39BUJkIrz2hNgQzs+LonEAgACgkQgQzs+Lon&#xA;EAhjMRAAgxYNGxO4BEmuNWxOcHA7HtXT9IIb9bkuhoeC7Y2TO7nasg3vQ84YDxlr&#xA;Bl/xPtKvk6fHl+n3AR1AhDO0PApSk4+gGS5Z0IqAxKok5Vm8KUhZ9p1Quz0M0WwF&#xA;/3b1GZfarKMUOhfY/0XeKiHg5oHd5UtIGyK7kvGbAPClB8IxnBhGn8dsQ0GnSaR6&#xA;nz9nHkATjrJLYjnKFxLiUwh1Urn4AsfJH0+KJ26KeP/tvegoY52FbDVV8nbkAngU&#xA;CJ71PrXncqlAvfAVb/qPXnpXEHfIHk1BQzKRoOJg7cCR7nPAQZ0Qjy4NYL13Uw38&#xA;mOIpLOeeNJzefUs/k9g1gZbIz0lXIuLoveR7VliRgX4s2hbtLfhMuHbCOpCyqvpl&#xA;4ofFSHHec0iuk6Q448zjDOnCWWS3tPY4Od6otEvyGLP2QsDVjdUBk9A3Or675YSq&#xA;hYUjLg/5rofL3zn2WbtJDlZHnp8AoaHQuvTeF0gp7F1A8l6o9apRtZQUnziLxEzt&#xA;uHG23BpawIlSZnOKtqdqCi7aCJRZsijcMcCuN8cssBd5EAU244aHgscADxrPb5Jm&#xA;6hnqsIpxmyvvdLK9u7Fql16ZBsTjLdZlsGOsrNH5pBurNyOfaMOc4Fv0oUnU9lY6&#xA;jZFNpux1CYUtO5YUC5o1ag5Fthc10QLhe9n0zw5+BNPwWzFtWY8=&#xA;=0+m9&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGNGkVgBEACZ+Z2ZDGOg+Ge5ntdC+QByQC1A1l503lwUNrIP5YF+V3kdZEo0&#xD;&#xA;Ys3SNKUGsfm6cJ0vi9aXq4R8bjsOfm1u9vQJOqn1d0D2uiwKUz0RZmv5RaV0UzKM&#xD;&#xA;RvhvAeQbYCCVWMyFYMfc1d1aYRhipMSkuAj6sfzDY0DmjIdqzVplyd/IbXtZcr8Q&#xD;&#xA;cTk7qpyHbrlXnDRfLN0lQgLTaDJCLrqeazcM0Hv6UC/fKi9/fF56wF7hmX8yf1K+&#xD;&#xA;JW0pgu6r/7hPZanlfxNsweziN10Lhuj+4oEvsiZfmUTU1tnPKUPMl4HvgyL/PX5x&#xD;&#xA;7PmW17MLE/o4M9NGp1cVGr41SEelleA3yxO6EA/JVlKKaTGI63ChoDYFVbERz0tl&#xD;&#xA;WpynsbeWDOELqRH6wt2djZBbk3CVLPnFHV3Sc7tqDsYPVsw1Xoy2+LKzJCNurkJ4&#xD;&#xA;RWri2j8kzHF3gK9psR7WYlHpMWALIpPMgj1ZiQ6xJO5KFzgxHBplkM2EaapLDzF2&#xD;&#xA;vgcbdZ26Mp+a9/ZLVi3YsG078ewgr4N8t9kKp6EQkQdzB6MoAcjxgXJ99Dzpc9SR&#xD;&#xA;Lkg9Pp+ROwUbQnV4Tn6xnFLAVj/LhACqvfysS7WL7lu8mscNXVKTvbdI76qZtmFJ&#xD;&#xA;g/vLk8B0n0/n3ygjFhlx2Os1XzxzUgy1f4ZARbKULWd+c90VSNm8oHWkJwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEs4ZyG2wRQqowRVkFARxSbymyznkFAmNGkVgCGwIFCQlmAYAC&#xD;&#xA;QAkQARxSbymyznnBdCAEGQEIAB0WIQSvmNDf0FQmQivPaE2BDOz4uicQCAUCY0aR&#xD;&#xA;WAAKCRCBDOz4uicQCBlJD/4kAiVpxbFqra6FpXWHG0/uVevQUrvMc5LzpFhkWLi7&#xD;&#xA;7LJNdLEHsrURog22Bsncuzh32PY666cC8GrrOX6qIsq3yJHI0Tm6+TQkkx++2rXV&#xD;&#xA;1xAM2RMHyo+WAfViS7rF5XDLzWWQz+z1uXrCfsz+gEHE/arWKQor2OX3ZV7Ke4jt&#xD;&#xA;11pkCIAujvhv7W+bp1v76mW+XcX9EW/vU5Toy9YWDlfGjMotlURwAvH5QWIx12E9&#xD;&#xA;aeVg0bUbEpE4xl2WKV4CciMb1beK2qeJil5ixNBwUrK3wyUqAy1V683kEnVo8QoW&#xD;&#xA;yHKAAXr5hGjc6AkDzb29Xyv27444k2jVf80sRhHdx2mvzyorw/7v6kcj8+iYltmS&#xD;&#xA;9UCVQI/gjz4uZ9wKHNYubNfQsoGlq05r7vVHkGFTunlYlx7cltt91kWwuNyE1peb&#xD;&#xA;CuDFr4oR2P7vIpVnDDFE2wVzSbxJQFt+Ay3DCCuq1yFGM8NE7jK+z0v/TwDQVwbh&#xD;&#xA;OVgDmaC4UCa79oC06UVJTJmS+qnnmVOoajqgEWWh1Ez4ZnY/CpmHva7F06a24jza&#xD;&#xA;kXaWtvj+HLllgDx3FJsjeY3dlJQECSKFBH1MXmA3PVWZKAHoetLTYt2jlrbpK+Ip&#xD;&#xA;SIrjrTvpHTu7WKjaoeCd8K2EnLUUoW1cAb7JfwQnqBYhFTfbUZyAyMLYJYokTmmM&#xD;&#xA;ZwLWD/0T40bbQdkVuzgHslSoEWH01VFisMQwGzSGpglEZ+UoEi3s9kXfMkM357U/&#xD;&#xA;VyiNM6iShikrT8BAuW/VFa4CO8LELtJnbpKeJ1+/fhCm4O0Osj2cGibUCJKb2T2V&#xD;&#xA;JPIxNIPxgHvZbn4qENqNa9ZcEzWFT/YkKoAaeZlMGFMEQy1/o4AUXSNFZwgdc95r&#xD;&#xA;M1Zov+J89NzWZHU4QL1oKyrbMI3e9PyTgN1LKxjEwV7ObuBaPQBydrJkIpR/L9fp&#xD;&#xA;FzUp3t8Ri1ntyTmIUvPNrLFW3MofTtitX7rMkQ2zKDJY4Pi4XjN0Ka9dPfN8mh/m&#xD;&#xA;5SS6AkOfOQEnfWkopBSCsmaSyhf0Hqet2kzbn4nfBV2RCSCSJPIdVp49WKxdP6sX&#xD;&#xA;2NS+AgYG7ocinK2RvjN2u9w7pDPVzsQHKiW+dMYc96oya6+Af89VjCNkqY7r6bj9&#xD;&#xA;Bi3Cy+no6UkHVQhLpyg2xD4JFc8lWOdJtg1GuiRvZnrZ+u17WVt0w8INsg69YWNi&#xD;&#xA;0YExuI8j5EHtuqtE97VV1a/vv+AC3lrV8NeOJPOvKNYLZ+H1gIB0BRUDYp4Sm0hN&#xD;&#xA;giiFQ1irhwilgVGPV1IVTJuQptQ9pdogkpHpcuP4C8flke59TeErmO0DnL+q2Hd7&#xD;&#xA;3OGb46QkKrimly/wVA/lwMpqHhzITQDfbWDCEJ/w67XQ4vH4Nw==&#xD;&#xA;=HbVw&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='628983'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.mylyn.commons.repositories.http.core' version='4.4.0.v20240617-1534'>
       <properties size='1'>
         <property name='download.size' value='40632'/>
@@ -5641,6 +6069,13 @@
         <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJm1rNKFiEEnjBEBxt1jry35FZzcA5PObwFNksACgkQcA5PObwF&#xA;Nkvw1g/+Jj1UxvZ1Fl7+OiM/CdCIbWTvuG8HIudOih90fa4amuvL2KLSRmAZqm3m&#xA;hN0KIw5JO+pZ/3UEOZqouQpYAuDspW2C+1Aq/z4kEnF8GqBmSWx6Yt2xxeBNURIZ&#xA;wuI7XjRXHkCS7Hu8AriflDdK7onm5MGP6g42dIpfRFvKcELt+VdU6Dz6ek/0upO/&#xA;Fpy1Pma5vxNi9WfymwuD0g0xkEbxv0N4z3m7JO0Tp65ax+tcAtQiJ4M+mKGMLsKp&#xA;MJtkNxzRagGMpase9ZPZT2OggVC07LMzpi1Np70cn/CjtGm8jT+DiJUy1+nUKzbI&#xA;uMqVmAr9kLh1SboEeCO0Zqec45kwONYTFdEOWUUF5KeOSsICExbj51WWgFQ94q/Y&#xA;A08yb6RyO/GYcYmRD46AfPBS8s6U4QGXi3HhKUkcBhpKJdC8OhTNJAD7036Y4XPv&#xA;JuAoS92LuibizXGfNKbjYl6413SGOK+FM4EN8vT9CZiDuu1uj41ABMZtccAvim+q&#xA;oGle+KSgc92ECTvYEd5EaO/05s7XrjxMixkcwGcBAkqnDXTOXu9ZgeY+A+Mls1WK&#xA;oww8blYoky9WnqqkQALkqJ73nFUgxfXUo5UvPdMFnB9EpbCPXQODLMfjoTfxrmxn&#xA;+JWOOOwvLwQjisJ/m+2I4akT6Zr1wkNcavivIXn3D9Kh11Z1PRk=&#xA;=zmZM&#xA;-----END PGP SIGNATURE-----'/>
         <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xA;Version: BCPG v1.77.00&#xA;&#xA;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&#xA;=xtSl&#xA;-----END PGP MESSAGE-----'/>
         <property name='download.size' value='13697'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='com.google.guava' version='33.3.1.jre'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/EFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6fIRA//UUgMrtXmGG0wjiYG66Xtk/FWFb+Jng4m6MOduGhT9sYX1dEfFMzMPJQv&#xA;JTQyBerL9rmZDNpnR61PdPadPkDj4Dv1CBxs0VKzkz4mP+ViKco6YLH85qATtLxV&#xA;23otcy/K5s+xIebuEkLhIdu7ll+QIKNk2yZSVy6GulEDuMBjXTuM4CZT1MVuqq/k&#xA;HUYJQ9Z4Vh/NxjZw6Y/FIGtbO0MiXMMsd3NS6cKcfS6qqccLaVqB5QlBJi/S18j/&#xA;aknxQPVd6DRgZpCWFHcSCQeE6p2PTZ9WdjsEQhS1s02QupbbgyRGf3eri+wiIowr&#xA;Y18zBwN/p9JWzCipfTxN6yddtxQo4ecIUfucjJtnYziqWFr3dyCmjXWqCWNfV8C+&#xA;ehe40OEgtOC612AP8MA/v58675P2S6hf0iM8Of8Kj2vpsCrBbgUU+48mQHGSzQo1&#xA;HghwWgepEqZp7knp9t/65Qvl99Vkc3BGWBt1pWIozg5AajEfPZE0mEX5h97cRW6e&#xA;4XJ2KMvEO8kr6Bnqe954FMoF1qJcbBWS4VAESpuO8weUg59IqTY3vRYBDpKmyEpP&#xA;SWlMH4HejR7Vp2rTFpEBaQDeofcjoS3P8BqY9NwFfznylEi3ZVmaluWftGLawIT/&#xA;ZJytwTKPBz+7tY53ce3hB2YqoBkXdAjMKC3aOi1NqZEgAIHgiFk=&#xA;=5/T/&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='3079289'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jem.beaninfo' version='2.1.0.v202307260438'>
@@ -5890,10 +6325,25 @@
         <property name='download.size' value='149455'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='bcpg' version='1.79.0'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIcBAABAgAGBQJnRfjPAAoJELojFh4lnQnMJGQP+gP3+u4yoaewZlBp+FOfOlvt&#xA;QZDJLsPSfWh4AcCzr0CnaaSMOSqcK1C1il1g4f/9zzyEJhSBog6RUA3r10vgbc8l&#xA;wHCEZByjFjOu0pd7SgeSvgbwsRIIR771bIGmiPM8KMrpT/UYQesIQr3xCCOP8LlJ&#xA;eAUxsAFxQIM/Fqe0GCoqrlrCQTdy/Yes2J1Qgm8PS0I4jxIhr3KF4U6eRG8hhNIr&#xA;XqVKBnMSbyc8YanLpVkS/A7/pgmTuZ+Dc2Tn7F4wsCUy18sNECx939RukgOvWZih&#xA;Cx1RMr5FFDwhioYn9a1/fTo9VmUIF0snz5HSUoXaQgYJcQRsQGC4zr2krUihAkhp&#xA;jV1WEnJ4g6kLDhrSMhDrRavCV+qpdTKX/jIxqLEnF+Auvg2TlHAqpHawvENjr8TZ&#xA;4kkOVF3A5gwyxlyGgEkNCaAeZmG0XocneqqCEcKcU+VbLP6P3/5S6VvQlcd/JVLN&#xA;zXnFtHJD6fliy0BP9NNtfW8Oche2DbL2DMVKOVx0zEYN+7VrLT91hxmOMLH0RNWU&#xA;lIS2HJ4A94LzcPyzcR+Z1cysXxa0zkrnsNWWB8u5np1qFjl8SH+9s/jT26iCcPvI&#xA;xuvfSUqRNYGhiDCVgr3cwv3S0W9yiw2nS5W/4aRJj/oRvV10m72Ukg8iX2cvdb4J&#xA;4thtKMKMepV/kEE279ZC&#xA;=UK42&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGRSOAQBEACYvIDktwbC/Ac+4D2DJwb2GnGRkzXMpcImuwU7VBUqY15OeOSX&#xD;&#xA;yBO/nWX/Z+2yoPnJA72mwsW//mUyq1PV+fmllepIR0Vd0BaY2WOxD2RL11aiUEkT&#xD;&#xA;V7uDQFV+lLSHfmubD9GtDz3FzKcbR1IX9HeCGChPt0VYuELt47d/G1ohrpg9pTfZ&#xD;&#xA;4dd7TIWMgWrisDHLmSzDmiFuI3S3ciYFDuQ2v1sinHaa8Zz05dVmOZm35rUwRQnv&#xD;&#xA;E1jVggk3PQLI5Notd72N0aF64hbTPBDmIp7nLwsN8UeG3yXK2dOsFLsYNvTTHq6Z&#xD;&#xA;6I6feUMXtZ6tM5vcq5Rvojp/yyaV0JysDGmNwhrquWO08SARvLarDCi2mIZ2Gqxa&#xD;&#xA;C4fq4MXvMYzkjWkIBjZVg1sk9frkDDE96iaUXaHeBL8+6vubxuWs2CXpPhy/+N/C&#xD;&#xA;tFBMcRphLgSg3ZSNaX1rSaOz28ap/QfGm8oTOFstcjYccvZ1Sx3dDRAcOxjP4/DZ&#xD;&#xA;Du/GT1CVv2+GyWcggQoX1vp2aKx5/W9e49tHW8WEwfkwykoQdnjz8MU4EYfFqViv&#xD;&#xA;8cZAqz1jZhN1lFcQ8pdzmciTBdiJcLtzTKXfg6lX4LfMFFaJ6BoguyOr4xPiQadS&#xD;&#xA;d4El/uvI+wPpZG5+GLLyfyXjX980/sq61WNEhgs8H3ZNGNZf8J8HMC5siwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEDUFmR4rH+OG4hXDmAmYIjeNaw1MFAmRSOAQCGwIFCQlmAYAC&#xD;&#xA;QAkQAmYIjeNaw1PBdCAEGQEIAB0WIQRlr4rUXZXd/H77p7W6IxYeJZ0JzAUCZFI4&#xD;&#xA;BAAKCRC6IxYeJZ0JzBdBD/9nDv+24HZ1VreH5IybOyA07oJIamL3gNztmbPfK3qW&#xD;&#xA;2kxRf6DmrYQoWML8UZW8D9ygQpPN/Axnm/u0zPFvoQ5ITgAjKPhu5W4yrIzm+87U&#xD;&#xA;isEz330S6bjI7+Y751oBxHjbSRGEmXxqq1vsqgHXkGh+P1u41gcQ3uyg5xOqLQx+&#xD;&#xA;if+XE7/2qfT4YSiBNj8ugiKEy8PJmQUG3T+IOKkKbe7ZI9xbcY69nH6N3F5FweY/&#xD;&#xA;Ot7WLNSbr7x9FunOOSiExQBAuwGntVMvzxWuFqOuIMekPr2UaeVynYo6JwVpOJIF&#xD;&#xA;4W3fL1PoCxUsBhmmDdEWGD9iw25ohFpdRuMYzmXgmhU8zrF5+Q7X7sQcXbSF3stY&#xD;&#xA;ozNCKXxP18OpfjI45b3/KVZOzVUx6GQaZ2bw6Pg3vZZ50UZN4r1uCt1nLHlsvhHV&#xD;&#xA;gXUIujMQvD6YFq7auVPCQsQ/HIwF/Tqxy3GNHAPMa2sEhCbnZ5XI+/fXScEscZ+x&#xD;&#xA;cdSCnTyImyJI54S2LB3FRnTbcWFR2fx+Mz1t/1kfZgLF3aWI2Uym/uPnZQJDSjrJ&#xD;&#xA;++J0zvxPYVXMLj1VR3nXGfzZZM3UPTQsO9iZ4JCSmk3OXr9E4+FdbzkmOvMX7K+X&#xD;&#xA;tFr6r89R98MuYoznZFrtELd9es/JpLsAXYjxleMdH9vuFWkF6R+W6OOAoTsNJoIc&#xD;&#xA;R/JTEACJwy3HGIpcKZfVOETIH01l3YgTK5My3+e1LS7Hr5JeTEX9wBQKWG73KRqg&#xD;&#xA;Kqj1YzVYEer6fhoOje1ulhAiHDMm3CsHsCMbMNiAs0vdwhYVc5xoepyNqZ7BI0PB&#xD;&#xA;3XNIxm5XRwtB/gBFnDeCW2pwcarnpazXDsipTYTEzMCqVHWFjmv+6vJTcflcP6nU&#xD;&#xA;7GE0EcONcS9/HWjlD5i0HuaUjY6XYZ57oMo9AEXboY0PrcgzHXkDW1cnj5coecpd&#xD;&#xA;ANppyT20+H+dFlbfbiVIOctnX7WRZduWpeAHGdd8/JhrGZjVkqj44Mq467f3KFNw&#xD;&#xA;D2T6cFtcgqcnsMdhl2vKAEoaSGkEtLJCPiwKW213DxAmeNmf3jIvHSVawhKgODpE&#xD;&#xA;isqaKBtBnxnOAppaCXGlZlbLuBARxBXTGZ46jlH5Qwqh8uHExDEtCr1UOv7eDFtN&#xD;&#xA;WB5YsLtCXBOwvaMJYM18hvE3RBFmRkDWJ5h5Tt5gs/ig29rEOMticvBhLVSSTjLc&#xD;&#xA;oATE+MC/XUhlt+PdXqLdGsVQ9XqKpskBztKv2U4I4rNn6ZiT6hqL3AUoqNalYGiG&#xD;&#xA;GhdGflZqUS6k4J/wQQpBNlhi5En2JDTi5kJ4hU4E5wSq5lnBPuk6Ji66Zk7Qz4Wn&#xD;&#xA;QFPaJTudbZSgN7Q70jDGxcN/Ti/jaebB3OdGDXhqtO8XqRbPrA==&#xD;&#xA;=Ailn&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='514871'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.epp.mpc.help.ui' version='1.11.0.v20240709-0639'>
       <properties size='1'>
         <property name='download.size' value='771092'/>
       </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.m2e.lemminx.feature' version='2.0.700.20240928-0605'>
+      <properties size='1'>
+        <property name='download.size' value='22660'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.wst.xsdeditor.doc.user' version='1.0.800.v201903222120'>
       <properties size='1'>
@@ -5916,6 +6366,13 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.datatools.enablement.ibm.db2.iseries.ui' version='1.3.0.202311071249'>
       <properties size='1'>
         <property name='download.size' value='37903'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.objectweb.asm.util' version='9.7.1'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnNH/IFiEEriAoj7msa1BodJn/XCgkegjDu6cACgkQXCgkegjD&#xA;u6e6sw//e75+2Ari7FBJ56SXe4nts9OYVOfeE1Xlly835FOBmv4WEJySkPOlXSKs&#xA;Lc+MS4bU0pswM80xwX42NaLSNTlihNnt5zIbWSBm7qUOHK2jHVZvIkwIrhreuJem&#xA;FHfYR0ta5SepiX6PshuXluU6Ve3ixjQYhKtAt3swwQfmZIyLOGBcS7iHldsD9Nx8&#xA;W61MM0miFgbWW8Ed7TdhFZNiCrNFlau6NoTaTXPyT/fGzfvd1uo3mGQsr/azQPz+&#xA;WTurUAcQXu7ZRbwgQxGVW+0DRzqjkrq6cvw4/JZpiwce/Bs6MlZfiewxiuIVkNac&#xA;2mtI6Ca9Hp8p/w9y8Gy9V3oSUZFgHn+Gaog9gpGsnOdwZK6n+NDQjiahIcWUpxe5&#xA;YMeWC0PdYRO1ABMkFSA+ayouNab0AC/c7eUQwfegZlVPkNuDPcOzCBLJTkl7ZbKh&#xA;bY/xXjeyeR+lIZ3UQ51EILLX3yfZ9yU/X9VHUpLVoUaQUg34OOcKY3FtzF465NoG&#xA;nEG1uyCfFAN4+z9YY/MwAxp+UQ30x6kGetVrlX0FvNyglfWTxOEA2X4DcCWZKKVD&#xA;h7QmmMlbZE/0DNnFgipCk2t5q2FSCRR86OysiiVxcVYphQLgrX9emejwhOUUdA4Y&#xA;ZLBaCSOngrOtKWHsBIW19RJ/tRFD8varIMy/RNDgJbiA/dNJSr8=&#xA;=Ft9P&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGSil/YBEACrN35cvBfmZEGUEcrqa3zH+Ng/FXoU33TDoAY20vD81br0xeYW&#xD;&#xA;NIRpON6tZT73KIgntWDF/B+nE0g4UicIup9bauGAP7GeuSU0PB8mWhGDkk0tzSq9&#xD;&#xA;XCg226z0PjBWWbHKy0F5fCp+/21SgKK7L8GRT27Vi/vvJglxtzznuPyFrex6k7/g&#xD;&#xA;f6l4Tf3EWr6LUtSLBALbxNbJBikMdu58Mug+nYrS9R6Z12qb8yk/8szq6AYEXKyr&#xD;&#xA;GJWKIYOd09lsCldJQbYot5HNFE4spWQz3P/MGxDSMUkxgfwzv/fRYV6bsvf7EB3r&#xD;&#xA;sCja1J3d3XNi+nctHhwJbxMTSv5J2734p5V/GCbSHyJXOW5hhzjy17nomDeAXQGk&#xD;&#xA;DZkvKp5BTG8bLrWq+PzregRcj2CSQT37x6elQVcC4I2OUOpE51ue8PCYH8CpCXQX&#xD;&#xA;n9TIkwymcz0JkyMgBT05Wrijqw4IgPSQjRfmDs9tnNJYNgFUQBVulfBxZxWzpODG&#xD;&#xA;S+LZvmAiRsyPX4Trej00nStN1vFBV+qdusxt3TQPFFSnHP6A+hYD5q+UZ527caKo&#xD;&#xA;Sez5MZwYQ1QAwnftmoh4UwaxOBoug8OuAl5xsvg5bElNIEZFKAvh+tXnWfmZ7Ft8&#xD;&#xA;4+aOtlmkjomH8jSNF2z1XITxxFcl+3ADupNCGLIo+tEIgMDKudXwzu71eQARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEVsQHpZq+YAiGwOyEc3Iwh8H1jPgFAmSil/YCGwIFCQlmAYAC&#xD;&#xA;QAkQc3Iwh8H1jPjBdCAEGQEIAB0WIQSuICiPuaxrUGh0mf9cKCR6CMO7pwUCZKKX&#xD;&#xA;9gAKCRBcKCR6CMO7p9goD/9eCboq2DDhLybqP4fMiKNi2CbRvziXa1CdH34irbLt&#xD;&#xA;BGILecMxar7V/yR//3d98y9a7EYfe4GyHEZFusIuF4h4aCgqj1wEPr/hu27DLgtG&#xD;&#xA;JN8x8ANBanHKyu1L4By6f2L7ISsps7Q6H57aUGTWx/XFToqc6fauGIzDEDcaV7Ej&#xD;&#xA;YM9no/YdruJQMmMQkuQwLGtm3iGz6By8VHIswHDE3BjwIcVRCogQ2iWfZRUkGg6r&#xD;&#xA;olP16mt86cO+4B4bWrgd2N4oU4WahFccPRj33BvRrTVuTR1WRzo4kLoeij/1Mb/j&#xD;&#xA;D3DNgQGKkEHVupB2lSNGtufqzN1+pUbWwHsVb7ORYTsNfRGecnIoLxOWhO4Ez8KG&#xD;&#xA;6F7bLV69asYJ3QN3iZGfjpLEt+dGSqKzaOxwc939eLnUnye0sSUrVc9Y9kwFK8/b&#xD;&#xA;4SeWXhO8E1bMVjiLdMeZuqNolt32WO5kiakKKB6kipyL7mThH282zj0qGQdBAr77&#xD;&#xA;HHbG3rArQDM81N1FSIcOwJoJofPCLP3HRvscAfgkVdyZa9Jo0GbjvgKwqCHvWF2R&#xD;&#xA;zgIwOR5zLBgKqFydzCdGoNzZOPdSdC97i5AmVhPeaiC1YdFKXQSBeb3dDr62fasP&#xD;&#xA;sJRoY9dLwyBA16YVyJOhpN7s//Nhx3TAtvGvmRySQtKWswIClR2Ihg3wkozcqP4V&#xD;&#xA;D624D/9gzX3qpqf4VF8odzt7DW4DSE1C8bM5gvxfAc913WYDhCssHOuQ1gpUdP9i&#xD;&#xA;k4bIDTEN5QnAGBps5w0tpqJdzznmj0YCZr2XWKpemfPUo5F28QcH4MBgxjs3WVbs&#xD;&#xA;8qELEzXZPbjiTAw3hugYKTHoxcMO26fIJoI7oSoEB+2+MXTsEP8ElGtg23PW+LDn&#xD;&#xA;hd7iYbAwi70vVqwbS8U+yH9b1U0Zsnsd5PaDR5E4p2teW1AkCu14qjSeyORg6tl2&#xD;&#xA;xK5yO1IH3C2+0jMV7oyKCbV720r9Wp7KipS3jN3zZDXi6e7CXXMuejy7EmujdH/B&#xD;&#xA;v9nMEPwijMKpXaYMFa62QLa7qp49oKdI9Ru2VAS9f21JkQK06pYKz5ckvPCFc+V0&#xD;&#xA;kA5kXa0Snwmmi7yryO9ViiTpoNrVmMukt+SRrs37yyQrE/qFSjYDZDzmfmW9Ynig&#xD;&#xA;o0lylvHFVASflqJZ20D6LmhECvfyRfH85+Eod47aiH2JFu8J8UvQjlQeLWmGA81C&#xD;&#xA;kBieHl5qtoEg/sxk3UyPzBaGW0JWe1k+l0P0qEb8GW0046MgEaY6HAwVIP6uIs39&#xD;&#xA;LN2W8/5jiBtHRQl1sLJDshWLmIsg3Aq1c0z0jaoG1DI5ReXs24u/cY3uAUsU9Gi4&#xD;&#xA;I9rLlXk7M4mFRCpLVyPrfykR+za36+mUJJELCEtnB5tEWtrOtQ==&#xD;&#xA;=OqCe&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='94519'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.jst.ws.jaxws.doc.user' version='1.0.400.v201902162216'>
@@ -6022,6 +6479,14 @@
         <property name='download.size' value='195143'/>
       </properties>
     </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.mapping.ui' version='2.17.0.v20240911-1027'>
+      <properties size='1'>
+        <property name='download.size' value='22780'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.wst.internet.monitor.core' version='1.1.0.v202304050316'>
       <properties size='1'>
         <property name='download.size' value='80907'/>
@@ -6054,6 +6519,11 @@
       <repositoryProperties size='1'>
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.editor.lemminx' version='2.0.700.20240928-0605'>
+      <properties size='1'>
+        <property name='download.size' value='253240'/>
+      </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='net.sf.eclipsecs.branding' version='10.20.1.202411071720'>
       <properties size='1'>
@@ -6272,6 +6742,14 @@
       <properties size='1'>
         <property name='download.size' value='412860'/>
       </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.sourcelookup' version='2.1.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='17202'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.apache.commons.collections' version='3.2.2.v201511171945'>
       <properties size='3'>
@@ -6539,6 +7017,11 @@
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.jdt.ui' version='2.1.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='42465'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.userstorage.oauth' version='1.1.0.v20190307-0457'>
       <properties size='1'>
         <property name='download.size' value='59660'/>
@@ -6575,6 +7058,14 @@
     <artifact classifier='org.eclipse.update.feature' id='org.eclipse.epp.package.jee.feature' version='4.33.0.20240905-0613'>
       <properties size='1'>
         <property name='download.size' value='23777'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.converter' version='2.22.0.v20240911-1442'>
+      <properties size='1'>
+        <property name='download.size' value='22874'/>
       </properties>
       <repositoryProperties size='1'>
         <property name='artifact.folder' value='true'/>
@@ -6631,10 +7122,23 @@
         <property name='download.size' value='144098'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.emf.mapping.ui' version='2.13.0.v20240911-1027'>
+      <properties size='1'>
+        <property name='download.size' value='158692'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.mylyn.commons.ui' version='4.4.0.v20240828-0218'>
       <properties size='1'>
         <property name='download.size' value='319202'/>
       </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='org.eclipse.emf.codegen.ui' version='2.27.0.v20240911-1027'>
+      <properties size='1'>
+        <property name='download.size' value='22805'/>
+      </properties>
+      <repositoryProperties size='1'>
+        <property name='artifact.folder' value='true'/>
+      </repositoryProperties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.css.swt' version='0.15.400.v20240321-1245'>
       <properties size='1'>
@@ -6837,6 +7341,11 @@
         <property name='download.size' value='82522'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.apache.batik.i18n' version='1.18.0.v20241009-1200'>
+      <properties size='1'>
+        <property name='download.size' value='21660'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.datatools.enablement.sybase.ase.models' version='1.3.0.202311071249'>
       <properties size='1'>
         <property name='download.size' value='243929'/>
@@ -6897,6 +7406,16 @@
         <property name='download.size' value='23980'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.pde.connector' version='2.2.0.20241001-1350'>
+      <properties size='1'>
+        <property name='download.size' value='40780'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.commonmark' version='0.24.0.v20241021-1700'>
+      <properties size='1'>
+        <property name='download.size' value='240941'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='biz.aQute.bnd.util' version='7.0.0.202310060912'>
       <properties size='3'>
         <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJm1rNLFiEEnjBEBxt1jry35FZzcA5PObwFNksACgkQcA5PObwF&#xA;Nktj8g/+Iftnz6LM3bgQrkbcjzFSmnI33ur4nP2cwu3L7IVESBnIGmfKt87nUsCZ&#xA;fj/6BT+4a5ESuFZDgx3/MVhf4uKLtImo3AivDKqLskz8rH9pWfOyXdnFrYMfhxWv&#xA;JeKELTR+vrmU5KIYhaAyZXYWWcJ8At69wX8ORwCu7rSY9At+FbvuKzUjvzoaNEwQ&#xA;WOAptctbSDwQbBwHkSw/rOUldtgnkFqwjNU1ki4rE0Mev7jMqnaTHwEzpPkHijNo&#xA;E/o85TnRF6os4SRX0Z5N1+VoKLYaNYjCVU6d32R/Wcvw1anGJBiQjwHnT06Z/LtM&#xA;3E7MvwrrgRc7szNnWZODWU2OohwsjotgkRB3R8NkYDYzZFMG35eAP3c+aSVdIjBy&#xA;ELzIkKZfp+fISJRmVCod9+GgLBXqGx9jCjUPoA6zQ0itTtvyEVKKC20zSgN3dl6n&#xA;g5EN9J6t61WPf0iCVdqHs19CIe8fNtwv1ntxGWTOms/td4TOiW+5XOfD2M5i5l9h&#xA;0yUa01NKjc+EGjefd1ge9p2dR7mhF4MjCWs3v5SRXmXGeCYV4Ld0geIK51oQJgGc&#xA;qfc0NXr6s1Jf+yDvCo+X4yDhvvWopn6gfOay6eCk5w79ODwuJuPJKcz7uQJphkGC&#xA;dUMfO/+xHnl6vZNBLMBzVu+E2oSHUEfZO1tzN5wFM0tOne3e0Yo=&#xA;=qlaP&#xA;-----END PGP SIGNATURE-----'/>
@@ -6934,6 +7453,13 @@
       <repositoryProperties size='1'>
         <property name='artifact.folder' value='true'/>
       </repositoryProperties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='org.eclipse.m2e.launching' version='2.1.0.20241011-1559'>
+      <properties size='3'>
+        <property name='pgp.signatures' value='-----BEGIN PGP SIGNATURE-----&#xA;&#xA;iQIzBAABCAAdBQJnRg4GFiEEr5jQ39BUJkIrz2hNgQzs+LonEAgACgkQgQzs+Lon&#xA;EAhJMA//cALrXJk9G2mnUXUaSqrpK0Ul4NV9X49Dfl+LaLOJJrsEClJkW+Sl4HRo&#xA;Zjy7qZEhwO+zdgg9MDdv6+DC/QY778uv4bTBP8SV71QTj6nDC3beSbdK7knHyzpR&#xA;177pVCQfXHOGT4X5kAbel2A82PRyuq4J0HTRSYXwSWWD91VKmpclmCgtUQSskJm7&#xA;jlmVUyR262nfJlBGg0VpmDWbjNeARErSE6nxfEDqeDCQOe70dt1Rbc8E7hn231tf&#xA;PQNRR7ePAPd5+/PGxmnFR+n1QYyOFfBlxokEr8EsownG7rb3wqVIfA6JFOgnFLdB&#xA;FtmbAUtuzHMdFN0cQmUR9CpCzHALOHrdA2SG6HGCNXnD05SKbq7iK9DZUC3ieNvY&#xA;1Qflxlh9EFjdp+estOjsr4qU71DJU22xAzzQYVVFb/1Wfxgi32KEnrLQfrKJe19n&#xA;u7Hm9EHuX3stsvvsCv/4l0NnCAvTBO49UT9K984rzya6gPEq0EDM+2iayGtrwcuY&#xA;+hHFEA+mSK37QV9bsErQksqrcMUALNhw+JNfSYWvDWhR7NMLX5WI9X7sWl749ci7&#xA;xdeUm6oOun9Gxq7rDj6tMK7gEl8/2/0wt6YHWB4KN4IjtcMy+eH289yeuMyc9siD&#xA;P+H0KduQLEdfeJJkhH6FE1SZd6I7rwcQW6pJS/Oq8PsHZ826vhg=&#xA;=mb+f&#xA;-----END PGP SIGNATURE-----'/>
+        <property name='pgp.publicKeys' value='-----BEGIN PGP MESSAGE-----&#xD;&#xA;Version: BCPG v@RELEASE_NAME@&#xD;&#xA;&#xD;&#xA;uQINBGNGkVgBEACZ+Z2ZDGOg+Ge5ntdC+QByQC1A1l503lwUNrIP5YF+V3kdZEo0&#xD;&#xA;Ys3SNKUGsfm6cJ0vi9aXq4R8bjsOfm1u9vQJOqn1d0D2uiwKUz0RZmv5RaV0UzKM&#xD;&#xA;RvhvAeQbYCCVWMyFYMfc1d1aYRhipMSkuAj6sfzDY0DmjIdqzVplyd/IbXtZcr8Q&#xD;&#xA;cTk7qpyHbrlXnDRfLN0lQgLTaDJCLrqeazcM0Hv6UC/fKi9/fF56wF7hmX8yf1K+&#xD;&#xA;JW0pgu6r/7hPZanlfxNsweziN10Lhuj+4oEvsiZfmUTU1tnPKUPMl4HvgyL/PX5x&#xD;&#xA;7PmW17MLE/o4M9NGp1cVGr41SEelleA3yxO6EA/JVlKKaTGI63ChoDYFVbERz0tl&#xD;&#xA;WpynsbeWDOELqRH6wt2djZBbk3CVLPnFHV3Sc7tqDsYPVsw1Xoy2+LKzJCNurkJ4&#xD;&#xA;RWri2j8kzHF3gK9psR7WYlHpMWALIpPMgj1ZiQ6xJO5KFzgxHBplkM2EaapLDzF2&#xD;&#xA;vgcbdZ26Mp+a9/ZLVi3YsG078ewgr4N8t9kKp6EQkQdzB6MoAcjxgXJ99Dzpc9SR&#xD;&#xA;Lkg9Pp+ROwUbQnV4Tn6xnFLAVj/LhACqvfysS7WL7lu8mscNXVKTvbdI76qZtmFJ&#xD;&#xA;g/vLk8B0n0/n3ygjFhlx2Os1XzxzUgy1f4ZARbKULWd+c90VSNm8oHWkJwARAQAB&#xD;&#xA;iQRyBBgBCAAmFiEEs4ZyG2wRQqowRVkFARxSbymyznkFAmNGkVgCGwIFCQlmAYAC&#xD;&#xA;QAkQARxSbymyznnBdCAEGQEIAB0WIQSvmNDf0FQmQivPaE2BDOz4uicQCAUCY0aR&#xD;&#xA;WAAKCRCBDOz4uicQCBlJD/4kAiVpxbFqra6FpXWHG0/uVevQUrvMc5LzpFhkWLi7&#xD;&#xA;7LJNdLEHsrURog22Bsncuzh32PY666cC8GrrOX6qIsq3yJHI0Tm6+TQkkx++2rXV&#xD;&#xA;1xAM2RMHyo+WAfViS7rF5XDLzWWQz+z1uXrCfsz+gEHE/arWKQor2OX3ZV7Ke4jt&#xD;&#xA;11pkCIAujvhv7W+bp1v76mW+XcX9EW/vU5Toy9YWDlfGjMotlURwAvH5QWIx12E9&#xD;&#xA;aeVg0bUbEpE4xl2WKV4CciMb1beK2qeJil5ixNBwUrK3wyUqAy1V683kEnVo8QoW&#xD;&#xA;yHKAAXr5hGjc6AkDzb29Xyv27444k2jVf80sRhHdx2mvzyorw/7v6kcj8+iYltmS&#xD;&#xA;9UCVQI/gjz4uZ9wKHNYubNfQsoGlq05r7vVHkGFTunlYlx7cltt91kWwuNyE1peb&#xD;&#xA;CuDFr4oR2P7vIpVnDDFE2wVzSbxJQFt+Ay3DCCuq1yFGM8NE7jK+z0v/TwDQVwbh&#xD;&#xA;OVgDmaC4UCa79oC06UVJTJmS+qnnmVOoajqgEWWh1Ez4ZnY/CpmHva7F06a24jza&#xD;&#xA;kXaWtvj+HLllgDx3FJsjeY3dlJQECSKFBH1MXmA3PVWZKAHoetLTYt2jlrbpK+Ip&#xD;&#xA;SIrjrTvpHTu7WKjaoeCd8K2EnLUUoW1cAb7JfwQnqBYhFTfbUZyAyMLYJYokTmmM&#xD;&#xA;ZwLWD/0T40bbQdkVuzgHslSoEWH01VFisMQwGzSGpglEZ+UoEi3s9kXfMkM357U/&#xD;&#xA;VyiNM6iShikrT8BAuW/VFa4CO8LELtJnbpKeJ1+/fhCm4O0Osj2cGibUCJKb2T2V&#xD;&#xA;JPIxNIPxgHvZbn4qENqNa9ZcEzWFT/YkKoAaeZlMGFMEQy1/o4AUXSNFZwgdc95r&#xD;&#xA;M1Zov+J89NzWZHU4QL1oKyrbMI3e9PyTgN1LKxjEwV7ObuBaPQBydrJkIpR/L9fp&#xD;&#xA;FzUp3t8Ri1ntyTmIUvPNrLFW3MofTtitX7rMkQ2zKDJY4Pi4XjN0Ka9dPfN8mh/m&#xD;&#xA;5SS6AkOfOQEnfWkopBSCsmaSyhf0Hqet2kzbn4nfBV2RCSCSJPIdVp49WKxdP6sX&#xD;&#xA;2NS+AgYG7ocinK2RvjN2u9w7pDPVzsQHKiW+dMYc96oya6+Af89VjCNkqY7r6bj9&#xD;&#xA;Bi3Cy+no6UkHVQhLpyg2xD4JFc8lWOdJtg1GuiRvZnrZ+u17WVt0w8INsg69YWNi&#xD;&#xA;0YExuI8j5EHtuqtE97VV1a/vv+AC3lrV8NeOJPOvKNYLZ+H1gIB0BRUDYp4Sm0hN&#xD;&#xA;giiFQ1irhwilgVGPV1IVTJuQptQ9pdogkpHpcuP4C8flke59TeErmO0DnL+q2Hd7&#xD;&#xA;3OGb46QkKrimly/wVA/lwMpqHhzITQDfbWDCEJ/w67XQ4vH4Nw==&#xD;&#xA;=HbVw&#xD;&#xA;-----END PGP MESSAGE-----&#xD;&#xA;'/>
+        <property name='download.size' value='114076'/>
+      </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.wst.xml.core' version='1.2.900.v202405130132'>
       <properties size='1'>
