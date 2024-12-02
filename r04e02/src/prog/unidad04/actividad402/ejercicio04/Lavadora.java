@@ -163,5 +163,6 @@ public class Lavadora {
     return precioFinal;
   }
   
+  //Faltan los metodos privados y terminar el metodo getPrecioFinal
   
 }
