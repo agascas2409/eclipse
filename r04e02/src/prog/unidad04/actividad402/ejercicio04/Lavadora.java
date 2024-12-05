@@ -1,5 +1,8 @@
 package prog.unidad04.actividad402.ejercicio04;
 
+/**
+ * Clase que representa una lavadora
+ */
 public class Lavadora {
 
   //Constantes
@@ -9,27 +12,38 @@ public class Lavadora {
   public static final String COLOR_ROJO = "rojo";
   public static final String COLOR_AZUL = "azul";
   public static final String COLOR_GRIS = "gris";
-  //Consumo Energetico
-  public static final char CONSUMO_A = 'A';
-  public static final char CONSUMO_B = 'B';
-  public static final char CONSUMO_C = 'C';
-  public static final char CONSUMO_D = 'D';
-  public static final char CONSUMO_E = 'E';
-  public static final char CONSUMO_F = 'F';
-  //Precio por consumo
-  public static final int PRECIO_A = 100;
-  public static final int PRECIO_B = 80;
-  public static final int PRECIO_C = 60;
-  public static final int PRECIO_D = 40;
-  public static final int PRECIO_E = 30;
-  public static final int PRECIO_F = 10;
+  
+  //Consumo Energetico minimo y maximo
+  public static final char CONSUMO_MINIMO = 'A';
+  public static final char CONSUMO_MAXIMO = 'F';
+  
+  //Valores por defecto
+  private static final double DEFECTO_PRECIO_BASE = 200;
+  private static final String DEFECTO_COLOR = COLOR_BLANCO;
+  private static final char DEFECTO_CONSUMO_ENERGETICO = CONSUMO_MAXIMO;
+  private static final double DEFECTO_PESO = 15;
+  private static final double DEFECTO_CARGA = 5;
+  
+  //Suplemento por precio por consumo
+  private static final int PRECIO_CONSUMO_A = 100;
+  private static final int PRECIO_CONSUMO_B = 80;
+  private static final int PRECIO_CONSUMO_C = 60;
+  private static final int PRECIO_CONSUMO_D = 40;
+  private static final int PRECIO_CONSUMO_E = 30;
+  private static final int PRECIO_CONSUMO_F = 10;
+  
   //Suplemento por peso
-  public static final int PRECIO_PESO_MENOS_20_KG = 10;
-  public static final int PRECIO_PESO_20_KG = 50;
-  public static final int PRECIO_PESO_50_KG = 80;
-  public static final int PRECIO_PESO_80_KG = 100;
+  private static final double PESO_TRAMO_1 = 20;
+  private static final double PESO_TRAMO_2 = 50;
+  private static final double PESO_TRAMO_3 = 80;
+  private static final double PRECIO_PESO_TRAMO_1 = 10;
+  private static final double PRECIO_PESO_TRAMO_2 = 50;
+  private static final double PRECIO_PESO_TRAMO_3 = 80;
+  private static final double PRECIO_PESO_TRAMO_4 = 100;
+  
   //Suplemento por carga
-  public static final int PRECIO_CARGA_MAS_30_KG = 50;
+  private static final double LIMITE_CARGA = 30;
+  private static final double PRECIO_EXCESO_CARGA = 50;
   
   //Atributos
   //Precio base de la lavadora
@@ -48,24 +62,24 @@ public class Lavadora {
    * Constructor por defecto
    */
   public Lavadora() {
-    this.precioBase = 200;
-    this.color = COLOR_BLANCO;
-    this.energia = 'F';
-    this.peso = 15;
-    this.carga = 5;
+    this.precioBase = DEFECTO_PRECIO_BASE;
+    this.color = DEFECTO_COLOR;
+    this.energia = DEFECTO_CONSUMO_ENERGETICO;
+    this.peso = DEFECTO_PESO;
+    this.carga = DEFECTO_CARGA;
   }
   
   /**
    * Constructor con algunos parametros. El resto toma los valores por defecto
-   * @param precio Precio de la nueva lavadora
-   * @param peso Peso de la nueva lavadora
+   * @param precio Precio de la nueva lavadora (no deberia ser menor que 0)
+   * @param peso Peso de la nueva lavadora (no deberia ser 0 o menor)
    */
   public Lavadora(double precio, double peso) {
     this.precioBase = precio;
-    this.color = COLOR_BLANCO;
-    this.energia = 'F';
+    this.color = DEFECTO_COLOR;
+    this.energia = DEFECTO_CONSUMO_ENERGETICO;
     this.peso = peso;
-    this.carga = 5;
+    this.carga = DEFECTO_CARGA;
   }
   
   /**
@@ -76,11 +90,26 @@ public class Lavadora {
    * @param energia Energia de la nueva lavadora
    * @param carga Carga de la nueva lavadora
    */
-  public Lavadora(double precio, double peso, String color, char energia, double carga) {
-    this.precioBase = precio;
-    this.color = color;
-    this.energia = energia;
+  public Lavadora(double precioBase, double peso, String color, char energia, double carga) {
+    if (precioBase < 0) {
+      System.out.println("Error. Precio base no válido");
+    }
+    this.precioBase = precioBase;
+    if (!color.equals(COLOR_AZUL) && !color.equals(COLOR_GRIS) && !color.equals(COLOR_NEGRO) && !color.equals(COLOR_ROJO) && !color.equals(COLOR_BLANCO)) {
+      System.out.println("Error. El color proporcionado no es válido");
+    }
+    this.color = comprobarColor(color);
+    if (energia < CONSUMO_MINIMO || energia > CONSUMO_MAXIMO) {
+      System.out.println("Error. Consumo energético no válido");
+    }
+    this.energia = comprobarConsumo(energia);
+    if (peso <= 0) {
+      System.out.println("Error. Peso es cero o menor");
+    }
     this.peso = peso;
+    if (carga <= 0) {
+      System.out.println("Error. Carga es cero o menor");
+    }
     this.carga = carga;
   }
   
@@ -131,38 +160,66 @@ public class Lavadora {
    */
   public double getPrecioFinal() {
     double precioFinal = precioBase;
+    
+    //Suplemento por energia
     switch (energia) {
-    case CONSUMO_A: {
-      precioFinal += PRECIO_A;
+    case 'A':
+      precioFinal += PRECIO_CONSUMO_A;
       break;
-    }
-    case CONSUMO_B: {
-      precioFinal += PRECIO_B;
+    case 'B':
+      precioFinal += PRECIO_CONSUMO_B;
       break;
-    }
-    case CONSUMO_C: {
-      precioFinal += PRECIO_C;
+    case 'C':
+      precioFinal += PRECIO_CONSUMO_C;
       break;
-    }
-    case CONSUMO_D: {
-      precioFinal += PRECIO_D;
+    case 'D':
+      precioFinal += PRECIO_CONSUMO_D;
       break;
-    }
-    case CONSUMO_E: {
-      precioFinal += PRECIO_E;
+    case 'E':
+      precioFinal += PRECIO_CONSUMO_E;
       break;
-    }
-    case CONSUMO_F: {
-      precioFinal += PRECIO_F;
+    case 'F':
+      precioFinal += PRECIO_CONSUMO_F;
       break;
-    }
     default:
-      throw new IllegalArgumentException("Unexpected value: " + energia);
+      System.out.printf("Error. Consumo energético no válido (%c)%n", energia);
+      break;
+    }
+  
+    // Añadimos el plus por peso
+    if (peso < PESO_TRAMO_1) {
+      precioFinal += PRECIO_PESO_TRAMO_1;
+    } else if ((peso >= PESO_TRAMO_1) && (peso < PESO_TRAMO_2)) {
+      precioFinal += PRECIO_PESO_TRAMO_2;
+    } else if ((peso >= PESO_TRAMO_2) && (peso < PESO_TRAMO_3)) {
+      precioFinal += PRECIO_PESO_TRAMO_3;
+    } else {
+      precioFinal += PRECIO_PESO_TRAMO_4;
     }
     
+    // Y por último añadimos plus por carga
+    if (carga > LIMITE_CARGA) {
+      precioFinal += PRECIO_EXCESO_CARGA;
+    }
+    
+    //Devolvemos el precioFinal
     return precioFinal;
   }
   
-  //Faltan los metodos privados y terminar el metodo getPrecioFinal
+  //Metodos privados
+  private char comprobarConsumo(char energia) {
+    if ((energia >= 'A') && (energia <= 'E')) {
+      return energia;
+    } else {
+      return DEFECTO_CONSUMO_ENERGETICO;
+    }
+  }
   
+  private String comprobarColor(String color) {
+    if (color.equals(COLOR_AZUL) || color.equals(COLOR_GRIS) || color.equals(COLOR_NEGRO) || color.equals(COLOR_ROJO)) {
+      return color;
+    } else {
+      return DEFECTO_COLOR;
+    }
+  }
 }
