@@ -1,5 +1,6 @@
 package prog.unidad04.practica406.libreria;
 
+
 /**
  * Clase que representa una fecha a partir del 1/1/1900
  */
@@ -19,12 +20,17 @@ public class Fecha {
      * @param dia Día de la fecha. Debe valer entre 1 y lacantidad de días del mes. Tiene en cuebta los años bisiestos
      * @param mes Mes de la fecha. Debe valer entre 1 y 12
      * @param anyo Año de la fecha. Debe ser mayor o igual a 1900
+     * @throws 
      */
     public Fecha(int dia, int mes, int anyo) {
-      //falta el trhows
-      this.dia = dia;
-      this.mes = mes;
-      this.anyo = anyo;
+      try {
+        //falta el trhows
+        this.dia = dia;
+        this.mes = mes;
+        this.anyo = anyo;
+      } catch (IllegalArgumentException e) {
+        System.out.println("hola");
+      }
     }
     
     //Metodos
@@ -45,7 +51,7 @@ public class Fecha {
      * @return Número de días transcurridos entre esta fecha y la proporcionada
      */
     public long diasEntre(Fecha fecha) {
-    //Buscar clase que compare fechas
+      //Buscar clase que compare fechas
       long fechas = 0;
       return fechas;
       //Falta un throws
@@ -56,7 +62,7 @@ public class Fecha {
      * @return Número de días transcurridos entre esta fecha y la fecha de inicio del cxalendario
      */
     public long diasTranscurridos() {
-    //Buscar clase que compare fechas
+      //Buscar clase que compare fechas
       long fechas = 0;
       return fechas;
       //Falta un throws
