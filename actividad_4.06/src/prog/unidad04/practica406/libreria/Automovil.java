@@ -1,7 +1,5 @@
 package prog.unidad04.practica406.libreria;
 
-import java.util.IllegalFormatCodePointException;
-
 /**
  * Clase que representa un automovil. Es un vehiculo de cuatro ruedas con un color y un númerode plazas
  */
