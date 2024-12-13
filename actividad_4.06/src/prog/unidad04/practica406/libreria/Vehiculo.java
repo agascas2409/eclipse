@@ -35,7 +35,7 @@ public class Vehiculo {
    * @return Matrícula del vehículo
    */
   public String getMatricula() {
-    //Teer encuenta la estructura de la matricula 0000 ABC(con o sin espacios)
+    //Tener encuenta la estructura de la matricula 0000 ABC(con o sin espacios)
     //PREGUNTAR: tenemos en cuenta que las matriculas no tienen vocales o eso ya no lo controlamos
     String matricula = "";
     return matricula;

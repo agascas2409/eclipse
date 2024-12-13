@@ -19,6 +19,11 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
    * Color negro
    */
   public static final String COLOR_NEGRO = "negro";
+  //Número de plazas
+  private static final int PLAZAS_0_EMISIONES = 1;
+  private static final int PLAZAS_ECO = 2;
+  private static final int PLAZAS_A = 4;
+  private static final int PLAZAS_B = 5;
   
   //Atributos
   private String color;
