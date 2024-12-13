@@ -21,7 +21,12 @@ public class Vehiculo {
   //faltan los throws
   protected Vehiculo(String matricula, Fecha fechaMatriculacion){
     //corregir
-    this.matricula = matricula;
+    if (compruebaMatricula(matricula)) {
+      this.matricula = matricula;
+    } else {
+      throw new IllegalArgumentException();
+    }
+    
     if (fechaMatriculacion.compruebaFechaMatriculacion(fechaMatriculacion) < 1900) {
       this.fechaMatriculacion = fechaMatriculacion;
     } else {
@@ -67,8 +72,8 @@ public class Vehiculo {
     return "Matricula: " + getMatricula() + ", Fecha Matriculacón: " + getFechaMatriculacion();
   }
   
-  private String compruebaMatricula() {
-    return "";
+  private boolean compruebaMatricula(String matricula) {
+    return false;
   }
   
   
