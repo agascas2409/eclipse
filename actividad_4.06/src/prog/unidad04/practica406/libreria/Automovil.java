@@ -3,7 +3,6 @@ package prog.unidad04.practica406.libreria;
 /**
  * Clase que representa un automovil. Es un vehiculo de cuatro ruedas con un color y un númerode plazas
  */
-//Falta la interfaz
 public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental{
 
   //Constantes
@@ -34,29 +33,29 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
    * @param matricula Matricula del vehículo. Debe tener un formato válido NNNN AAA donde NNNN son 4 dígitos y AAA son tres letras MAYÚSCULAS. Entre ellas puede haber cuantos espacios se quiera (incluido ninguno)
    * @param fechaMatriculacion Fecha de matriculación del vehiculo. No puede ser null
    * @param color Color del vehiculo. Sólo se permite uno de COLOR_BLANCO, COLOR_NEGRO, COLOR_AZUL
-   * @param plazasNúmero de plazas del vehículo. Debe ser mayor que o (por lo menos tiene que tener una para el conductor)
+   * @param plazasNúmero de plazas del vehículo. Debe ser mayor que o (por lo menos tiene que tener una para el conductor) 
    * @throws IllegalArgumentException Si la matrícula, el color o el número de plazas no son válidas
    * @throws NullPointerException Si fechaMatriculacion o color son null 
    */
   public Automovil(String matricula, Fecha fechaMatriculacion, String color, int plazas) {
     super(matricula, fechaMatriculacion);
-      //comprobar los throws
-      //controlar los colores
-      if(color == null) {
-        throw new NullPointerException();
-      } else if (color != COLOR_AZUL || color != COLOR_BLANCO || color != COLOR_NEGRO) {
-        throw new IllegalArgumentException();
-      } else {
-        this.color = color; 
-      }
+    //comprobar los throws
+    //controlar los colores
+    if(color == null) {
+      throw new NullPointerException();
+    } else if (color != COLOR_AZUL || color != COLOR_BLANCO || color != COLOR_NEGRO) {
+      throw new IllegalArgumentException();
+    } else {
+      this.color = color; 
+    }
       
-      //controlar que no sea 0 o menor
-      if (plazas <= 0) {
-        throw new IllegalArgumentException();
-      } else {
-        this.plazas = plazas;
-      }
-      VEHICULOS_MATRICULADOS++;
+    //controlar que no sea 0 o menor
+    if (plazas <= 0) {
+      throw new IllegalArgumentException();
+    } else {
+      this.plazas = plazas;
+    }
+    VEHICULOS_MATRICULADOS++;
   }
   
   //Metodos
@@ -78,7 +77,7 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
     if (plazas > PLAZAS_B) {
       return "B";
     } else if (plazas >= PLAZAS_A) {
-        return "A";
+      return "A";
     } else if (plazas >= PLAZAS_ECO) {
       return "ECO";
     } else {

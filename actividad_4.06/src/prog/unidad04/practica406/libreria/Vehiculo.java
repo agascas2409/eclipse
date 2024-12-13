@@ -13,10 +13,21 @@ public class Vehiculo {
   protected static int VEHICULOS_MATRICULADOS;
   
   //Constructores
-  protected Vehiculo(String matricula, Fecha fechaMatriculacion) {
+  /**
+   * 
+   * @param matricula
+   * @param fechaMatriculacion
+   */
+  //faltan los throws
+  protected Vehiculo(String matricula, Fecha fechaMatriculacion){
     //corregir
     this.matricula = matricula;
-    this.fechaMatriculacion = fechaMatriculacion;
+    if (fechaMatriculacion.compruebaFechaMatriculacion(fechaMatriculacion) < 1900) {
+      this.fechaMatriculacion = fechaMatriculacion;
+    } else {
+      throw new IllegalArgumentException();
+    }
+    
   }
   
   //Metodos
@@ -24,10 +35,9 @@ public class Vehiculo {
    * Obtiene la fecha de matriculación del vehículo
    * @return Fecha de matriculación del vehículo
    */
-  public Fecha getFechaMatriculacion() throws FechaException{
+  public Fecha getFechaMatriculacion(){
     //Ver como se añaden fechas diferentes
-    Fecha fecha = new Fecha(16,12,2024);
-    return fecha;
+    return fechaMatriculacion;
   }
   
   /**
@@ -37,7 +47,6 @@ public class Vehiculo {
   public String getMatricula() {
     //Tener encuenta la estructura de la matricula 0000 ABC(con o sin espacios)
     //PREGUNTAR: tenemos en cuenta que las matriculas no tienen vocales o eso ya no lo controlamos
-    String matricula = "";
     return matricula;
   }
   
@@ -55,6 +64,12 @@ public class Vehiculo {
    */
   //arreglar getFechaMatriculacion con un metodo privado
   public String toString() {
-    return "Matricula: " + getMatricula() + ", Fecha Matriculacón: ";// + getFechaMatriculacion();
+    return "Matricula: " + getMatricula() + ", Fecha Matriculacón: " + getFechaMatriculacion();
   }
+  
+  private String compruebaMatricula() {
+    return "";
+  }
+  
+  
 }

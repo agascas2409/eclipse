@@ -20,12 +20,14 @@ public class Motocicleta extends Vehiculo implements MaquinaConDistintivoAmbient
    * @param matricula Matricula del vehículo. Debe tener un formato válido NNNN AAA donde NNNN son 4 dígitos y AAA son tres letras MAYÚSCULAS. Entre ellas puede haber cuantos espacios se quiera (incluido ninguno)
    * @param fechaMatriculacion Fecha de matriculación del vehiculo. No puede ser null
    * @param cilindradas Cilindrada de la motocicleta (debe ser superior o igual a 50)
+   * @throws IllegalArgumentException Si alguno de los parametros no es válido
+   * @throws NullPointerException Si la matrícula o fechaMatriculacion son null
    */
   public Motocicleta(String matricula, Fecha fechaMatriculacion, int cilindradas) {
     //faltan dos throws
     super(matricula, fechaMatriculacion);
     if (cilindradas < 50) {
-      //throw
+      throw new IllegalArgumentException();
     } else {
       this.cilindradas = cilindradas; 
     }
@@ -49,9 +51,9 @@ public class Motocicleta extends Vehiculo implements MaquinaConDistintivoAmbient
   //Falta la interfaz
   public String getDistintivo(){
     if (cilindradas > CILINDRADAS_B) {
-        return "B";
+      return "B";
     } else if (cilindradas > CILINDRADAS_A) {
-        return "A"; 
+      return "A"; 
     } else if (cilindradas >= CILINDRADAS_ECO) {
       return "ECO";
     } else {

@@ -40,14 +40,14 @@ public class Fecha {
    * @param anyo Año de la fecha. Debe ser mayor o igual a 1900
    * @throws IllegalArgumentException Si los párametros no se corresponden con una fecha válida
    */
-   public Fecha(int dia, int mes, int anyo) throws FechaException {
+   public Fecha(int dia, int mes, int anyo) throws IllegalArgumentException {
      try {
        //los throws se encuentran dentro de los metodos privados
-         this.dia = diasDelMes();
-         this.mes = compruebaMes();
-         this.anyo = compruebaAnyo();
+       this.dia = diasDelMes();
+       this.mes = compruebaMes();
+       this.anyo = compruebaAnyo();
      } catch (IllegalArgumentException e) {
-       throw new FechaException("La fecha introducida es erronea");
+       throw new IllegalArgumentException();
      }
    }
     
@@ -69,12 +69,17 @@ public class Fecha {
     * Obtiene el número de días transcurridos entre esta fecha y otra posterior que se proporciona
     * @param fecha Otra fecha posterior a esta
     * @return Número de días transcurridos entre esta fecha y la proporcionada
+    * @throws FechaException Si la fecha proporcionada es anterior a esta
     */
-   public long diasEntre(Fecha fecha) {
-     //Buscar clase que compare fechas
-     long fechas = 0;
-     return fechas;
-     //Falta un throws
+   public long diasEntre(Fecha fecha) throws FechaException{
+     boolean hola = true;
+     if (hola) {
+      long fechas = 0;
+      return fechas;
+    } else {
+      throw new FechaException();
+    }
+      
    }
     
    /**
@@ -135,6 +140,15 @@ public class Fecha {
      //hacer que se escriba el mes con letra
      //retocar el return
      return this.dia + " de " + mesEnLetras() + " de " + this.anyo;
+   }
+   
+   /**
+    * 
+    * @param fecha
+    * @return
+    */
+   protected int compruebaFechaMatriculacion(Fecha fecha) {
+     return fecha.compara(fecha);
    }
    
    /**
@@ -263,4 +277,6 @@ public class Fecha {
       return mes;
     }
     }
+    
+
 }
