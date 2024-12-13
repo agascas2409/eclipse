@@ -24,9 +24,9 @@ public class Vehiculo {
    * Obtiene la fecha de matriculación del vehículo
    * @return Fecha de matriculación del vehículo
    */
-  public Fecha getFechaMatriculacion() {
+  public Fecha getFechaMatriculacion() throws FechaException{
     //Ver como se añaden fechas diferentes
-    Fecha fecha = new Fecha(10, 12, 2024);
+    Fecha fecha = new Fecha(16,12,2024);
     return fecha;
   }
   
@@ -50,7 +50,11 @@ public class Vehiculo {
     return VEHICULOS_MATRICULADOS;
   }
   
+  /**
+   * 
+   */
+  //arreglar getFechaMatriculacion con un metodo privado
   public String toString() {
-    return "Matricula: " + getMatricula() + ", Fecha Matriculacón: " + getFechaMatriculacion();
+    return "Matricula: " + getMatricula() + ", Fecha Matriculacón: ";// + getFechaMatriculacion();
   }
 }

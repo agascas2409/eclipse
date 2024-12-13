@@ -6,7 +6,7 @@ package prog.unidad04.practica406.libreria;
 public class FechaException extends Exception{
 
   //Constructor
-  public FechaException(String mensaje) {
+  protected FechaException(String mensaje) {
     super(mensaje);
   }
 }

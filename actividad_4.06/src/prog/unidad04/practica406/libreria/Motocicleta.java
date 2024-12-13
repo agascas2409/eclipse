@@ -48,18 +48,14 @@ public class Motocicleta extends Vehiculo implements MaquinaConDistintivoAmbient
    */
   //Falta la interfaz
   public String getDistintivo(){
-    if (cilindradas < CILINDRADAS_B) {
-      if (cilindradas <= CILINDRADAS_A) {
-        if (cilindradas < CILINDRADAS_ECO) {
-          return "0";
-        } else {
-          return "ECO";
-        }
-      } else {
-        return "A";
-      }
+    if (cilindradas > CILINDRADAS_B) {
+        return "B";
+    } else if (cilindradas > CILINDRADAS_A) {
+        return "A"; 
+    } else if (cilindradas >= CILINDRADAS_ECO) {
+      return "ECO";
     } else {
-      return "B";
+      return "0";
     }
   }
   

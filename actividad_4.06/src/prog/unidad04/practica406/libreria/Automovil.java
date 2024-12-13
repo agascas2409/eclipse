@@ -35,16 +35,21 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
    * @param fechaMatriculacion Fecha de matriculación del vehiculo. No puede ser null
    * @param color Color del vehiculo. Sólo se permite uno de COLOR_BLANCO, COLOR_NEGRO, COLOR_AZUL
    * @param plazasNúmero de plazas del vehículo. Debe ser mayor que o (por lo menos tiene que tener una para el conductor)
+   * @throws IllegalArgumentException Si la matrícula, el color o el número de plazas no son válidas
+   * @throws NullPointerException Si fechaMatriculacion o color son null 
    */
   public Automovil(String matricula, Fecha fechaMatriculacion, String color, int plazas) {
     super(matricula, fechaMatriculacion);
       //comprobar los throws
       //controlar los colores
-      if (color != COLOR_AZUL || color != COLOR_BLANCO || color != COLOR_NEGRO) {
+      if(color == null) {
+        throw new NullPointerException();
+      } else if (color != COLOR_AZUL || color != COLOR_BLANCO || color != COLOR_NEGRO) {
         throw new IllegalArgumentException();
       } else {
         this.color = color; 
       }
+      
       //controlar que no sea 0 o menor
       if (plazas <= 0) {
         throw new IllegalArgumentException();
@@ -70,19 +75,16 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
    */
   //Falta la interfaz
   public String getDistintivo(){
-    if (plazas < PLAZAS_B) {
-      if (plazas < PLAZAS_A) {
-        if (plazas < PLAZAS_ECO) {
-          return "0";
-        } else {
-          return "ECO";
-        }
-      } else {
-        return "A";
-      }
-    } else {
+    if (plazas > PLAZAS_B) {
       return "B";
+    } else if (plazas >= PLAZAS_A) {
+        return "A";
+    } else if (plazas >= PLAZAS_ECO) {
+      return "ECO";
+    } else {
+      return "0";
     }
+      
   }
   
   /**

@@ -1,5 +1,5 @@
 package prog.unidad04.practica406.libreria;
-import java.util.Calendar;
+import java.time.LocalDate;
 
 /**
  * Clase que representa una fecha a partir del 1/1/1900
@@ -40,14 +40,14 @@ public class Fecha {
    * @param anyo Año de la fecha. Debe ser mayor o igual a 1900
    * @throws IllegalArgumentException Si los párametros no se corresponden con una fecha válida
    */
-   public Fecha(int dia, int mes, int anyo) {
+   public Fecha(int dia, int mes, int anyo) throws FechaException {
      try {
        //los throws se encuentran dentro de los metodos privados
-       this.dia = diasDelMes();
-       this.mes = compruebaMes();
-       this.anyo = compruebaAnyo();
+         this.dia = diasDelMes();
+         this.mes = compruebaMes();
+         this.anyo = compruebaAnyo();
      } catch (IllegalArgumentException e) {
-       System.out.println("hola");
+       throw new FechaException("La fecha introducida es erronea");
      }
    }
     
@@ -59,6 +59,8 @@ public class Fecha {
     */
    public int compara(Fecha fecha) {
      //Buscar clase que compare fechas
+     //LocalDate hoy = new LocalDate();
+     //hoy.now();
      int fechas = 0;
      return fechas;
    }
