@@ -20,7 +20,6 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
    */
   public static final String COLOR_NEGRO = "negro";
   //Número de plazas
-  private static final int PLAZAS_0_EMISIONES = 1;
   private static final int PLAZAS_ECO = 2;
   private static final int PLAZAS_A = 4;
   private static final int PLAZAS_B = 5;
@@ -38,21 +37,21 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
    * @param plazasNúmero de plazas del vehículo. Debe ser mayor que o (por lo menos tiene que tener una para el conductor)
    */
   public Automovil(String matricula, Fecha fechaMatriculacion, String color, int plazas) {
-    //faltan dos throws
     super(matricula, fechaMatriculacion);
-    //controlar los colores
-    if (color != COLOR_AZUL || color != COLOR_BLANCO || color != COLOR_NEGRO) {
-      //throw
-    } else {
-      this.color = color; 
-    }
-    //controlar que no sea 0 o menor
-    if (plazas <= 0) {
-      //throw
-    } else {
-      this.plazas = plazas;
-    }
-    VEHICULOS_MATRICULADOS++;
+      //comprobar los throws
+      //controlar los colores
+      if (color != COLOR_AZUL || color != COLOR_BLANCO || color != COLOR_NEGRO) {
+        throw new IllegalArgumentException();
+      } else {
+        this.color = color; 
+      }
+      //controlar que no sea 0 o menor
+      if (plazas <= 0) {
+        throw new IllegalArgumentException();
+      } else {
+        this.plazas = plazas;
+      }
+      VEHICULOS_MATRICULADOS++;
   }
   
   //Metodos
@@ -71,9 +70,9 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
    */
   //Falta la interfaz
   public String getDistintivo(){
-    if (plazas < 5) {
-      if (plazas < 4) {
-        if (plazas < 2) {
+    if (plazas < PLAZAS_B) {
+      if (plazas < PLAZAS_A) {
+        if (plazas < PLAZAS_ECO) {
           return "0";
         } else {
           return "ECO";
