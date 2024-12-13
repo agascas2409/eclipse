@@ -219,40 +219,36 @@ public class Fecha {
     * @return Devuelve los dias o lanza una excepción si no es posible ese numero de dia
     */
   private int diasDelMes() {
-    if (dia > 0) {
-      if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
-        if (dia <= MES_CON_31_DIAS) {
+    if (mes == 2) {
+      if (esBisiesto()) {
+        if (dia <= MES_FEBRERO_BISIESTO) {
           return dia;
         } else {
           throw new IllegalArgumentException();
-        }
-      } else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
-        if (dia <= MES_CON_30_DIAS) {
-          return dia;
-        } else {
-          throw new IllegalArgumentException();
-        }
-      } else if (mes == 2) {
-        if (esBisiesto()) {
-          if (dia <= MES_FEBRERO_BISIESTO) {
-            return dia;
-          } else {
-            throw new IllegalArgumentException();
-          }
-        } else {
-          if (dia <= MES_FEBRERO) {
-            return dia;
-          } else {
-            throw new IllegalArgumentException();
-          }
         }
       } else {
+        if (dia <= MES_FEBRERO) {
+          return dia;
+        } else {
+          throw new IllegalArgumentException();
+        }
+      }
+    } else if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
+      if (dia <= MES_CON_31_DIAS) {
+        return dia;
+      } else {
         throw new IllegalArgumentException();
-      } 
+      }
+    } else if(mes == 4 || mes == 6 || mes == 9 || mes == 11) {
+      if (dia <= MES_CON_30_DIAS) {
+        return dia;
+      } else {
+        throw new IllegalArgumentException();
+      }
     } else {
       throw new IllegalArgumentException();
     }
-   }
+  }
     
     /**
      * Comprueba que el año sea mayor al año de inicio
