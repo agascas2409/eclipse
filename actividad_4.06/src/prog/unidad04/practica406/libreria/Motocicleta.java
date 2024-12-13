@@ -6,6 +6,10 @@ package prog.unidad04.practica406.libreria;
 public class Motocicleta extends Vehiculo implements MaquinaConDistintivoAmbiental{
 
   //Constantes
+  private static final int CILINDRADAS_ECO = 75;
+  private static final int CILINDRADAS_A = 125;
+  private static final int CILINDRADAS_B = 500;
+  
   //Atributos
   private int cilindradas;
   
@@ -44,9 +48,9 @@ public class Motocicleta extends Vehiculo implements MaquinaConDistintivoAmbient
    */
   //Falta la interfaz
   public String getDistintivo(){
-    if (cilindradas < 500) {
-      if (cilindradas <= 125) {
-        if (cilindradas < 75) {
+    if (cilindradas < CILINDRADAS_B) {
+      if (cilindradas <= CILINDRADAS_A) {
+        if (cilindradas < CILINDRADAS_ECO) {
           return "0";
         } else {
           return "ECO";
