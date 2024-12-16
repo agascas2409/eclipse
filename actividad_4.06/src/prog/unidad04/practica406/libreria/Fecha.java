@@ -15,7 +15,69 @@ public class Fecha {
   /**
    * Dias que tiene un año
    */
-  private static final int DIAS_POR_ANYO = 365; 
+  private static final int DIAS_POR_ANYO = 365;
+  //Dias por mes
+  /**
+   * Meses que tienen 31 días
+   */
+  private static final int MES_CON_31_DIAS = 31;
+  /**
+   * Meses que tienen 30 días
+   */
+  private static final int MES_CON_30_DIAS = 30;
+  /**
+   * Meses que tienen 28 días
+   */
+  private static final int MES_FEBRERO = 28;
+  /**
+   * Meses que tienen 29 días
+   */
+  private static final int MES_FEBRERO_BISIESTO = 29;
+  //Meses del año en numero
+  /**
+   * Dias en Noviembre
+   */
+  private static final int MES_DE_NOVIEMBRE = 11;
+  /**
+   * Dias en Octubre
+   */
+  private static final int MES_DE_OCTUBRE = 10;
+  /**
+   * Dias en Septiembre
+   */
+  private static final int MES_DE_SEPTIEMBRE = 9;
+  /**
+   * Dias en Agosto
+   */
+  private static final int MES_DE_AGOSTO = 8;
+  /**
+   * Dias en Julio
+   */
+  private static final int MES_DE_JULIO = 7;
+  /**
+   * Dias en Junio
+   */
+  private static final int MES_DE_JUNIO = 6;
+  /**
+   * Dias en Mayo
+   */
+  private static final int MES_DE_MAYO = 5;
+  /**
+   * Dias en Abril
+   */
+  private static final int MES_DE_ABRIL = 4;
+  /**
+   * Dias en Marzo
+   */
+  private static final int MES_DE_MARZO = 3;
+  /**
+   * Dias en Febrero
+   */
+  private static final int MES_DE_FEBRERO = 2;
+  /**
+   * Dias en Enero
+   */
+  private static final int MES_DE_ENERO = 1;
   //Meses del año en letras
   /**
    * Enero
@@ -65,23 +127,7 @@ public class Fecha {
    * Diciembre
    */
   private static final String DICIEMBRE = "Diciembre";
-  //Dias por mes
-  /**
-   * Meses que tienen 31 días
-   */
-  private static final int MES_CON_31_DIAS = 31;
-  /**
-   * Meses que tienen 30 días
-   */
-  private static final int MES_CON_30_DIAS = 30;
-  /**
-   * Meses que tienen 28 días
-   */
-  private static final int MES_FEBRERO = 28;
-  /**
-   * Meses que tienen 29 días
-   */
-  private static final int MES_FEBRERO_BISIESTO = 29;
+  
     
   //Atributos
   /**
@@ -144,28 +190,47 @@ public class Fecha {
     * @return Número de días transcurridos entre esta fecha y la fecha de inicio del cxalendario
     */
    public long diasTranscurridos() {
-     //se comprueban los años bisiestos para añadir un dia mas al año
-     int bisiestos = 0;
-     for (int anyoTemporal = ANYO_INICIO; anyoTemporal <= this.anyo; anyoTemporal++) {
-       if (esBisiesto(anyoTemporal) && (mes > 2 || anyoTemporal != 0)) {
-         bisiestos++;
+     
+     int cantidadBisiestos = 0;
+     
+     //Hago un bucle para comprobar la cantidad de años bisiestos que hay entre la fecha inicial hasta la fecha del objeto, lo que suma un dia por cada año bisiesto.
+     for (int anyoTemporal = ANYO_INICIO; anyoTemporal <= anyo; anyoTemporal++) {
+
+       if (esBisiesto(anyoTemporal) && (mes > 2 || anyoTemporal != anyo)) {
+         cantidadBisiestos++;
        }
      }
      
-     //dias segun el mes
      int diasPorMes = 0;
-     int mesTemporal = mes;
-     if (mesTemporal == 1 || mesTemporal == 3 || mesTemporal == 5 || mesTemporal == 7 || mesTemporal == 8 || mesTemporal == 10 || mesTemporal == 12) {
-       diasPorMes += MES_CON_31_DIAS;
-     } else if (mesTemporal == 4 || mesTemporal == 6 || mesTemporal == 9 || mesTemporal == 11){
-       diasPorMes += MES_CON_30_DIAS;
-     } else if(mesTemporal == 2) {
-       diasPorMes += MES_FEBRERO;
+     
+     //Acumulo en la variable diasPorMes la suma de todos los dias que tenga cada mes hacia abajo en base al mes de la fecha del objeto.
+     switch (mes - 1) {
+   
+       case MES_DE_NOVIEMBRE:
+         diasPorMes += MES_CON_30_DIAS;
+       case MES_DE_OCTUBRE:
+         diasPorMes += MES_CON_31_DIAS;
+       case MES_DE_SEPTIEMBRE:
+         diasPorMes += MES_CON_30_DIAS;
+       case MES_DE_AGOSTO:
+         diasPorMes += MES_CON_31_DIAS;
+       case MES_DE_JULIO:
+         diasPorMes += MES_CON_31_DIAS;
+       case MES_DE_JUNIO:
+         diasPorMes += MES_CON_30_DIAS;
+       case MES_DE_MAYO:
+         diasPorMes += MES_CON_31_DIAS;
+       case MES_DE_ABRIL:
+         diasPorMes += MES_CON_30_DIAS;
+       case MES_DE_MARZO:
+         diasPorMes += MES_CON_31_DIAS;
+       case MES_DE_FEBRERO:
+         diasPorMes += MES_FEBRERO;
+       case MES_DE_ENERO:
+         diasPorMes += MES_CON_31_DIAS;
      }
      
-     //calculo del dia total de dias
-     int diasTranscurridos = (bisiestos + (anyo - ANYO_INICIO) * DIAS_POR_ANYO) + diasPorMes + (dia - 1);
-     return diasTranscurridos;
+     return (cantidadBisiestos + (anyo - ANYO_INICIO) * DIAS_POR_ANYO) + diasPorMes + (dia - 1);
    }
     
    /**
