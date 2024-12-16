@@ -27,15 +27,21 @@ public class Vehiculo {
    * @param matricula Matricula del vehículo. Debe tener un formato válido NNNN AAA donde NNNN son 4 dígitos y AAA son tres letras MAYÚSCULAS. Entre ellas puede haber cuantos espacios se quiera (incluido ninguno)
    * @param fechaMatriculacion Fecha de matriculación del vehiculo. No puede ser null
    */
-  protected Vehiculo(String matricula, Fecha fechaMatriculacion){
+  protected Vehiculo(String matricula, Fecha fechaMatriculacion) throws IllegalArgumentException, NullPointerException{
     if (compruebaMatricula(matricula)) {
       this.matricula = matricula;
     } else {
       throw new IllegalArgumentException();
     }
-    fechaMatriculacion.anyo = fechaMatriculacion.getAnyo();
-    fechaMatriculacion.mes = fechaMatriculacion.getMes();
-    fechaMatriculacion.dia = fechaMatriculacion.getDia();
+    if (fechaMatriculacion == null) {
+      throw new NullPointerException();
+    } else {
+      fechaMatriculacion.anyo = fechaMatriculacion.getAnyo();
+      fechaMatriculacion.mes = fechaMatriculacion.getMes();
+      fechaMatriculacion.dia = fechaMatriculacion.getDia();
+      this.fechaMatriculacion = fechaMatriculacion;
+    }
+    
   }
   
   //Metodos

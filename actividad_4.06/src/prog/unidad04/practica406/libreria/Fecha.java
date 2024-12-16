@@ -82,51 +82,51 @@ public class Fecha {
   /**
    * Enero
    */
-  private static final String ENERO = "Enero";
+  private static final String ENERO = "enero";
   /**
    * Febrero
    */
-  private static final String FEBRERO = "Febrero";
+  private static final String FEBRERO = "febrero";
   /**
    * Marzo
    */
-  private static final String MARZO = "Marzo";
+  private static final String MARZO = "marzo";
   /**
    * Abril
    */
-  private static final String ABRIL = "Abril";
+  private static final String ABRIL = "abril";
   /**
    * Mayo
    */
-  private static final String MAYO = "Mayo";
+  private static final String MAYO = "mayo";
   /**
    * Junio
    */
-  private static final String JUNIO = "Junio";
+  private static final String JUNIO = "junio";
   /**
    * Julio
    */
-  private static final String JULIO = "Julio";
+  private static final String JULIO = "julio";
   /**
    * Agosto
    */
-  private static final String AGOSTO = "Agosto";
+  private static final String AGOSTO = "agosto";
   /**
    * Septiembre
    */
-  private static final String SEPTIEMBRE = "Septiembre";
+  private static final String SEPTIEMBRE = "septiembre";
   /**
    * Octubre
    */
-  private static final String OCTUBRE = "Octubre";
+  private static final String OCTUBRE = "octubre";
   /**
    * Noviembre
    */
-  private static final String NOVIEMBRE = "Noviembre";
+  private static final String NOVIEMBRE = "noviembre";
   /**
    * Diciembre
    */
-  private static final String DICIEMBRE = "Diciembre";
+  private static final String DICIEMBRE = "diciembre";
   
     
   //Atributos
@@ -155,7 +155,12 @@ public class Fecha {
     //los throws se encuentran dentro de los metodos protegidos
     this.anyo = compruebaAnyo(anyo);
     this.mes = compruebaMes(mes);
-    this.dia = diasDelMes(dia);
+    if (dia == 0) {
+      throw new IllegalArgumentException();
+    } else {
+      this.dia = diasDelMes(dia, mes, anyo);
+    }
+    
   }
     
    //Metodos
@@ -176,12 +181,12 @@ public class Fecha {
     * @throws FechaException Si la fecha proporcionada es anterior a esta
     */
    public long diasEntre(Fecha fecha) throws FechaException{
-     //Se calculan los dias transcurridos entre una fecha y otra siempre que la la fecha introducida sea posterior a la otra
+     //Se calculan los dias transcurridos entre una fecha y otra fecha introducida sea posterior a la otra
      long diasEntre = fecha.diasTranscurridos() - diasTranscurridos();
      if (diasEntre >= 0) {
        return diasEntre;
      } else {
-       throw new FechaException();
+       throw new FechaException("La fecha introducida no es posterior");
      } 
    }
     
@@ -193,7 +198,7 @@ public class Fecha {
      
      int cantidadBisiestos = 0;
      
-     //Hago un bucle para comprobar la cantidad de años bisiestos que hay entre la fecha inicial hasta la fecha del objeto, lo que suma un dia por cada año bisiesto.
+     //Hago un bucle para saber cuantos dias bisiestos hay que añadir
      for (int anyoTemporal = ANYO_INICIO; anyoTemporal <= anyo; anyoTemporal++) {
 
        if (esBisiesto(anyoTemporal) && (mes > 2 || anyoTemporal != anyo)) {
@@ -203,7 +208,7 @@ public class Fecha {
      
      int diasPorMes = 0;
      
-     //Acumulo en la variable diasPorMes la suma de todos los dias que tenga cada mes hacia abajo en base al mes de la fecha del objeto.
+     //Acumulo en la variable diasPorMes que sume todos los dias de los meses anteriores de ese año
      switch (mes - 1) {
    
        case MES_DE_NOVIEMBRE:
@@ -277,9 +282,9 @@ public class Fecha {
     * Comprueba que el númerode dias sea correcto dependiendo del mes
     * @return Devuelve los dias o lanza una excepción si no es posible ese numero de dia
     */
-  protected int diasDelMes(int dia) {
+  protected int diasDelMes(int dia, int mes, int anyo) {
     if (mes == 2) {
-      if (esBisiesto()) {
+      if (esBisiesto(anyo)) {
         if (dia <= MES_FEBRERO_BISIESTO) {
           return dia;
         } else {

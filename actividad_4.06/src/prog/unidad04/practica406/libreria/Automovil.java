@@ -52,16 +52,16 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
    * @throws IllegalArgumentException Si la matrícula, el color o el número de plazas no son válidas
    * @throws NullPointerException Si fechaMatriculacion o color son null 
    */
-  public Automovil(String matricula, Fecha fechaMatriculacion, String color, int plazas) {
+  public Automovil(String matricula, Fecha fechaMatriculacion, String color, int plazas) throws IllegalArgumentException, NullPointerException{
     super(matricula, fechaMatriculacion);
     //comprobar los throws
     //controlar los colores
     if(color == null) {
       throw new NullPointerException();
-    } else if (color != COLOR_AZUL || color != COLOR_BLANCO || color != COLOR_NEGRO) {
-      throw new IllegalArgumentException();
+    } else if (color == COLOR_AZUL || color == COLOR_BLANCO || color == COLOR_NEGRO) {
+      this.color = color;
     } else {
-      this.color = color; 
+      throw new IllegalArgumentException();
     }
       
     //controlar que no sea 0 o menor
