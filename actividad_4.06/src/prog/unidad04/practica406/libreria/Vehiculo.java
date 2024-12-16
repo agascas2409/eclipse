@@ -33,9 +33,9 @@ public class Vehiculo {
     } else {
       throw new IllegalArgumentException();
     }
-    fechaMatriculacion.anyo = fechaMatriculacion.compruebaAnyo();
-    fechaMatriculacion.mes = fechaMatriculacion.compruebaMes();
-    fechaMatriculacion.dia = fechaMatriculacion.diasDelMes();
+    fechaMatriculacion.anyo = fechaMatriculacion.getAnyo();
+    fechaMatriculacion.mes = fechaMatriculacion.getMes();
+    fechaMatriculacion.dia = fechaMatriculacion.getDia();
   }
   
   //Metodos

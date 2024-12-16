@@ -107,9 +107,9 @@ public class Fecha {
    */
   public Fecha(int dia, int mes, int anyo) throws IllegalArgumentException {
     //los throws se encuentran dentro de los metodos protegidos
-    this.anyo = compruebaAnyo();
-    this.mes = compruebaMes();
-    this.dia = diasDelMes();
+    this.anyo = compruebaAnyo(anyo);
+    this.mes = compruebaMes(mes);
+    this.dia = diasDelMes(dia);
   }
     
    //Metodos
@@ -154,15 +154,13 @@ public class Fecha {
      
      //dias segun el mes
      int diasPorMes = 0;
-     int mesTemporal = mes - 1;
+     int mesTemporal = mes;
      if (mesTemporal == 1 || mesTemporal == 3 || mesTemporal == 5 || mesTemporal == 7 || mesTemporal == 8 || mesTemporal == 10 || mesTemporal == 12) {
        diasPorMes += MES_CON_31_DIAS;
-     }else if (mesTemporal == 4 || mesTemporal == 6 || mesTemporal == 9 || mesTemporal == 11){
+     } else if (mesTemporal == 4 || mesTemporal == 6 || mesTemporal == 9 || mesTemporal == 11){
        diasPorMes += MES_CON_30_DIAS;
      } else if(mesTemporal == 2) {
        diasPorMes += MES_FEBRERO;
-     } else {
-       throw new IllegalArgumentException();
      }
      
      //calculo del dia total de dias
@@ -214,7 +212,7 @@ public class Fecha {
     * Comprueba que el númerode dias sea correcto dependiendo del mes
     * @return Devuelve los dias o lanza una excepción si no es posible ese numero de dia
     */
-  protected int diasDelMes() {
+  protected int diasDelMes(int dia) {
     if (mes == 2) {
       if (esBisiesto()) {
         if (dia <= MES_FEBRERO_BISIESTO) {
@@ -250,7 +248,7 @@ public class Fecha {
    * Comprueba que el año sea mayor al año de inicio
    * @return Devuelve el año
    */
-  protected int compruebaAnyo() {
+  protected int compruebaAnyo(int anyo) {
     if (anyo < ANYO_INICIO) {
       throw new IllegalArgumentException();
     } else {
@@ -262,7 +260,7 @@ public class Fecha {
    * Comprueba que el numero del mes es correcto
    * @return Devuelve el mes
    */
-  protected int compruebaMes() {
+  protected int compruebaMes(int mes) {
     if (mes > 12 || mes < 1) {
       throw new IllegalArgumentException();
     } else {
