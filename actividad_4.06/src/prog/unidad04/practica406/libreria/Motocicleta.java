@@ -6,11 +6,23 @@ package prog.unidad04.practica406.libreria;
 public class Motocicleta extends Vehiculo implements MaquinaConDistintivoAmbiental{
 
   //Constantes
+  /**
+   * Número de cilindradas minimo para la motocicleta ECO
+   */
   private static final int CILINDRADAS_ECO = 75;
+  /**
+   * Número de cilindradas minimo para la motocicleta A
+   */
   private static final int CILINDRADAS_A = 125;
+  /**
+   * Número de cilindradas minimo para la motocicleta B
+   */
   private static final int CILINDRADAS_B = 500;
   
   //Atributos
+  /**
+   * Cilindradas
+   */
   private int cilindradas;
   
   //Constructor
@@ -61,6 +73,10 @@ public class Motocicleta extends Vehiculo implements MaquinaConDistintivoAmbient
     }
   }
   
+  /**
+   * Obtiene la representación en texto de la motocicleta en el formato:
+   * Matricula: matricula, Fecha Matriculación: dd de mmmmm de aaaa, Cilindrada: cilindradas
+   */
   public String toString() {
     return toString() + ", Cilindrada: " + getCilindrada();
   }

@@ -19,12 +19,27 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
    */
   public static final String COLOR_NEGRO = "negro";
   //Número de plazas
+  /**
+   * Número de plazas minimo para el automovil ECO
+   */
   private static final int PLAZAS_ECO = 2;
+  /**
+   * Número de plazas minimo para el automovil A
+   */
   private static final int PLAZAS_A = 4;
+  /**
+   * Número de plazas minimo para el automovil B
+   */
   private static final int PLAZAS_B = 5;
   
   //Atributos
+  /**
+   * Color
+   */
   private String color;
+  /**
+   * Plazas
+   */
   private int plazas;
   
   //Constructores
@@ -102,5 +117,5 @@ public class Automovil extends Vehiculo implements MaquinaConDistintivoAmbiental
     //Asegurarme que el toString sea de vehiculo
     return toString() + ", Color: " + getColor() + ", Num. Plazas: " + getPlazas();
   }
-  
+   
 }

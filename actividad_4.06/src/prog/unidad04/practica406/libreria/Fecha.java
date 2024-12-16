@@ -1,5 +1,4 @@
 package prog.unidad04.practica406.libreria;
-import java.time.LocalDate;
 
 /**
  * Clase que representa una fecha a partir del 1/1/1900
@@ -7,30 +6,96 @@ import java.time.LocalDate;
 public class Fecha {
 
   //Constantes
+  //Año que se inicio
+  /**
+   * Año de inicio
+   */
   private static final int ANYO_INICIO = 1900;
+  //Dias que tiene un año
+  /**
+   * Dias que tiene un año
+   */
+  private static final int DIAS_POR_ANYO = 365; 
   //Meses del año en letras
+  /**
+   * Enero
+   */
   private static final String ENERO = "Enero";
+  /**
+   * Febrero
+   */
   private static final String FEBRERO = "Febrero";
+  /**
+   * Marzo
+   */
   private static final String MARZO = "Marzo";
+  /**
+   * Abril
+   */
   private static final String ABRIL = "Abril";
+  /**
+   * Mayo
+   */
   private static final String MAYO = "Mayo";
+  /**
+   * Junio
+   */
   private static final String JUNIO = "Junio";
+  /**
+   * Julio
+   */
   private static final String JULIO = "Julio";
+  /**
+   * Agosto
+   */
   private static final String AGOSTO = "Agosto";
+  /**
+   * Septiembre
+   */
   private static final String SEPTIEMBRE = "Septiembre";
+  /**
+   * Octubre
+   */
   private static final String OCTUBRE = "Octubre";
+  /**
+   * Noviembre
+   */
   private static final String NOVIEMBRE = "Noviembre";
+  /**
+   * Diciembre
+   */
   private static final String DICIEMBRE = "Diciembre";
   //Dias por mes
+  /**
+   * Meses que tienen 31 días
+   */
   private static final int MES_CON_31_DIAS = 31;
+  /**
+   * Meses que tienen 30 días
+   */
   private static final int MES_CON_30_DIAS = 30;
+  /**
+   * Meses que tienen 28 días
+   */
   private static final int MES_FEBRERO = 28;
+  /**
+   * Meses que tienen 29 días
+   */
   private static final int MES_FEBRERO_BISIESTO = 29;
     
   //Atributos
-  private int dia;
-  private int mes;
-  private int anyo;
+  /**
+   * Dia
+   */
+  protected int dia;
+  /**
+   * Mes
+   */
+  protected int mes;
+  /**
+   * Año
+   */
+  protected int anyo;
     
   //Constructor
   /**
@@ -40,16 +105,12 @@ public class Fecha {
    * @param anyo Año de la fecha. Debe ser mayor o igual a 1900
    * @throws IllegalArgumentException Si los párametros no se corresponden con una fecha válida
    */
-   public Fecha(int dia, int mes, int anyo) throws IllegalArgumentException {
-     try {
-       //los throws se encuentran dentro de los metodos privados
-       this.dia = diasDelMes();
-       this.mes = compruebaMes();
-       this.anyo = compruebaAnyo();
-     } catch (IllegalArgumentException e) {
-       throw new IllegalArgumentException();
-     }
-   }
+  public Fecha(int dia, int mes, int anyo) throws IllegalArgumentException {
+    //los throws se encuentran dentro de los metodos protegidos
+    this.anyo = compruebaAnyo();
+    this.mes = compruebaMes();
+    this.dia = diasDelMes();
+  }
     
    //Metodos
    /**
@@ -58,11 +119,8 @@ public class Fecha {
     * @return Menor que o si esta fecha es anterior a la otra, o si las dos fechas son iguales y mayor que cero si esta fecha es posterior a la otra
     */
    public int compara(Fecha fecha) {
-     //Buscar clase que compare fechas
-     //LocalDate hoy = new LocalDate();
-     //hoy.now();
-     int fechas = 0;
-     return fechas;
+     //Calcula los dias trancurridos de cada fecha y se restan para calcular la diferencia de dias
+     return (int) (diasTranscurridos() - fecha.diasTranscurridos());
    }
     
    /**
@@ -72,14 +130,13 @@ public class Fecha {
     * @throws FechaException Si la fecha proporcionada es anterior a esta
     */
    public long diasEntre(Fecha fecha) throws FechaException{
-     boolean hola = true;
-     if (hola) {
-      long fechas = 0;
-      return fechas;
-    } else {
-      throw new FechaException();
-    }
-      
+     //Se calculan los dias transcurridos entre una fecha y otra siempre que la la fecha introducida sea posterior a la otra
+     long diasEntre = fecha.diasTranscurridos() - diasTranscurridos();
+     if (diasEntre >= 0) {
+       return diasEntre;
+     } else {
+       throw new FechaException();
+     } 
    }
     
    /**
@@ -87,10 +144,30 @@ public class Fecha {
     * @return Número de días transcurridos entre esta fecha y la fecha de inicio del cxalendario
     */
    public long diasTranscurridos() {
-     //Buscar clase que compare fechas
-     long fechas = 0;
-     return fechas;
-     //Falta un throws
+     //se comprueban los años bisiestos para añadir un dia mas al año
+     int bisiestos = 0;
+     for (int anyoTemporal = ANYO_INICIO; anyoTemporal <= this.anyo; anyoTemporal++) {
+       if (esBisiesto(anyoTemporal) && (mes > 2 || anyoTemporal != 0)) {
+         bisiestos++;
+       }
+     }
+     
+     //dias segun el mes
+     int diasPorMes = 0;
+     int mesTemporal = mes - 1;
+     if (mesTemporal == 1 || mesTemporal == 3 || mesTemporal == 5 || mesTemporal == 7 || mesTemporal == 8 || mesTemporal == 10 || mesTemporal == 12) {
+       diasPorMes += MES_CON_31_DIAS;
+     }else if (mesTemporal == 4 || mesTemporal == 6 || mesTemporal == 9 || mesTemporal == 11){
+       diasPorMes += MES_CON_30_DIAS;
+     } else if(mesTemporal == 2) {
+       diasPorMes += MES_FEBRERO;
+     } else {
+       throw new IllegalArgumentException();
+     }
+     
+     //calculo del dia total de dias
+     int diasTranscurridos = (bisiestos + (anyo - ANYO_INICIO) * DIAS_POR_ANYO) + diasPorMes + (dia - 1);
+     return diasTranscurridos;
    }
     
    /**
@@ -98,15 +175,8 @@ public class Fecha {
     * @return true si el año es bisiesto, false en caso contrario
     */
    public boolean esBisiesto() {
-     //Debe ser divisible entre 4
-     //NO debe ser divisible entre 100
-     //Debe ser divisible entre 400
-     //un if(a&&(b||b))
-     if (anyo % 4 == 0 && (anyo % 100 != 0 || anyo % 400 == 0 )) {
-       return true;
-     } else {
-       return false; 
-     }
+     //Como para diasTrasurridos necesito saber si el año es bisiesto, creo un metodo privado para todos y este es especifico pora el que se esta creando
+     return esBisiesto(this.anyo);
    }
     
    /**
@@ -137,88 +207,14 @@ public class Fecha {
     * Obtiene una representación de la fecha en formato texto El formato es DD de MMMMM de AAAA donde DD es el día del mes (en número), MMMM es el mes (en letra y minúsculas) y AAAA es el año (en número)
     */
    public String toString() {
-     //hacer que se escriba el mes con letra
-     //retocar el return
      return this.dia + " de " + mesEnLetras() + " de " + this.anyo;
    }
    
    /**
-    * 
-    * @param fecha
-    * @return
-    */
-   protected int compruebaFechaMatriculacion(Fecha fecha) {
-     return fecha.compara(fecha);
-   }
-   
-   /**
-    * Obtenemos el mes en letras
-    * @return Mes en letras
-    */
-   private String mesEnLetras() {
-      String resultado;
-      switch(mes){
-      case 1: {
-        resultado = ENERO;
-        break;
-      }
-      case 2: {
-        resultado = FEBRERO;
-        break;
-      }
-      case 3: {
-        resultado = MARZO;
-        break;
-      }
-      case 4: {
-        resultado = ABRIL;
-        break;
-      }
-      case 5: {
-        resultado = MAYO;
-        break;
-      }
-      case 6: {
-        resultado = JUNIO;
-        break;
-      }
-      case 7: {
-        resultado = JULIO;
-        break;
-      }
-      case 8: {
-        resultado = AGOSTO;
-        break;
-      }
-      case 9: {
-         resultado = SEPTIEMBRE;
-         break;
-      }
-      case 10: {
-        resultado = OCTUBRE;
-        break;
-      }
-      case 11: {
-        resultado = NOVIEMBRE;
-        break;
-      }
-      case 12: {
-        resultado = DICIEMBRE;
-        break;
-        }
-      default: {
-        resultado = "Error";
-        break;
-      }
-      }
-      return resultado;
-   }
-    
-   /**
     * Comprueba que el númerode dias sea correcto dependiendo del mes
     * @return Devuelve los dias o lanza una excepción si no es posible ese numero de dia
     */
-  private int diasDelMes() {
+  protected int diasDelMes() {
     if (mes == 2) {
       if (esBisiesto()) {
         if (dia <= MES_FEBRERO_BISIESTO) {
@@ -249,30 +245,108 @@ public class Fecha {
       throw new IllegalArgumentException();
     }
   }
-    
-    /**
-     * Comprueba que el año sea mayor al año de inicio
-     * @return Devuelve el año
-     */
-    private int compruebaAnyo() {
-      if (anyo < ANYO_INICIO) {
-        throw new IllegalArgumentException();
-      } else {
-        return anyo;
-      }
+     
+  /**
+   * Comprueba que el año sea mayor al año de inicio
+   * @return Devuelve el año
+   */
+  protected int compruebaAnyo() {
+    if (anyo < ANYO_INICIO) {
+      throw new IllegalArgumentException();
+    } else {
+      return anyo;
     }
-    
-    /**
-     * Comprueba que el numero del mes es correcto
-     * @return Devuelve el mes
-     */
-    private int compruebaMes() {
-      if (mes > 12 || mes < 1) {
-        throw new IllegalArgumentException();
+  }
+     
+  /**
+   * Comprueba que el numero del mes es correcto
+   * @return Devuelve el mes
+   */
+  protected int compruebaMes() {
+    if (mes > 12 || mes < 1) {
+      throw new IllegalArgumentException();
     } else {
       return mes;
     }
+  }
+   
+   /**
+    * Obtenemos el mes en letras
+    * @return Mes en letras
+    */
+  private String mesEnLetras() {
+    String resultado;
+    switch(mes){
+      case 1: {
+        resultado = ENERO;
+        break;
+      }
+      case 2: {
+        resultado = FEBRERO;
+        break;
+      }
+      case 3: {
+        resultado = MARZO;
+        break;
+      }
+      case 4: {
+        resultado = ABRIL;
+        break;
+      }
+      case 5: {
+        resultado = MAYO;
+        break;
+      }
+      case 6: {
+        resultado = JUNIO;
+        break;
+      } 
+      case 7: {
+        resultado = JULIO;
+        break;
+      }
+      case 8: {
+        resultado = AGOSTO;
+        break;
+      }
+      case 9: {
+        resultado = SEPTIEMBRE;
+        break;
+      }
+      case 10: {
+        resultado = OCTUBRE;
+        break;
+      }
+      case 11: {
+        resultado = NOVIEMBRE;
+        break;
+      }
+      case 12: {
+        resultado = DICIEMBRE;
+        break;
+      }
+      default: {
+        resultado = "Error";
+        break;
+      }
     }
-    
-
+    return resultado;
+  }
+  
+  /**
+   * Devuelve si el año es bisiesto o no del año que se le proporciona
+   * @anyo Año que se le proporciona para saber si es bisiesto o no
+   * @return true si el año es bisiesto, false en caso contrario
+   */
+  private boolean esBisiesto(int anyo) {
+    //Debe ser divisible entre 4
+    //NO debe ser divisible entre 100
+    //Debe ser divisible entre 400
+    //un if(a&&(b||b))
+    if (anyo % 4 == 0 && (anyo % 100 != 0 || anyo % 400 == 0 )) {
+      return true;
+    } else {
+      return false; 
+    }
+  }
 }
