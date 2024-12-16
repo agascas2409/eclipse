@@ -11,7 +11,6 @@ INDEX VERSION 1.134+C:\Users\Ana\Downloads\eclipse\.metadata\.plugins\org.eclips
 2660344170.index
 2576839410.index
 2292546964.index
-1241467073.index
 266000758.index
 1980129746.index
 1865797976.index

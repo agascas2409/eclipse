@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Ana/Downloads/Programación/4_06/actividad_4.06.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
