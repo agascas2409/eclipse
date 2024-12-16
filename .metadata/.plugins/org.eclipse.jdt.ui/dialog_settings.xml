@@ -15,7 +15,7 @@
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-21"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo.comments" value="false"/>
 	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo" value="false"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Ana\Downloads\eclipse\examen2\lif"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\Ana\Downloads\Programación\jar angel"/>
 	<item key="org.eclipse.jdt.ui.last.external.project" value="C:\Users\Ana\Downloads\Programación\ECLIPSE"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
@@ -69,9 +69,10 @@
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
 		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\Ana\Downloads\eclipse"/>
 		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
-		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="SuperEstadisticaApp - examen3"/>
-		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\Ana\Downloads\Programación\Ejercicios\Tema3\SuperEstadisticaApp.jar"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="VehiculosApp - actividad_4.06_principal"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\Ana\Downloads\Programación\VehiculosApp.jar"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Ana\Downloads\Programación\VehiculosApp.jar"/>
 			<item value="C:\Users\Ana\Downloads\Programación\Ejercicios\Tema3\SuperEstadisticaApp.jar"/>
 			<item value="C:\Users\Ana\Downloads\Programación\Ejercicios\Tema3\ParImparFibonacciApp.jar"/>
 		</list>
@@ -80,9 +81,9 @@
 			<item value=".xml"/>
 		</list>
 		<section name="FatJarPackageWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="683"/>
-			<item key="DIALOG_Y_ORIGIN" value="191"/>
-			<item key="DIALOG_WIDTH" value="571"/>
+			<item key="DIALOG_X_ORIGIN" value="330"/>
+			<item key="DIALOG_Y_ORIGIN" value="186"/>
+			<item key="DIALOG_WIDTH" value="525"/>
 			<item key="DIALOG_HEIGHT" value="550"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
@@ -104,21 +105,289 @@
 		<item key="nonavbar" value="false"/>
 		<item key="openinbrowser" value="false"/>
 		<item key="source" value="21"/>
-		<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r04e02\javadoc.xml"/>
-		<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r04e02\doc"/>
+		<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\actividad_4.06\javadoc.xml"/>
+		<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\actividad_4.06\doc"/>
 		<section name="projects">
+			<section name="r01e20">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e20\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e20\javadoc.xml"/>
+			</section>
+			<section name="r01e21">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e21\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e21\javadoc.xml"/>
+			</section>
+			<section name="r03e02">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r03e02\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r03e02\javadoc.xml"/>
+			</section>
+			<section name="r01e22">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e22\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e22\javadoc.xml"/>
+			</section>
+			<section name="r03e01">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r03e01\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r03e01\javadoc.xml"/>
+			</section>
+			<section name="examen3">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\examen3\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\examen3\javadoc.xml"/>
+			</section>
+			<section name="r01e05">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e05\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e05\javadoc.xml"/>
+			</section>
+			<section name="r01e27">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e27\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e27\javadoc.xml"/>
+			</section>
+			<section name="r01e06">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e06\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e06\javadoc.xml"/>
+			</section>
+			<section name="r01e28">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e28\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e28\javadoc.xml"/>
+			</section>
+			<section name="r01e07">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e07\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e07\javadoc.xml"/>
+			</section>
+			<section name="r01e29">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e29\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e29\javadoc.xml"/>
+			</section>
+			<section name="r01e08">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e08\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e08\javadoc.xml"/>
+			</section>
+			<section name="r01e01">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e01\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e01\javadoc.xml"/>
+			</section>
+			<section name="r01e23">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e23\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e23\javadoc.xml"/>
+			</section>
+			<section name="r01e02">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e02\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e02\javadoc.xml"/>
+			</section>
+			<section name="r01e24">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e24\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e24\javadoc.xml"/>
+			</section>
+			<section name="r03e03">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r03e03\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r03e03\javadoc.xml"/>
+			</section>
+			<section name="Prueba1">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\Prueba1\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\Prueba1\javadoc.xml"/>
+			</section>
+			<section name="r01e03">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e03\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e03\javadoc.xml"/>
+			</section>
+			<section name="r01e25">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e25\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e25\javadoc.xml"/>
+			</section>
+			<section name="r01e04">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e04\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e04\javadoc.xml"/>
+			</section>
+			<section name="r01e26">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e26\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e26\javadoc.xml"/>
+			</section>
+			<section name="r03e05">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r03e05\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r03e05\javadoc.xml"/>
+			</section>
+			<section name="r01e09">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e09\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e09\javadoc.xml"/>
+			</section>
+			<section name="actividad_4.06_principal">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\actividad_4.06_principal\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\actividad_4.06_principal\javadoc.xml"/>
+			</section>
+			<section name="examen">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\examen\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\examen\javadoc.xml"/>
+			</section>
 			<section name="r04e02">
 				<item key="href" value=""/>
 				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r04e02\doc"/>
 				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r04e02\javadoc.xml"/>
 			</section>
+			<section name="r01e30">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e30\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e30\javadoc.xml"/>
+			</section>
+			<section name="actividad_4.06">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\actividad_4.06\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\actividad_4.06\javadoc.xml"/>
+			</section>
+			<section name="r01e10">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e10\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e10\javadoc.xml"/>
+			</section>
+			<section name="r01e11">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e11\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e11\javadoc.xml"/>
+			</section>
+			<section name="r04e01">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\Programación\ECLIPSE\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\Programación\ECLIPSE\javadoc.xml"/>
+			</section>
+			<section name="r01e16">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e16\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e16\javadoc.xml"/>
+			</section>
+			<section name="r01e17">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e17\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e17\javadoc.xml"/>
+			</section>
+			<section name="r01e18">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e18\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e18\javadoc.xml"/>
+			</section>
+			<section name="Actividad_4.06_pruebas">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\Programación\Ejercicios\Tema4\Actividad 4.06 - Práctica Obligatoria Bloque 04-20241210\Actividad_4.06_pruebas\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\Programación\Ejercicios\Tema4\Actividad 4.06 - Práctica Obligatoria Bloque 04-20241210\Actividad_4.06_pruebas\javadoc.xml"/>
+			</section>
+			<section name="r01e19">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e19\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e19\javadoc.xml"/>
+			</section>
+			<section name="r01e12">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e12\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e12\javadoc.xml"/>
+			</section>
+			<section name="r02e03">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r02e03\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r02e03\javadoc.xml"/>
+			</section>
+			<section name="r01e13">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e13\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e13\javadoc.xml"/>
+			</section>
+			<section name="r02e02">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r02e02\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r02e02\javadoc.xml"/>
+			</section>
+			<section name="ENDES">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\ENDES\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\ENDES\javadoc.xml"/>
+			</section>
+			<section name="r01e14">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e14\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e14\javadoc.xml"/>
+			</section>
+			<section name="r02e05">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r02e05\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r02e05\javadoc.xml"/>
+			</section>
+			<section name="r01e15">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r01e15\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r01e15\javadoc.xml"/>
+			</section>
+			<section name="r02e04">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\r02e04\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\r02e04\javadoc.xml"/>
+			</section>
+			<section name="examen2">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\Ana\Downloads\eclipse\examen2\doc"/>
+				<item key="antpath" value="C:\Users\Ana\Downloads\eclipse\examen2\javadoc.xml"/>
+			</section>
 		</section>
 	</section>
 	<section name="JavadocWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="31"/>
+		<item key="DIALOG_X_ORIGIN" value="233"/>
 		<item key="DIALOG_Y_ORIGIN" value="186"/>
 		<item key="DIALOG_WIDTH" value="936"/>
 		<item key="DIALOG_HEIGHT" value="616"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="JarPackageWizard">
+		<item key="JarPackageWizardPage.EXPORT_CLASS_FILES" value="true"/>
+		<item key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER" value="false"/>
+		<item key="JarPackageWizardPage.EXPORT_JAVA_FILES" value="false"/>
+		<item key="JarPackageWizardPage.REFACTORINGS" value="false"/>
+		<item key="JarPackageWizardPage.COMPRESS" value="true"/>
+		<item key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES" value="false"/>
+		<item key="JarPackageWizardPage.OVERWRITE" value="false"/>
+		<item key="jarOptionsWizardPage.EXPORT_WARNINGS" value="true"/>
+		<item key="jarOptionsWizardPage.EXPORT_ERRORS" value="true"/>
+		<item key="jarOptionsWizardPage.STORE_USE_SRC_FOLDERS" value="false"/>
+		<item key="jarOptionsWizardPage.BUILD_IF_NEEDED" value="true"/>
+		<item key="jarOptionsWizardPage.SAVE_DESCRIPTION" value="false"/>
+		<item key="jarOptionsWizardPage.DESCRIPTION_LOCATION" value=""/>
+		<item key="JarManifestWizardPage.GENERATE_MANIFEST" value="true"/>
+		<item key="JarManifestWizardPage.SAVE_MANIFEST" value="false"/>
+		<item key="JarManifestWizardPage.REUSE_MANIFEST" value="false"/>
+		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
+		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
+		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Ana\Downloads\Programación\4_06\actividad_4.06.jar"/>
+		</list>
+		<section name="JarPackageWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="330"/>
+			<item key="DIALOG_Y_ORIGIN" value="186"/>
+			<item key="DIALOG_WIDTH" value="563"/>
+			<item key="DIALOG_HEIGHT" value="667"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item key="index" value="4"/>
 	</section>
 </section>
